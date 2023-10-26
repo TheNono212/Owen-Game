@@ -23,48 +23,48 @@ namespace HO
 
     public void OnEnable()
     {
-      if (this.inputActions == null)
+      if (inputActions == null)
       {
-        this.inputActions = new PlayerControls();
-        this.inputActions.PlayerMovement.Movement.performed += (Action<InputAction.CallbackContext>) (inputActions => this.movementInput = inputActions.ReadValue<Vector2>());
-        this.inputActions.PlayerMovement.Camera.performed += (Action<InputAction.CallbackContext>) (i => this.cameraInput = i.ReadValue<Vector2>());
+        inputActions = new PlayerControls();
+        inputActions.PlayerMovement.Movement.performed += (Action<InputAction.CallbackContext>) (inputActions => movementInput = inputActions.ReadValue<Vector2>());
+        inputActions.PlayerMovement.Camera.performed += (Action<InputAction.CallbackContext>) (i => cameraInput = i.ReadValue<Vector2>());
       }
-      this.inputActions.Enable();
+      inputActions.Enable();
     }
 
-    private void OnDisable() => this.inputActions.Disable();
+    private void OnDisable() => inputActions.Disable();
 
     public void TickInput(float delta)
     {
-      this.MoveInput(delta);
-      this.HandleRollInput(delta);
+      MoveInput(delta);
+      HandleRollInput(delta);
     }
 
     private void MoveInput(float delta)
     {
-      this.horizontal = this.movementInput.x;
-      this.vertical = this.movementInput.y;
-      this.moveAmount = Mathf.Clamp01(Mathf.Abs(this.horizontal) + Mathf.Abs(this.vertical));
-      this.mouseX = this.cameraInput.x;
-      this.mouseY = this.cameraInput.y;
+      horizontal = movementInput.x;
+      vertical = movementInput.y;
+      moveAmount = Mathf.Clamp01(Mathf.Abs(horizontal) + Mathf.Abs(vertical));
+      mouseX = cameraInput.x;
+      mouseY = cameraInput.y;
     }
 
     private void HandleRollInput(float delta)
     {
-      this.leftShift = this.inputActions.PlayerActions.Roll.phase == InputActionPhase.Performed;
-      if (this.leftShift)
+      leftShift = inputActions.PlayerActions.Roll.phase == InputActionPhase.Performed;
+      if (leftShift)
       {
-        this.rollInputTimer += delta;
-        this.sprintFlag = true;
+        rollInputTimer += delta;
+        sprintFlag = true;
       }
       else
       {
-        if ((double) this.rollInputTimer > 0.0 && (double) this.rollInputTimer < 0.5)
+        if (rollInputTimer > 0.0 && rollInputTimer < 0.5)
         {
-          this.sprintFlag = false;
-          this.rollFlag = true;
+          sprintFlag = false;
+          rollFlag = true;
         }
-        this.rollInputTimer = 0.0f;
+        rollInputTimer = 0.0f;
       }
     }
   }

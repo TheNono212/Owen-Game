@@ -2,8 +2,9 @@ using UnityEngine;
 
 namespace HO
 {
-  public class PlayerLocomotion : MonoBehaviour
-  {
+    public class PlayerLocomotion : MonoBehaviour
+    {
+
     [Header("Dependencies")]
     private PlayerManager playerManager;
     private Transform cameraObject;
@@ -33,130 +34,98 @@ namespace HO
     private float groundDirectionRayDistance = -0.2f;
     private LayerMask ignoreForGroundCheck;
     public float inAirTimer;
-    private Vector3 normalVector;
-    private Vector3 targetPosition;
 
     private void Start()
     {
-      this.playerManager = this.GetComponent<PlayerManager>();
-      this.rigidbody = this.GetComponent<Rigidbody>();
-      this.inputHandler = this.GetComponent<InputHandler>();
-      this.animatorHandler = this.GetComponentInChildren<AnimationHandler>();
-      this.cameraObject = Camera.main.transform;
-      this.myTransform = this.transform;
-      this.animatorHandler.Initialize();
-      this.playerManager.isGrounded = true;
-      this.ignoreForGroundCheck = (LayerMask) -2305;
+      playerManager = GetComponent<PlayerManager>();
+      rigidbody = GetComponent<Rigidbody>();
+      inputHandler = GetComponent<InputHandler>();
+      animatorHandler = GetComponentInChildren<AnimationHandler>();
+      cameraObject = Camera.main.transform;
+      myTransform = transform;
+      //animatorHandler.Initialize();
+      playerManager.isGrounded = true;
+      //ignoreForGroundCheck = (LayerMask) -2305;
     }
+
+    public void Update()
+    {
+      float delta = inAirTimer;
+
+      inputHandler.TickInput(delta);
+
+      moveDirection = cameraObject.forward * inputHandler.vertical;
+      moveDirection += cameraObject.right * inputHandler.horizontal;
+      moveDirection.Normalize();
+
+      float speed = movementSpeed;
+      moveDirection *= speed;
+    }
+    
+    #region Movement
+    Vector3 normalVector;
+    Vector3 targetPosition;
 
     private void HandleRotation(float delta)
     {
-      Vector3 zero = Vector3.zero;
-      double moveAmount = (double) this.inputHandler.moveAmount;
-      Vector3 forward = this.cameraObject.forward * this.inputHandler.vertical + this.cameraObject.right * this.inputHandler.horizontal;
-      forward.Normalize();
-      forward.y = 0.0f;
-      if (forward == Vector3.zero)
-        forward = this.myTransform.forward;
-      float rotationSpeed = this.rotationSpeed;
-      this.myTransform.rotation = Quaternion.Slerp(this.myTransform.rotation, Quaternion.LookRotation(forward), rotationSpeed * delta);
-    }
 
+      Vector3 targetDir = Vector3.zero; 
+      float moveOverride = inputHandler.moveAmount;
+
+      targetDir = cameraObject.forward * inputHandler.vertical;
+      targetDir += cameraObject.right * inputHandler.horizontal;
+
+      targetDir.Normalize();
+      targetDir.y = 0.0f;
+
+      if (targetDir == Vector3.zero)
+      {
+         targetDir = myTransform.targetDir;
+      }
+      
+      float rs = rotationSpeed;
+
+      Quaternion tr = Quaternion.LookRotation(targetDir);
+      Quaternion targetRotation = Quaternion.Slerp(myTransform.rotation, tr, rs * delta);
+      
+      myTransform.rotation = targetRotation;
+    }
+    
     public void HandleMovement(float delta)
     {
-      if (this.inputHandler.rollFlag)
+      if (inputHandler.rollFlag)
         return;
-      this.moveDirection = this.cameraObject.forward * this.inputHandler.vertical;
-      this.moveDirection += this.cameraObject.right * this.inputHandler.horizontal;
-      this.moveDirection.Normalize();
-      this.moveDirection.y = 0.0f;
-      float movementSpeed = this.movementSpeed;
-      if (this.inputHandler.sprintFlag)
-        this.moveDirection *= this.sprintSpeed;
+      moveDirection = cameraObject.forward * this.inputHandler.vertical;
+      moveDirection += cameraObject.right * this.inputHandler.horizontal;
+      moveDirection.Normalize();
+      moveDirection.y = 0.0f;
+      float movementSpeed = thisovementSpeed;
+      if (inputHandler.sprintFlag)
+        moveDirection *= this.sprintSpeed;
       else
-        this.moveDirection *= movementSpeed;
-      this.rigidbody.velocity = Vector3.ProjectOnPlane(this.moveDirection, this.normalVector);
-      this.animatorHandler.UpdateAnimatorValues(this.inputHandler.moveAmount, 0.0f, this.playerManager.isSprinting);
-      if (!this.animatorHandler.canRotate)
+        moveDirection *= movementSpeed;
+      rigidbody.velocity = Vector3.ProjectOnPlane(moveDirection, normalVector);
+      animatorHandler.UpdateAnimatorValues(inputHandler.moveAmount, 0.0f, playerManager.isSprinting);
+      if (!animatorHandler.canRotate)
         return;
-      this.HandleRotation(delta);
+      HandleRotation(delta);
     }
 
     public void HandleRollingAndSprinting(float delta)
     {
-      if (this.animatorHandler.anim.GetBool("isInteracting") || !this.inputHandler.rollFlag)
+      if (animatorHandler.anim.GetBool("isInteracting") || !inputHandler.rollFlag)
         return;
-      this.moveDirection = this.cameraObject.forward * this.inputHandler.vertical;
-      this.moveDirection += this.cameraObject.right * this.inputHandler.horizontal;
-      if ((double) this.inputHandler.moveAmount > 0.0)
+      moveDirection = cameraObject.forward * inputHandler.vertical;
+      moveDirection += cameraObject.right * inputHandler.horizontal;
+      if (inputHandler.moveAmount > 0.0)
       {
-        this.animatorHandler.PlayTargetAnimation("Rolling", true);
-        this.moveDirection.y = 0.0f;
-        this.myTransform.rotation = Quaternion.LookRotation(this.moveDirection);
+        animatorHandler.PlayTargetAnimation("Rolling", true);
+        moveDirection.y = 0.0f;
+        myTransform.rotation = Quaternion.LookRotation(moveDirection);
       }
       else
-        this.animatorHandler.PlayTargetAnimation("Backstep", true);
+        animatorHandler.PlayTargetAnimation("Backstep", true);
     }
-
-    public void HandleFalling(float delta, Vector3 moveDirection)
-    {
-      this.playerManager.isGrounded = false;
-      Vector3 position = this.myTransform.position;
-      position.y += this.groundDetectionRayStartPoint;
-      RaycastHit hitInfo;
-      if (Physics.Raycast(position, this.myTransform.forward, out hitInfo, 0.4f))
-        moveDirection = Vector3.zero;
-      if (this.playerManager.isInAir)
-      {
-        this.rigidbody.AddForce(-Vector3.up * this.fallingSpeed);
-        this.rigidbody.AddForce(moveDirection * this.fallingSpeed / 5f);
-      }
-      Vector3 vector3_1 = moveDirection;
-      vector3_1.Normalize();
-      Vector3 vector3_2 = position + vector3_1 / this.groundDirectionRayDistance;
-      this.targetPosition = this.myTransform.position;
-      Debug.DrawRay(vector3_2, -Vector3.up * this.minimumDistanceNeededToBeginFall, Color.red, 0.1f, false);
-      if (Physics.Raycast(vector3_2, -Vector3.up, out hitInfo, this.minimumDistanceNeededToBeginFall, (int) this.ignoreForGroundCheck))
-      {
-        this.normalVector = hitInfo.normal;
-        Vector3 point = hitInfo.point;
-        this.playerManager.isGrounded = true;
-        this.targetPosition.y = point.y;
-        if (this.playerManager.isInAir)
-        {
-          if ((double) this.inAirTimer > 0.5)
-          {
-            Debug.Log((object) ("You were in the air for " + this.inAirTimer.ToString()));
-            this.animatorHandler.PlayTargetAnimation("Land", true);
-          }
-          else
-          {
-            this.animatorHandler.PlayTargetAnimation("Locomotion", false);
-            this.inAirTimer = 0.0f;
-          }
-          this.playerManager.isInAir = false;
-        }
-      }
-      else
-      {
-        if (this.playerManager.isGrounded)
-          this.playerManager.isGrounded = false;
-        if (!this.playerManager.isInAir)
-        {
-          if (!this.playerManager.isInteracting)
-            this.animatorHandler.PlayTargetAnimation("Falling", true);
-          Vector3 velocity = this.rigidbody.velocity;
-          velocity.Normalize();
-          this.rigidbody.velocity = velocity / (this.movementSpeed / 2f);
-          this.playerManager.isInAir = true;
-        }
-      }
-      if (!this.playerManager.isGrounded)
-        return;
-      if (this.playerManager.isInteracting || (double) this.inputHandler.moveAmount > 0.0)
-        this.myTransform.position = Vector3.Lerp(this.myTransform.position, this.targetPosition, Time.deltaTime);
-      else
-        this.myTransform.position = this.targetPosition;
-    }
+    #endregion
   }
 }
