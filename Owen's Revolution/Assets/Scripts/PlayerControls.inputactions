@@ -2,7 +2,7 @@
     "name": "PlayerControls",
     "maps": [
         {
-            "name": "PlayerMovement",
+            "name": "Player Movement",
             "id": "b6a37bc9-4e74-429a-bfe4-349b2deda867",
             "actions": [
                 {
@@ -99,6 +99,45 @@
                     "processors": "NormalizeVector2",
                     "groups": "",
                     "action": "Camera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Player Actions",
+            "id": "a5c02a54-07e8-4b2b-9380-aef0cdf22397",
+            "actions": [
+                {
+                    "name": "Roll",
+                    "type": "Button",
+                    "id": "256e81bb-cd39-4d55-8be8-fba51b9279c8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9ec85d3a-dbf4-4d37-ba61-2ebf64486636",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3a41a1a3-b452-4234-9aa7-19343424911f",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

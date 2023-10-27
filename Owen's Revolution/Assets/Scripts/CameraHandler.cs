@@ -13,8 +13,8 @@ namespace HO
         [SerializeField] private LayerMask ignoreLayers;
         private Vector3 cameraFollowVelocity = Vector3.zero;
 
-        [SerializeField] float horizontalRotateSpeed = 1;
-        [SerializeField] float verticalRotateSpeed = 1;
+		public static CameraHandler singleton;
+
         public float lookSpeed = 0.1f;
         public float followSpeed = 0.1f;
         public float pivotSpeed = 0.03f;
@@ -31,13 +31,7 @@ namespace HO
         public float minimumCollisionOffset = 0.2f;
 
         private void Awake()
-        {
-            if (singleton != null)
-            {
-                Destroy(this);
-                return;
-            }
-            
+        {           
             singleton = this;
             myTransform = transform;
             defaultPosition = cameraTransform.localPosition.z;

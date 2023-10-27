@@ -4,7 +4,6 @@ namespace HO
 {
     public class PlayerLocomotion : MonoBehaviour
     {
-
     [Header("Dependencies")]
     private PlayerManager playerManager;
     private Transform cameraObject;
@@ -43,25 +42,31 @@ namespace HO
       animatorHandler = GetComponentInChildren<AnimationHandler>();
       cameraObject = Camera.main.transform;
       myTransform = transform;
-      //animatorHandler.Initialize();
+      animatorHandler.Initialize();
       playerManager.isGrounded = true;
       //ignoreForGroundCheck = (LayerMask) -2305;
     }
 
     public void Update()
-    {
-      float delta = inAirTimer;
+        {
+            float delta = inAirTimer;
+            inputHandler.TickInput(delta);
+            moveDirection = cameraObject.forward * inputHandler.vertical;
+            moveDirection += cameraObject.right * inputHandler.horizontal;
+            moveDirection.Normalize();
+            
+            float speed = movementSpeed;
+            moveDirection *= speed;
 
-      inputHandler.TickInput(delta);
+            Vector3 projectedVelocity = Vector3.ProjectOnPlane(moveDirection, normalVector);
+            rigidbody.velocity = projectedVelocity;
 
-      moveDirection = cameraObject.forward * inputHandler.vertical;
-      moveDirection += cameraObject.right * inputHandler.horizontal;
-      moveDirection.Normalize();
+            if(animatorHandler.canRotate)
+            {
+                HandleRotation(delta);
+            }
+        }
 
-      float speed = movementSpeed;
-      moveDirection *= speed;
-    }
-    
     #region Movement
     Vector3 normalVector;
     Vector3 targetPosition;
@@ -80,7 +85,7 @@ namespace HO
 
       if (targetDir == Vector3.zero)
       {
-         targetDir = myTransform.targetDir;
+         targetDir = myTransform.forward;
       }
       
       float rs = rotationSpeed;
@@ -92,23 +97,32 @@ namespace HO
     }
     
     public void HandleMovement(float delta)
-    {
+    { 
       if (inputHandler.rollFlag)
         return;
-      moveDirection = cameraObject.forward * this.inputHandler.vertical;
-      moveDirection += cameraObject.right * this.inputHandler.horizontal;
+      moveDirection = cameraObject.forward * inputHandler.vertical;
+      moveDirection += cameraObject.right * inputHandler.horizontal;
       moveDirection.Normalize();
       moveDirection.y = 0.0f;
-      float movementSpeed = thisovementSpeed;
-      if (inputHandler.sprintFlag)
-        moveDirection *= this.sprintSpeed;
-      else
-        moveDirection *= movementSpeed;
-      rigidbody.velocity = Vector3.ProjectOnPlane(moveDirection, normalVector);
+
+      float speed = movementSpeed;
+
+            if (inputHandler.sprintFlag)
+            {
+                speed = sprintSpeed;
+                moveDirection *= sprintSpeed;
+            }
+            else
+            {
+                moveDirection *= speed;
+            }
+      
+		rigidbody.velocity = Vector3.ProjectOnPlane(moveDirection, normalVector);
       animatorHandler.UpdateAnimatorValues(inputHandler.moveAmount, 0.0f, playerManager.isSprinting);
-      if (!animatorHandler.canRotate)
-        return;
-      HandleRotation(delta);
+            if (animatorHandler.canRotate)
+            {
+                HandleRotation(delta);
+            }
     }
 
     public void HandleRollingAndSprinting(float delta)

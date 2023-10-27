@@ -1,71 +1,118 @@
-using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
-
 namespace HO
 {
-  public class AnimationHandler : MonoBehaviour
-  {
-    [Header("Dependencies")]
-    private PlayerControls inputActions;
-    private CameraHandler cameraHandler;
-    public float horizontal;
-    public float vertical;
-    public float moveAmount;
-    public float mouseX;
-    public float mouseY;
-    public bool leftShift;
-    public bool rollFlag;
-    public bool sprintFlag;
-    public float rollInputTimer;
-    private Vector2 movementInput;
-    private Vector2 cameraInput;
-
-    public void OnEnable()
+    public class AnimationHandler : MonoBehaviour
     {
-      if (inputActions == null)
-      {
-        inputActions = new PlayerControls();
-        inputActions.PlayerMovement.Movement.performed += (Action<InputAction.CallbackContext>) (inputActions => movementInput = inputActions.ReadValue<Vector2>());
-        inputActions.PlayerMovement.Camera.performed += (Action<InputAction.CallbackContext>) (i => cameraInput = i.ReadValue<Vector2>());
-      }
-      inputActions.Enable();
-    }
+        PlayerManager playerManager;
+        public Animator anim;
+        public InputHandler inputHandler;
+        private PlayerLocomotion playerLocomotion;
+        int vertical;
+        int horizontal;
+        public bool canRotate;
 
-    private void OnDisable() => inputActions.Disable();
-
-    public void TickInput(float delta)
-    {
-      MoveInput(delta);
-      HandleRollInput(delta);
-    }
-
-    private void MoveInput(float delta)
-    {
-      horizontal = movementInput.x;
-      vertical = movementInput.y;
-      moveAmount = Mathf.Clamp01(Mathf.Abs(horizontal) + Mathf.Abs(vertical));
-      mouseX = cameraInput.x;
-      mouseY = cameraInput.y;
-    }
-
-    private void HandleRollInput(float delta)
-    {
-      leftShift = inputActions.PlayerActions.Roll.phase == InputActionPhase.Performed;
-      if (leftShift)
-      {
-        rollInputTimer += delta;
-        sprintFlag = true;
-      }
-      else
-      {
-        if (rollInputTimer > 0.0 && rollInputTimer < 0.5)
+        // Start is called before the first frame update
+        void Start()
         {
-          sprintFlag = false;
-          rollFlag = true;
+
         }
-        rollInputTimer = 0.0f;
-      }
+        public void Initialize()
+        {
+            playerManager = GetComponentInParent<PlayerManager>();
+            anim = GetComponent<Animator>();
+            playerLocomotion = GetComponentInParent<PlayerLocomotion>();
+            inputHandler = GetComponentInParent<InputHandler>();
+            vertical = Animator.StringToHash("Vertical");
+            horizontal = Animator.StringToHash("Horizontal");
+        }
+        public void UpdateAnimatorValues(float verticalMovement, float horizontalMovement, bool isSprinting)
+        {
+            #region Vertical
+            float v = 0;
+            if (verticalMovement > 0 && verticalMovement < 0.55f)
+            {
+                v = 0.5f;
+            }
+            else if (verticalMovement > 0.55f)
+            {
+                v = 1;
+            }
+            else if (verticalMovement < 0 && verticalMovement > -0.55f)
+            {
+                v = -0.5f;
+            }
+            else if (verticalMovement < -0.55f)
+            {
+                v = -1;
+            }
+            else
+            {
+                v = 0;
+            }
+            #endregion
+
+            #region Horizontal
+            float h = 0;
+            if (horizontalMovement > 0 && horizontalMovement < 0.55f)
+            {
+                h = 0.5f;
+            }
+            else if (horizontalMovement > 0.55f)
+            {
+                h = 1;
+            }
+            else if (horizontalMovement < 0 && horizontalMovement > -0.55f)
+            {
+                h = -0.5f;
+            }
+            else if (horizontalMovement < -0.55f)
+            {
+                h = -1;
+            }
+            else
+            {
+                h = 0;
+            }
+            #endregion
+
+            if (isSprinting)
+            {
+                v = 2;
+                h = horizontalMovement;
+            }
+            anim.SetFloat(vertical, v, 0.1f, Time.deltaTime);
+            anim.SetFloat(horizontal, h, 0.1f, Time.deltaTime);
+        }
+        public void PlayTargetAnimation(string targetAnim, bool isInteracting)
+        {
+            anim.applyRootMotion = isInteracting;
+            anim.SetBool("IsInteracting", isInteracting);
+            Debug.Log(anim.GetBool("IsInteracting"));
+            anim.CrossFade(targetAnim, 0.2f);
+        }
+        public void CanRotate()
+        {
+            canRotate = true;
+        }
+        public void StopRotate()
+        {
+            canRotate = false;
+        }
+        private void OnAnimatorMove()
+        {
+
+            if (playerManager.isInteracting == false)
+                return;
+            float delta = Time.deltaTime;
+            //anim.ApplyBuiltinRootMotion();
+            playerLocomotion.rigidbody.drag = 0;
+            Vector3 deltaPosition = anim.deltaPosition;
+
+            deltaPosition.y = 0;
+            Vector3 velocity = deltaPosition / delta;
+            playerLocomotion.rigidbody.velocity = velocity;
+        }
     }
-  }
 }

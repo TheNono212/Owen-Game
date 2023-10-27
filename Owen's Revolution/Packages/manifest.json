@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "com.unity.animation.rigging": "1.2.1",
+    "com.unity.collab-proxy": "2.1.0",
+    "com.unity.feature.characters-animation": "1.0.0",
     "com.unity.inputsystem": "1.6.3",
     "com.unity.render-pipelines.universal": "14.0.8",
     "com.unity.toolchain.win-x86_64-linux-x86_64": "2.0.6",
@@ -33,7 +36,6 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0",
-    "com.unity.collab-proxy": "2.1.0"
+    "com.unity.modules.xr": "1.0.0"
   }
 }
