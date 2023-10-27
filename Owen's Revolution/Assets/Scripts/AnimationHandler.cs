@@ -85,11 +85,12 @@ namespace HO
             anim.SetFloat(vertical, v, 0.1f, Time.deltaTime);
             anim.SetFloat(horizontal, h, 0.1f, Time.deltaTime);
         }
+
         public void PlayTargetAnimation(string targetAnim, bool isInteracting)
         {
             anim.applyRootMotion = isInteracting;
-            anim.SetBool("IsInteracting", isInteracting);
-            Debug.Log(anim.GetBool("IsInteracting"));
+            anim.SetBool("isInteracting", isInteracting);
+            Debug.Log(anim.GetBool("isInteracting"));
             anim.CrossFade(targetAnim, 0.2f);
         }
         public void CanRotate()
@@ -103,7 +104,7 @@ namespace HO
         private void OnAnimatorMove()
         {
 
-            if (playerManager.isInteracting == false)
+            if (inputHandler.isInteracting == false)
                 return;
             float delta = Time.deltaTime;
             //anim.ApplyBuiltinRootMotion();

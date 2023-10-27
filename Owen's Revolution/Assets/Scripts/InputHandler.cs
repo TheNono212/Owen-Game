@@ -14,9 +14,14 @@ namespace HO
     public float moveAmount;
     public float mouseX;
     public float mouseY;
+
     public bool leftShift;
     public bool rollFlag;
     public bool sprintFlag;
+
+    public bool isInteracting;
+
+
     public float rollInputTimer;
     private Vector2 movementInput;
     private Vector2 cameraInput;

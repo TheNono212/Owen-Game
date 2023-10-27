@@ -22,17 +22,17 @@ namespace HO
     private float rotationSpeed = 10f;
     [SerializeField]
     private float sprintSpeed = 8f;
-    [SerializeField]
-    private float fallingSpeed = 4f;
-    [Header("Ground & Air Detection Stats")]
-    [SerializeField]
-    private float groundDetectionRayStartPoint = 0.5f;
-    [SerializeField]
-    private float minimumDistanceNeededToBeginFall = 0.1f;
-    [SerializeField]
-    private float groundDirectionRayDistance = -0.2f;
-    private LayerMask ignoreForGroundCheck;
-    public float inAirTimer;
+        //[SerializeField]
+        //private float fallingSpeed = 4f;
+        //[Header("Ground & Air Detection Stats")]
+        //[SerializeField]
+        //private float groundDetectionRayStartPoint = 0.5f;
+        //[SerializeField]
+        //private float minimumDistanceNeededToBeginFall = 0.1f;
+        //[SerializeField]
+        //private float groundDirectionRayDistance = -0.2f;
+        //private LayerMask ignoreForGroundCheck;
+        //public float inAirTimer;
 
     private void Start()
     {
@@ -43,17 +43,21 @@ namespace HO
       cameraObject = Camera.main.transform;
       myTransform = transform;
       animatorHandler.Initialize();
-      playerManager.isGrounded = true;
+      //playerManager.isGrounded = true;
       //ignoreForGroundCheck = (LayerMask) -2305;
     }
 
     public void Update()
         {
-            float delta = inAirTimer;
-            inputHandler.TickInput(delta);
+            float delta = Time.deltaTime;
+            //inputHandler.TickInput(delta);
             moveDirection = cameraObject.forward * inputHandler.vertical;
             moveDirection += cameraObject.right * inputHandler.horizontal;
             moveDirection.Normalize();
+
+            //make it NO GO IN AIR LIKE A GRAVITY WEIRDO
+            moveDirection.y = 0;
+
             
             float speed = movementSpeed;
             moveDirection *= speed;
@@ -118,6 +122,7 @@ namespace HO
             }
       
 		rigidbody.velocity = Vector3.ProjectOnPlane(moveDirection, normalVector);
+
       animatorHandler.UpdateAnimatorValues(inputHandler.moveAmount, 0.0f, playerManager.isSprinting);
             if (animatorHandler.canRotate)
             {

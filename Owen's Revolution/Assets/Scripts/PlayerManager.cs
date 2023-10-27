@@ -11,9 +11,8 @@ namespace HO
     private CameraHandler cameraHandler;
     [Header("Player Flags")]
     public bool isSprinting;
-    public bool isInteracting;
-    public bool isInAir;
-    public bool isGrounded;
+    //public bool isInAir;
+    //public bool isGrounded;
 
     private void Awake() => cameraHandler = CameraHandler.singleton;
 
@@ -26,7 +25,7 @@ namespace HO
 
     private void Update()
     {
-      isInteracting = anim.GetBool("isInteracting");
+      inputHandler.isInteracting = anim.GetBool("isInteracting");
       float deltaTime = Time.deltaTime;
       inputHandler.TickInput(deltaTime);
       playerLocomotion.HandleMovement(deltaTime);
@@ -48,10 +47,10 @@ namespace HO
       inputHandler.rollFlag = false;
       inputHandler.sprintFlag = false;
       isSprinting = inputHandler.leftShift;
-      if (isInAir)
-        playerLocomotion.inAirTimer += Time.deltaTime;
-      else
-        playerLocomotion.inAirTimer = 0.0f;
+      //if (isInAir)
+      //  playerLocomotion.inAirTimer += Time.deltaTime;
+      //else
+      //  playerLocomotion.inAirTimer = 0.0f;
     }
   }
 }
