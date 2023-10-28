@@ -9,8 +9,11 @@ namespace HO
     private PlayerLocomotion playerLocomotion;
     private Animator anim;
     private CameraHandler cameraHandler;
-    [Header("Player Flags")]
-    public bool isSprinting;
+
+
+        [Header("Player Flags")]
+        public bool isRolling;
+        public bool isSprinting;
     //public bool isInAir;
     //public bool isGrounded;
 
@@ -25,12 +28,20 @@ namespace HO
 
     private void Update()
     {
-      inputHandler.isInteracting = anim.GetBool("isInteracting");
+            if (inputHandler.moveAmount < 1)
+            {
+                isSprinting = false;
+            }
+            inputHandler.isInteracting = anim.GetBool("isInteracting");
       float deltaTime = Time.deltaTime;
       inputHandler.TickInput(deltaTime);
+
       playerLocomotion.HandleMovement(deltaTime);
       playerLocomotion.HandleRollingAndSprinting(deltaTime);
-      //playerLocomotion.HandleFalling(deltaTime, playerLocomotion.moveDirection);
+            //playerLocomotion.HandleFalling(deltaTime, playerLocomotion.moveDirection);
+
+            isSprinting = inputHandler.sprintFlag;
+            isRolling = inputHandler.rollFlag;
     }
 
     private void FixedUpdate()
@@ -42,11 +53,12 @@ namespace HO
       cameraHandler.HandleCameraRotation(deltaTime, inputHandler.mouseX, inputHandler.mouseY);
     }
 
-    private void LateUpdate()
-    {
-      inputHandler.rollFlag = false;
-      inputHandler.sprintFlag = false;
-      isSprinting = inputHandler.leftShift;
+        private void LateUpdate()
+        {
+            //inputHandler.rollFlag = false;
+            //inputHandler.sprintFlag = false;
+
+
       //if (isInAir)
       //  playerLocomotion.inAirTimer += Time.deltaTime;
       //else

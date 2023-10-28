@@ -76,15 +76,17 @@ namespace HO
       {
         rollInputTimer += delta;
         sprintFlag = true;
+                //serait ce mieux si on attendait genre 0.2 sec avant de pouvoir courir (comme ça ça ne cours et roulade en meme tant)
       }
       else
       {
-        if ( rollInputTimer > 0.0 && rollInputTimer < 0.5)
+        if (rollInputTimer > 0.0 && rollInputTimer < 0.5)
         {
           sprintFlag = false;
           rollFlag = true;
         }
         rollInputTimer = 0.0f;
+                sprintFlag = false;
       }
     }
   }

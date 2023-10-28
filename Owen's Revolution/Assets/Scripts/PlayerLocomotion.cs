@@ -22,6 +22,7 @@ namespace HO
     private float rotationSpeed = 10f;
     [SerializeField]
     private float sprintSpeed = 8f;
+
         //[SerializeField]
         //private float fallingSpeed = 4f;
         //[Header("Ground & Air Detection Stats")]
@@ -34,7 +35,7 @@ namespace HO
         //private LayerMask ignoreForGroundCheck;
         //public float inAirTimer;
 
-    private void Start()
+        private void Start()
     {
       playerManager = GetComponent<PlayerManager>();
       rigidbody = GetComponent<Rigidbody>();
@@ -49,26 +50,13 @@ namespace HO
 
     public void Update()
         {
+
             float delta = Time.deltaTime;
-            //inputHandler.TickInput(delta);
-            moveDirection = cameraObject.forward * inputHandler.vertical;
-            moveDirection += cameraObject.right * inputHandler.horizontal;
-            moveDirection.Normalize();
 
-            //make it NO GO IN AIR LIKE A GRAVITY WEIRDO
-            moveDirection.y = 0;
-
-            
-            float speed = movementSpeed;
-            moveDirection *= speed;
-
-            Vector3 projectedVelocity = Vector3.ProjectOnPlane(moveDirection, normalVector);
-            rigidbody.velocity = projectedVelocity;
-
-            if(animatorHandler.canRotate)
-            {
-                HandleRotation(delta);
-            }
+            inputHandler.TickInput(delta);
+            HandleMovement(delta);
+            HandleRollingAndSprinting(delta);
+            HandleLessRotationWhenInteracting(delta);
         }
 
     #region Movement
@@ -101,29 +89,20 @@ namespace HO
     }
     
     public void HandleMovement(float delta)
-    { 
-      if (inputHandler.rollFlag)
-        return;
-      moveDirection = cameraObject.forward * inputHandler.vertical;
-      moveDirection += cameraObject.right * inputHandler.horizontal;
-      moveDirection.Normalize();
-      moveDirection.y = 0.0f;
+    {
+            moveDirection = cameraObject.forward * inputHandler.vertical;
+            moveDirection += cameraObject.right * inputHandler.horizontal;
+            moveDirection.Normalize();
+            moveDirection.y = 0;
 
-      float speed = movementSpeed;
+            float speed = movementSpeed;
+            moveDirection *= speed;
 
-            if (inputHandler.sprintFlag)
-            {
-                speed = sprintSpeed;
-                moveDirection *= sprintSpeed;
-            }
-            else
-            {
-                moveDirection *= speed;
-            }
-      
-		rigidbody.velocity = Vector3.ProjectOnPlane(moveDirection, normalVector);
+            Vector3 projectedVelocity = Vector3.ProjectOnPlane(moveDirection, normalVector);
+            rigidbody.velocity = projectedVelocity;
 
-      animatorHandler.UpdateAnimatorValues(inputHandler.moveAmount, 0.0f, playerManager.isSprinting);
+            animatorHandler.UpdateAnimatorValues(inputHandler.moveAmount, 0.0f, playerManager.isSprinting);
+
             if (animatorHandler.canRotate)
             {
                 HandleRotation(delta);
@@ -136,15 +115,31 @@ namespace HO
         return;
       moveDirection = cameraObject.forward * inputHandler.vertical;
       moveDirection += cameraObject.right * inputHandler.horizontal;
-      if (inputHandler.moveAmount > 0.0)
-      {
-        animatorHandler.PlayTargetAnimation("Rolling", true);
-        moveDirection.y = 0.0f;
-        myTransform.rotation = Quaternion.LookRotation(moveDirection);
-      }
-      else
-        animatorHandler.PlayTargetAnimation("Backstep", true);
+            if (inputHandler.moveAmount > 0.0)
+            {
+                animatorHandler.PlayTargetAnimation("Rolling", true);
+                moveDirection.y = 0.0f;
+                myTransform.rotation = Quaternion.LookRotation(moveDirection);
+            }
+            else
+            {
+                animatorHandler.PlayTargetAnimation("Backstep", true);
+            }
+      inputHandler.rollFlag = false;
     }
+
+        public void HandleLessRotationWhenInteracting(float delta)
+        {
+            if(inputHandler.isInteracting)
+            {
+                rotationSpeed = 5;
+            }
+            if(inputHandler.isInteracting == false)
+            {
+                    rotationSpeed = 10;
+            }
+            // A FINIR CAR NE MARCHE PAS
+        }
     #endregion
   }
 }
