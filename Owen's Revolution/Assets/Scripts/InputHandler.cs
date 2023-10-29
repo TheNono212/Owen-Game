@@ -8,7 +8,6 @@ namespace HO
   {
     [Header("Dependencies")]
     private PlayerControls inputActions;
-    private CameraHandler cameraHandler;
     public float horizontal;
     public float vertical;
     public float moveAmount;
@@ -19,28 +18,12 @@ namespace HO
     public bool rollFlag;
     public bool sprintFlag;
 
-    public bool isInteracting;
-
 
     public float rollInputTimer;
     private Vector2 movementInput;
     private Vector2 cameraInput;
 
-    private void Awake()
-    {
-      cameraHandler = CameraHandler.singleton;
-    }
 
-    private void FixedUpdate()
-    {
-      float delta = Time.deltaTime;
-
-      if (cameraHandler != null)
-      {
-        cameraHandler.FollowTarget(delta);
-        cameraHandler.HandleCameraRotation(delta, mouseX, mouseY);
-      }
-    }
     public void OnEnable()
     {
       if (inputActions == null)
@@ -75,6 +58,8 @@ namespace HO
       if (leftShift)
       {
         rollInputTimer += delta;
+        if(moveAmount < 1)
+          return;
         sprintFlag = true;
                 //serait ce mieux si on attendait genre 0.2 sec avant de pouvoir courir (comme ça ça ne cours et roulade en meme tant)
       }

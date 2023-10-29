@@ -21,7 +21,7 @@ namespace HO
     [SerializeField]
     private float rotationSpeed = 10f;
     [SerializeField]
-    private float sprintSpeed = 8f;
+    private float sprintSpeed = 9f;
 
         //[SerializeField]
         //private float fallingSpeed = 4f;
@@ -35,7 +35,7 @@ namespace HO
         //private LayerMask ignoreForGroundCheck;
         //public float inAirTimer;
 
-        private void Start()
+    private void Start()
     {
       playerManager = GetComponent<PlayerManager>();
       rigidbody = GetComponent<Rigidbody>();
@@ -48,16 +48,6 @@ namespace HO
       //ignoreForGroundCheck = (LayerMask) -2305;
     }
 
-    public void Update()
-        {
-
-            float delta = Time.deltaTime;
-
-            inputHandler.TickInput(delta);
-            HandleMovement(delta);
-            HandleRollingAndSprinting(delta);
-            HandleLessRotationWhenInteracting(delta);
-        }
 
     #region Movement
     Vector3 normalVector;
@@ -90,23 +80,30 @@ namespace HO
     
     public void HandleMovement(float delta)
     {
-            moveDirection = cameraObject.forward * inputHandler.vertical;
-            moveDirection += cameraObject.right * inputHandler.horizontal;
-            moveDirection.Normalize();
-            moveDirection.y = 0;
 
-            float speed = movementSpeed;
-            moveDirection *= speed;
-
-            Vector3 projectedVelocity = Vector3.ProjectOnPlane(moveDirection, normalVector);
-            rigidbody.velocity = projectedVelocity;
-
-            animatorHandler.UpdateAnimatorValues(inputHandler.moveAmount, 0.0f, playerManager.isSprinting);
-
-            if (animatorHandler.canRotate)
-            {
-                HandleRotation(delta);
-            }
+      moveDirection = cameraObject.forward * inputHandler.vertical;
+      moveDirection += cameraObject.right * inputHandler.horizontal;
+      moveDirection.Normalize();
+      moveDirection.y = 0;
+      float speed = movementSpeed ;
+      if(inputHandler.sprintFlag)
+      {
+        speed = sprintSpeed;
+        playerManager.isSprinting = true;
+        moveDirection *= speed;
+      }
+      else
+      {  
+        moveDirection *= speed;
+      
+      Vector3 projectedVelocity = Vector3.ProjectOnPlane(moveDirection, normalVector);
+      rigidbody.velocity = projectedVelocity;
+      animatorHandler.UpdateAnimatorValues(inputHandler.moveAmount, 0.0f, playerManager.isSprinting);
+      if (animatorHandler.canRotate)
+      {
+          HandleRotation(delta);
+      }
+    }
     }
 
     public void HandleRollingAndSprinting(float delta)
@@ -130,11 +127,11 @@ namespace HO
 
         public void HandleLessRotationWhenInteracting(float delta)
         {
-            if(inputHandler.isInteracting)
+            if(playerManager.isInteracting)
             {
                 rotationSpeed = 5;
             }
-            if(inputHandler.isInteracting == false)
+            if(playerManager.isInteracting == false)
             {
                     rotationSpeed = 10;
             }

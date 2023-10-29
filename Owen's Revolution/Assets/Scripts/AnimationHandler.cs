@@ -7,17 +7,12 @@ namespace HO
     {
         PlayerManager playerManager;
         public Animator anim;
-        public InputHandler inputHandler;
-        private PlayerLocomotion playerLocomotion;
+        InputHandler inputHandler;
+         PlayerLocomotion playerLocomotion;
         int vertical;
         int horizontal;
         public bool canRotate;
-
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
+        
         public void Initialize()
         {
             playerManager = GetComponentInParent<PlayerManager>();
@@ -104,7 +99,7 @@ namespace HO
         private void OnAnimatorMove()
         {
 
-            if (inputHandler.isInteracting == false)
+            if (playerManager.isInteracting == false)
                 return;
             float delta = Time.deltaTime;
             //anim.ApplyBuiltinRootMotion();

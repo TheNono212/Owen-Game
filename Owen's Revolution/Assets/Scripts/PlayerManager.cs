@@ -10,14 +10,19 @@ namespace HO
     private Animator anim;
     private CameraHandler cameraHandler;
 
+    public bool isInteracting;
 
-        [Header("Player Flags")]
-        public bool isRolling;
-        public bool isSprinting;
+    [Header("Player Flags")]
+    public bool isRolling;
+    public bool isSprinting;
+
     //public bool isInAir;
     //public bool isGrounded;
 
-    private void Awake() => cameraHandler = CameraHandler.singleton;
+    private void Awake()
+    { 
+      cameraHandler = CameraHandler.singleton;
+    }
 
     private void Start()
     {
@@ -28,39 +33,40 @@ namespace HO
 
     private void Update()
     {
-            if (inputHandler.moveAmount < 1)
-            {
-                isSprinting = false;
-            }
-            inputHandler.isInteracting = anim.GetBool("isInteracting");
-      float deltaTime = Time.deltaTime;
-      inputHandler.TickInput(deltaTime);
+      float delta = Time.deltaTime;
 
-      playerLocomotion.HandleMovement(deltaTime);
-      playerLocomotion.HandleRollingAndSprinting(deltaTime);
-            //playerLocomotion.HandleFalling(deltaTime, playerLocomotion.moveDirection);
-
-            isSprinting = inputHandler.sprintFlag;
-            isRolling = inputHandler.rollFlag;
+      isInteracting = anim.GetBool("isInteracting");
+      
+      inputHandler.TickInput(delta);
+      playerLocomotion.HandleMovement(delta);
+      playerLocomotion.HandleRollingAndSprinting(delta);
+      //playerLocomotion.HandleFalling(delta, playerLocomotion.moveDirection);
+      isSprinting = inputHandler.sprintFlag;
+      isRolling = inputHandler.rollFlag;
     }
 
     private void FixedUpdate()
     {
-      float deltaTime = Time.deltaTime;
-      if (cameraHandler == null)
-        return;
-      cameraHandler.FollowTarget(deltaTime);
-      cameraHandler.HandleCameraRotation(deltaTime, inputHandler.mouseX, inputHandler.mouseY);
+      float delta = Time.deltaTime;
+
+      if (cameraHandler != null)
+      {
+        cameraHandler.FollowTarget(delta);
+        cameraHandler.HandleCameraRotation(delta, inputHandler.mouseX, inputHandler.mouseY);
+      }
     }
 
-        private void LateUpdate()
-        {
-            //inputHandler.rollFlag = false;
-            //inputHandler.sprintFlag = false;
-
-
+    private void LateUpdate()
+    {
+      inputHandler.rollFlag = false;
+      inputHandler.sprintFlag = false;
+      if(inputHandler.moveAmount > 1)
+      {
+        isSprinting = inputHandler.leftShift;
+      }
+      
       //if (isInAir)
-      //  playerLocomotion.inAirTimer += Time.deltaTime;
+      //  playerLocomotion.inAirTimer += Time.delta;
       //else
       //  playerLocomotion.inAirTimer = 0.0f;
     }
