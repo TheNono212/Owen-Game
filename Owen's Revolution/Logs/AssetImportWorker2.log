@@ -1,0 +1,708 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.2f1 (d74737c6db50) revision 14108471'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Professional' Language: 'fr' Physical Memory: 16258 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+E:\STOK\Hanono\Unity\Installation\2022.3.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+E:/STOK/Hanono/Programmation/GIT/Owen-Game/Owen's Revolution
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+50382
+Successfully changed project path to: E:/STOK/Hanono/Programmation/GIT/Owen-Game/Owen's Revolution
+E:/STOK/Hanono/Programmation/GIT/Owen-Game/Owen's Revolution
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [16808] Host "[IP] 192.168.0.22 [Port] 0 [Flags] 2 [Guid] 2896557817 [EditorId] 2896557817 [Version] 1048832 [Id] WindowsEditor(7,HANONO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [16808] Host "[IP] 192.168.0.22 [Port] 0 [Flags] 2 [Guid] 2896557817 [EditorId] 2896557817 [Version] 1048832 [Id] WindowsEditor(7,HANONO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 22.64 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.2f1 (d74737c6db50)
+[Subsystems] Discovering subsystems at path E:/STOK/Hanono/Unity/Installation/2022.3.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/STOK/Hanono/Programmation/GIT/Owen-Game/Owen's Revolution/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x162)
+    Vendor:   Intel
+    VRAM:     128 MB
+    Driver:   10.18.10.5161
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Initialize mono
+Mono path[0] = 'E:/STOK/Hanono/Unity/Installation/2022.3.2f1/Editor/Data/Managed'
+Mono path[1] = 'E:/STOK/Hanono/Unity/Installation/2022.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/STOK/Hanono/Unity/Installation/2022.3.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56144
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/STOK/Hanono/Unity/Installation/2022.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: E:/STOK/Hanono/Unity/Installation/2022.3.2f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.010613 seconds.
+- Loaded All Assemblies, in  0.728 seconds
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.594 seconds
+Domain Reload Profiling: 1323ms
+	BeginReloadAssembly (200ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (94ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (108ms)
+	LoadAllAssembliesAndSetupDomain (303ms)
+		LoadAssemblies (198ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (297ms)
+			TypeCache.Refresh (296ms)
+				TypeCache.ScanAssembly (274ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (596ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (451ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (39ms)
+			SetLoadedEditorAssemblies (14ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (287ms)
+			ProcessInitializeOnLoadMethodAttributes (106ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  3.781 seconds
+Refreshing native plugins compatible for Editor in 4.71 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Owen's Revolution
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+MAPMAGIC2 Enabled
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MapMagic.GUI.SettingsWindow:ToggleKeyword (bool,string,string&) (at Assets/Import/MapMagic/Core/Plugins/SettingsWindow.cs:239)
+MapMagic.GUI.SettingsWindow:InitializeSettings () (at Assets/Import/MapMagic/Core/Plugins/SettingsWindow.cs:71)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/Import/MapMagic/Core/Plugins/SettingsWindow.cs Line: 239)
+
+MM_NATIVE Enabled
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MapMagic.GUI.SettingsWindow:ToggleKeyword (bool,string,string&) (at Assets/Import/MapMagic/Core/Plugins/SettingsWindow.cs:239)
+MapMagic.GUI.SettingsWindow:InitializeSettings () (at Assets/Import/MapMagic/Core/Plugins/SettingsWindow.cs:74)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/Import/MapMagic/Core/Plugins/SettingsWindow.cs Line: 239)
+
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.688 seconds
+Domain Reload Profiling: 5464ms
+	BeginReloadAssembly (281ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (72ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (121ms)
+	LoadAllAssembliesAndSetupDomain (3279ms)
+		LoadAssemblies (2884ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (559ms)
+			TypeCache.Refresh (505ms)
+				TypeCache.ScanAssembly (480ms)
+			ScanForSourceGeneratedMonoScriptInfo (38ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1688ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1409ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (109ms)
+			ProcessInitializeOnLoadAttributes (1134ms)
+			ProcessInitializeOnLoadMethodAttributes (138ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 11.66 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4185 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 92 unused Assets / (11.1 MB). Loaded Objects now: 4665.
+Memory consumption went from 205.5 MB to 194.4 MB.
+Total: 12.378000 ms (FindLiveObjects: 0.668800 ms CreateObjectMapping: 0.258100 ms MarkObjects: 9.271100 ms  DeleteObjects: 2.178000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/GOPainter.cs: 5438c03539094541586329ba60b1f947 -> b92cee52a41f0706103c47ec0a47a128
+  custom:scripting/monoscript/fileName/HeightData.cs: 221d220320a7f17771c27015a0cef516 -> a51b112cd92a41ffdca2d1469ade53d7
+  custom:scripting/monoscript/fileName/GrassData.cs: d50ff80b5c72ce599dfd2154e21bd111 -> 6ae7a81fb96a8281296b02993f46ed96
+  custom:scripting/monoscript/fileName/PositioningSettings.cs: 38578f0db06aecddbbde50103a46011e -> 2175cfef10d9ef02cb5480cf0fe069f7
+  custom:scripting/monoscript/fileName/SplineSceneview.cs: b5488a4f9ee02ae644c822b0de5f28e7 -> 58cd8b2028b7157b55cf18b757aa0c47
+  custom:scripting/monoscript/fileName/EditorHacks.cs: d330c801104b42ad53f14fa276a9dcd3 -> ffb967f13b5b1a11e85508c52ecde535
+  custom:scripting/monoscript/fileName/GraphTemplates.cs: 6e7762aefb2229a90d5d72ac2b6739ea -> 8a30c89d4c8369214ae622e2f8c9bb11
+  custom:scripting/monoscript/fileName/Deserialize.cs: 2df6d82507632554da143a20e6555611 -> 6dcf0e7751066a6fced25d74c65b0c90
+  custom:scripting/monoscript/fileName/Override.cs: 1d8440da7d9300936e98052dec3a2320 -> b5c4e21d022856937f55d0f91615a99c
+  custom:scripting/monoscript/fileName/DirectTexturesHolder.cs: dc30778b4b3e784500e1402836ab7062 -> 7e7190ccc5e08bc69b671cfd4bab8b48
+  custom:scripting/monoscript/fileName/Noise.cs: 92baceadbf5bf59fb8b3a1525ff6d108 -> ca135d862cc94540ecb7c78e7934538f
+  custom:scripting/monoscript/fileName/Segment.cs: 08b4e00730208d5cfcb7c8e791e60835 -> 82a57e3068e2e9eed00b1a869da8878e
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/RightClick.cs: 6e45ac2a4100268a317f48a464b71773 -> 696ed5480983a73e6eab4d500c62a1c9
+  custom:scripting/monoscript/fileName/PhysicsSimulation.cs: d8206f878f697776832d3a5f80b0d1f6 -> a658621ba6435eeae54fc996b302f3ce
+  custom:scripting/monoscript/fileName/CTSEditor.cs: 6b724d56c8bb13b18a9d4fe344627ee3 -> eb98000991af9aa08eaf3bd36657f6b2
+  custom:scripting/monoscript/fileName/GOSwitcher.cs: 18528c0cfaccf4b4e051e71226a4d421 -> 35cc3b3636e22fcdd0408d5277dd0c15
+  custom:scripting/monoscript/fileName/GeneratorRightClick.cs: 04892ed9d5d002468cce61c716da57ab -> 7c8d12103cff34833457521ca42f7900
+  custom:scripting/monoscript/fileName/TerrainTileManager.cs: c8aa1689cd470fbf2aefeed63fade46b -> df3c07d8298757e0e5dca05e40321d2a
+  custom:scripting/monoscript/fileName/MicroSplatOutputPlaceholder.cs: 3ae4d49aaf2470f34279d120f0d8045d -> 23f6bc1e2eff4e36b8c30fcf20e2a24a
+  custom:scripting/monoscript/fileName/ExtendedTerrainInspector.cs: 15a21427c881e694bac00def51b7bda4 -> 53a79c9531a8e9ae40b14188b07fcec9
+  custom:scripting/monoscript/fileName/Apply.cs: eea4a72f77527f6c9d8f71aa41235f6d -> fc74471de8c372cdd26ba1f75de4b390
+  custom:scripting/monoscript/fileName/RTPOutput.cs: 38943fd6d0de9e5032bd50c4a97db025 -> 6926f74b357833c3490ebe02a3df58b1
+  custom:scripting/monoscript/fileName/CreateRightClick.cs: 14384ed142321fd09b91f46b597f4399 -> 92f36519e7e8f73c5a91b4c5d6582057
+  custom:scripting/monoscript/fileName/TileManager.cs: 9980557ec7eba3a98cec81254ca014c9 -> 4fd239c735ecc73f2011d56d1537e4bd
+  custom:scripting/monoscript/fileName/GOSurfaceSnapper.cs: cf87fc74ebc7275d035c8293e93d4a3d -> c3d344cb3b7e7d9b672a50885e9aaeb8
+  custom:scripting/monoscript/fileName/MatrixInitial.cs: 34dea3e7eb561cba8f0b10a3e95cb1fa -> 8be99a4d9dd1a62643dcccfece0d1b4b
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/CellExpose.cs: 52353c3da5958466936bd1605fe146dd -> 2111b59f58cb129bbed40af954ee8739
+  custom:scripting/monoscript/fileName/TerrainTile.cs: 08256b4d2d454f9943762620aaf797b5 -> acb9db7041e86c9839d36228645f39d2
+  custom:scripting/monoscript/fileName/TwoWayDict.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/TerrainSettings.cs: 95cf92f077c3efe12d8f17ece0d64b5f -> 429a52aab7beafc0b6401f452d4b4508
+  custom:scripting/monoscript/fileName/CellToObj.cs: 68c50205016a35225996b48a21cd9f91 -> 22974f8424415cf35ac8e213c95e3217
+  custom:scripting/monoscript/fileName/DrawPreview.cs: 81ba02a4c14015cd368f882172b79c89 -> 52cf52a6e48ccbc2c9ecb48823b270d0
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/SplinePreview.cs: 8bbf024863a1ac735a29ba9e451e581b -> 5834d77fa62982b273a9ee27eeccc31f
+  custom:scripting/monoscript/fileName/TileData.cs: 37037c1630f2890d0a64458283bc6574 -> 155cbdaab26450fe6b1335bfa37b9444
+  custom:scripting/monoscript/fileName/Structs.cs: 4dd9f6b5ec2e7dee83a773c281e7a28e -> 7ee80091708c105e9b4c792c320d1f98
+  custom:scripting/monoscript/fileName/StackMatrix.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/MatrixWindowPlugins.cs: d19fc02fa34347f0d1ad1ee779f722b6 -> 2d3b8f05163ab9304fc26ab5f89bb6e6
+  custom:scripting/monoscript/fileName/Erosion.cs: 87d4bb2540d18b606b0e4b6870d7de65 -> ace2a4444a3d8be4a78640297d2f31be
+  custom:scripting/monoscript/fileName/StylesCache.cs: 0fd610b570e99e1eeab9775abc8bca38 -> d22a884173ffe787e395abb51f39b7f7
+  custom:scripting/monoscript/fileName/Marker.cs: 4bfeb8f48863c8e4fc9f7ce84f6ba8f7 -> 503acff44354bee3ff2ce5f2483acffb
+  custom:scripting/monoscript/fileName/VSProMapsPlaceholder.cs: ff1cc4ddeb18afa3ca559184080a7daa -> 5e198ef24e459796cbb850cfece7dda0
+  custom:scripting/monoscript/fileName/ObjectPaintAnimation.cs: 8b2d4b9f073a79ca01636d84e9ebe80e -> 0b1059b7a0a91b3233a86d9528a7cd40
+  custom:scripting/monoscript/fileName/TerrainAiming.cs: cec5e578f8e8db82c3a79cb874553f9d -> 751f6d5c69b40730ef84a77990421aee
+  custom:scripting/monoscript/fileName/Area.cs: 0b4dfe3672438c34fdf5854d78605625 -> 6dd357d2b09d46ea64c746eab62c3ce7
+  custom:scripting/monoscript/fileName/CoroutineManagerObject.cs: 86e2912454a753d7502f49dbaf2f0d3e -> 48c40553d6154ee2d94980eb94a15d89
+  custom:scripting/monoscript/fileName/MatrixAssetInspector.cs: a49d9581dd6961850ab1d5c4d07798ea -> 08ada1bfe2de51ecc818bfd54a193689
+  custom:scripting/monoscript/fileName/Coordinates.cs: f8b9f282ab700fbce6187da1d8ac1670 -> 474985f525b4d18751efc42751d71080
+  custom:scripting/monoscript/fileName/MapMagicInspector.cs: 0931b83fac2e7101ecb98b4158b49123 -> 32b8ade328236b555e4052e20a3c037f
+  custom:scripting/monoscript/fileName/ArrayTools.cs: 09404ca3ab122fd1f38844eca9913f24 -> 3a649b8ca01621a31a99f26be4f74f62
+  custom:scripting/monoscript/fileName/ObjectsEditorHelpers.cs: 665a564da1e38c015c691567cab7c442 -> 23b1736ec5b30aafd3aad1f864ead0de
+  custom:scripting/monoscript/fileName/OrderedDict.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/MatrixSetPrototype.cs: 418d4f31f7e1856e84569ac1bc99538b -> 3512971f692f145aac58e242fe87d2f3
+  custom:scripting/monoscript/fileName/DirectMatricesHolder.cs: 16444bf81435c922bb0e734aac0d2d0e -> 31e21bb79c89099c50d831aaa8b30765
+  custom:scripting/monoscript/fileName/MapMagicObject.cs: f0e3d28ae27ad4b2c33cf99413c51501 -> 1ca2438083cc3023f4d9942dd2f92d6a
+  custom:scripting/monoscript/fileName/LockData.cs: 7006a2752372ceb9a580441df1ddf1f4 -> 97be2622afb4742f0f9954a890388e66
+  custom:scripting/monoscript/fileName/Edges.cs: 9a8ccfa1086754276c08040af22f4764 -> 089cff2cbf612471a1f9f13468d4a777
+  custom:scripting/monoscript/fileName/PopupMenu.cs: 2c2ed0c310fcaaa3f26f70198f134035 -> af5ef52e22cc7aa6916a638e020920fd
+  custom:scripting/monoscript/fileName/MatrixSet.cs: 7aeb1af664edee10938f7aad5c5bc0cf -> 581abd6a89c1f33a16354100ddd5363d
+  custom:scripting/monoscript/fileName/CircleFactory.cs: 8fbfb5640cd4c8160afc8948204283f8 -> 2821b26199deb14d459fb8cca8dbca75
+  custom:scripting/monoscript/fileName/MegaSplatOutput.cs: c87c7022a898de3e35febb06950c47c1 -> 88d7fc8ba6ceed428ab79c4e7f2be92c
+  custom:scripting/monoscript/fileName/ObjectsPreview.cs: 9da8cb6edc85f6271fd5c886d581c884 -> 89a72d3b80716e3624a85405b3edf7fa
+  custom:scripting/monoscript/fileName/ThreadManager.cs: bb08d1c24fb57dfa7ac5c1ce5e06898d -> b6e26efd8f56894d0afb76531139d4a3
+  custom:scripting/monoscript/fileName/Lock.cs: b81ea524c964757eec352d715e5d8257 -> 1ab29d1f8c5e81437683ef091cf91f8b
+  custom:scripting/monoscript/fileName/DirectTexturesHolderInspector.cs: 8244f1bfb558eb28a948760f9aad11e9 -> 2ea15bfd62dc4fac935f980739640dfc
+  custom:scripting/monoscript/fileName/MatrixEditors.cs: e0f687b88c5f1b02d1dbc3d5346dddc6 -> 7d68968e8a37df412808551bbca29e30
+  custom:scripting/precompiled-assembly-types:Plugins.Baedrick.ColoredHeaderCreator.Editor: 653ab0e81103787c69b2598c1d33bc54 -> 724c3d5000d6149834545c4bdb204636
+  custom:scripting/monoscript/fileName/PaintCanvas.cs: b1e31dfbab8105cbfdbee14f1058a564 -> fd1c0206f5f540f2a8657cd935cd50c5
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/CurveDraw.cs: e8183a3079e37308f3a188eaaa73d8e3 -> f50d56cee4a2171a56658fdb1d9fe9dd
+  custom:scripting/monoscript/fileName/Matrix3D.cs: cf6b36ca750604748254abc7f2d75b06 -> 868cad849d0a644fc3ebdf756e1dd7d9
+  custom:scripting/monoscript/fileName/Vector.cs: 82a5b135083da7336a8b5d982f0457d7 -> 0ae6b9a1ecc16faf145f8df788a34247
+  custom:scripting/monoscript/fileName/Texture2DExtensions.cs: 06a2b106eae568ed080bca57cfa03452 -> 99f20d364dae22e6534e1fe9f0eae137
+  custom:scripting/monoscript/fileName/MaterialPropertySerializer.cs: 3562d3e8c526ed7ec1353ddaa11d6d5c -> ddaadfde97d91b87e64a482e7985b6d3
+  custom:scripting/monoscript/fileName/Brush.cs: 8138a3ba71215644a1f84bb029e81d3e -> 659446fd6e21a6962cb8ee3a6d522528
+  custom:scripting/monoscript/fileName/Exposed.cs: 09f2f91f6ef6b47e3c6cecc6e07a5127 -> 1519ff78a713a8af18588b647e64ae49
+  custom:scripting/monoscript/fileName/GraphEditorActions.cs: 0c78ad74468a9ddb8268fe214150c65c -> 6cb913f4f7d20ffce2b36e0dbd36dc0e
+  custom:scripting/monoscript/fileName/TexturesCache.cs: 4d2b15f01ae5e26e0b5c7399e6409213 -> d9f22a31328890667673bf658c3b31a6
+  custom:scripting/monoscript/fileName/GOPainterMenu.cs: c6786828b0b65cad38e2599b8560a635 -> 33e0702910816751d76f2a06de900579
+  custom:scripting/monoscript/fileName/DebugGizmos.cs: a0f83095719f2ae83ca44acc42424f1f -> afa11358b9880e2324d612d5cb27cab9
+  custom:scripting/monoscript/fileName/Draw.cs: 4d4d57afe18299a769e366d924a637ab -> 434bf3c1eb75b6287ace0545d4bfbaa7
+  custom:scripting/monoscript/fileName/AboutWindow.cs: 21949c9892d9873ec901b9934fdae340 -> b6e67832305e18c0da49cf68fe8694c6
+  custom:scripting/monoscript/fileName/GridTransform.cs: ace6be5f81d7e0297e064d94700340ef -> b2bbc387c1fb757611c533bee578292f
+  custom:scripting/monoscript/fileName/Transition.cs: e5cdd37d91fb64fbd33644373b7e7357 -> 3945d7fe7fceabaf8db49357dc032feb
+  custom:scripting/monoscript/fileName/RTPEditor.cs: 35a68cb4ae328c562acef8823cb8e4ac -> 05269db7ae2a649f816dfd65c87650bf
+  custom:scripting/monoscript/fileName/GrassOut.cs: f4364c81b2f34b997e4b5231e94b4d7e -> dbe461f5ab69b5304fd1d657610ae33f
+  custom:scripting/monoscript/fileName/LineFactory.cs: 1abbd6efedcad9c220894953d227a362 -> 978ceb2327be79725838072e722caecf
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/Weld.cs: f74fd2515c056ac36164cd2146e9b3ed -> a54c93caf70b6d9de3f9a592716ace71
+  custom:scripting/monoscript/fileName/Id.cs: f9d5b152c4f5831ca2477af04efbd4a2 -> b1b682a0d695941d9902cdb450c7ca7b
+  custom:scripting/monoscript/fileName/Extensions.cs: d2f743d6693458f816fc9cb7f6b87887 -> b8510d5c099d9892fc3c0a0934b768bd
+  custom:scripting/monoscript/fileName/CoroutineManager.cs: 4ddebb30261a7b089fa9e88073787a5b -> dd66d8153341cafa6bd20253eb07dd86
+  custom:scripting/monoscript/fileName/ValueRightClick.cs: d9afbf41e2d708c5a345c4181900ca19 -> bcb8fb98e3a9c3395356d973c7aa1553
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/FloatMatrix.cs: 59e483804ba8e92ec5a01624fb24e5db -> 08db8b95d739a6cbed87e69462e13f09
+  custom:scripting/monoscript/fileName/Serialize.cs: b87ddace3b9a729efa7c34f58e0e2c91 -> 4bf99c747680c746dc8a10bfb4dcbf88
+  custom:scripting/monoscript/fileName/DocScreensWindow.cs: 388b44804be3bd24ba3dffba089ced60 -> e165db7838dea83525429a9f3baa7e01
+  custom:scripting/monoscript/fileName/TexturesOut.cs: 8f938ace253c48c957b6642151d33e7e -> 1f1c98204647bfd9ca0875a7736f439d
+  custom:scripting/monoscript/fileName/HolesOut.cs: cae5f7df1e4ec18db0748c1f40f6ca4c -> 817b0c2833fc419161e943e998553cb6
+  custom:scripting/monoscript/fileName/Curve.cs: 6bdac177ea3e9943b270a3a5af9a0d22 -> af3b18574a3cbb4220ef5983c2aa546f
+  custom:scripting/monoscript/fileName/ObjectFactory.cs: 167c2a17c9f501f4499867f9d4f20607 -> 0f5cba08a5e094d6cc92621de065b4d4
+  custom:scripting/monoscript/fileName/SettingsAsset.cs: adb9bf122c6fe365ae4f081673c05981 -> 1b27ea3380a602f56567fd2ac2dfdb4a
+  custom:scripting/monoscript/fileName/GraphWindow.cs: 40cab8c24e4220b48ea20747777601f3 -> dcb8289bc7a6c090f260ec04189946a9
+  custom:scripting/monoscript/fileName/Padding.cs: f1ce2a054c7ad0b7c768bc573751477e -> 21baeea1a0a7126441c797f4e69619d3
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/Select.cs: 1805201c0c16c9ede55f1010264965e1 -> bd4d4f910746f677629138a7d1789d8a
+  custom:scripting/monoscript/fileName/PosTab.cs: 5680b4175ffdd192b94758ad8f60842c -> a03602e7b6a74bd412ab893ba66b98d0
+  custom:scripting/monoscript/fileName/Reflection.cs: 7d35be80c344e2dc7e06eb0fe7b5ee38 -> 752963cd89483dd9d0f40d06c0a03e3d
+  custom:scripting/monoscript/fileName/MatrixModifiers.cs: f0763ce2019c06eebe9032d009741eb7 -> 8da24cebdc584e2fb41e0f4b5c5dcbcf
+  custom:scripting/monoscript/fileName/UI.cs: a520931dc080d1d2a216dbb23cc27978 -> 36a28ba75a937ad66207203a82edeec1
+  custom:scripting/monoscript/fileName/MegaSplatEditor.cs: 554c62921743570917475cfde6e6064b -> c75ae1ab251cb3dc4cebbeae5ecdbded
+  custom:scripting/monoscript/fileName/Group.cs: 188beca79f8863ce4e1863a1720ff126 -> 4163396120fa06efd6fc9e9a84df924b
+  custom:scripting/monoscript/fileName/GroupRightClick.cs: b98337d1034afb93c569e7be1e9e8711 -> 649a21446614e5bb0d25727bd90f4c19
+  custom:scripting/monoscript/fileName/LockDraw.cs: 043af9bf9779d3287e76a334d7ffae1a -> abf896bfb4f2cfca8bf2b7d4f137c1f8
+  custom:scripting/monoscript/fileName/MoveRotateScale.cs: fdf61493448a9b0ba0edf20e274bfe4a -> 8177b932d7b440d4bcec6a2b3b93e5dd
+  custom:scripting/monoscript/fileName/MicroSplatEditorPlaceholder.cs: 421d869efedb8433277bad0fb251f84b -> c7cf7849a6492e6ff6bdf5288480388b
+  custom:scripting/monoscript/fileName/Calculator.cs: 250c3f37adcdd855f6094cdea1ab91c0 -> ac1280254abbafd172d15d3ad13dc19e
+  custom:scripting/monoscript/fileName/TerrainExtensions.cs: d63c9a1d2979da080db327cd01ea65c6 -> 1e089a85419045ff92db943986993392
+  custom:scripting/monoscript/fileName/GraphTree.cs: 38a65e892da6a224b7a26fba197df80c -> b2081d2256b18a95b3ec58b6193a4830
+  custom:scripting/monoscript/fileName/Graph.cs: 762002c025a198f8d1bf97a733b27a51 -> 8de06e082cc9fa3cf5f3cbe693bcbfe5
+  custom:scripting/monoscript/fileName/LogWindow.cs: 42ba22c736d9e391a66275c773ae829e -> 5d80d70e81e333051e55d538cc5a2f99
+  custom:scripting/monoscript/fileName/SplineSys.cs: bc64e6a4aefe67c5e241ab6ab18d4c14 -> 2bc4391a65e69e70b421318715cc7d97
+  custom:scripting/monoscript/fileName/Pop.cs: 4faa7714973d475238f6d0a9a0281b44 -> 2d320c46cb24d133b4bee5d163555ace
+  custom:scripting/monoscript/fileName/Pathfinding.cs: 13a510bc925b10ef86e977b63f1b12a5 -> 3b1b899738ac6e80626909350faa271d
+  custom:scripting/monoscript/fileName/FrameDraw.cs: fad7cd7279420f0fb72c7bb035740e6f -> 993b40fc30807a0e2a46b28d5f722a27
+  custom:scripting/monoscript/fileName/GraphRightClick.cs: 090d06009c96806c51fbb3ead6b2df30 -> 2b3ff6ea9b8c00211829a74795b9e715
+  custom:scripting/monoscript/fileName/MatrixObjectInspector.cs: 241a1859341adcb4f7055f197e06b535 -> 1d85e41d485fc689b16d3a7f737083d1
+  custom:scripting/monoscript/fileName/Undo.cs: 0588bb0e09c0049991420f1147f46d21 -> 6a2d7b7a07b0ffb8ba9ca5dbe4d235bd
+  custom:scripting/monoscript/fileName/Loader.cs: cd5c1ed45b02097f31af04ad8e28a2f0 -> a5ae146a54eee75fd4d1b2708c34771c
+  custom:scripting/monoscript/fileName/MatrixWindow.cs: b61db01db3b52f515f9b158f36a4b3e8 -> 6f7832e556f7d6c8412d00deaf5e62dc
+  custom:scripting/monoscript/fileName/GraphInspector.cs: 6cd8a83ca865e8903e901d53e633d47b -> 66b4efebfaf4989c7abcc5032184ce48
+  custom:scripting/monoscript/fileName/IGridTransform.cs: 60f2e7cc2737666cea485fa887f8cba4 -> 04ca06b6db5ea3660d4b8b168953f061
+  custom:scripting/monoscript/fileName/SplineObject.cs: b33d29086f2e8be5a8be7fc9407c4a20 -> ff1570e4b251e37e195ffb1622b4f67b
+  custom:scripting/monoscript/fileName/TextureArrayExtensions.cs: 6c95e5b8cd50be0c31d9ef523510ef20 -> 2d2045f3ebf043957d6663fd8841d04a
+  custom:scripting/monoscript/fileName/MatrixAsset.cs: 6f57af26a55fe8e2a7c9e5768f8d17e5 -> 2809c1d3e09dd59f59369d03ca6484d1
+  custom:scripting/monoscript/fileName/ScriptableAssetsExtensions.cs: 2ac04738d486e19a59c878a632d2e828 -> 0b97fa906759f26264face377e5e62d2
+  custom:scripting/monoscript/fileName/ScrollZoom.cs: 1fe25e10dc6eccec86ece3cf3bec3044 -> 7ab53e5a8b922985818e840a8bb3d938
+  custom:scripting/monoscript/fileName/Matrix2D.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/MatrixPreview.cs: a8bd9fe3d32628b22b419e70fc5af1d8 -> 36ad6df3abf2f630d90fa5ad47d4de21
+  custom:scripting/monoscript/fileName/DirectMatricesHolderInspector.cs: 80494f6b36385ea17e2c64b4a82eaf1e -> 94654fe0ebf06af547a4490f602a49d7
+  custom:scripting/monoscript/fileName/GORandomizer.cs: c9a871cb6feedfb0a34ac16db9e08d9f -> 3139eb6d5886ab1e1ae706183bf8ce10
+  custom:scripting/monoscript/fileName/RectFactory.cs: d6c7d9aafe5306719bf770e06c067374 -> 0c2053755969b199ddf4fcc567194821
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/AutoSubscribe.cs: 97e90cccbb04fe9d56405528b327d303 -> 47913f62612c6543b1cdfaa7fa84494f
+  custom:scripting/monoscript/fileName/GraphUpdater.cs: e7a20f67edd764e9050bca897e58c2c0 -> eb872f3304b3c39db38943707f9f1ea4
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/SettingsWindow.cs: dbb64ea8f354fc985a0d185aa6bfbcae -> 4f30deeca2384e30b1651a1e380b6d74
+  custom:scripting/monoscript/fileName/PolyLine.cs: 135a8833c503835b3719593d4bf7978b -> 50596cc04cd7eb2976ad25dbff77a026
+  custom:scripting/monoscript/fileName/Portals.cs: 616b81757775bbf7ae8559a633de501e -> 63340f8bb0c08373c52f3ab837faf532
+  custom:scripting/monoscript/fileName/Assets.cs: 2606b7aaef63907e21df1ebcd6ae1e54 -> 358fe0bb61bff8d10a86c63944ef8899
+  custom:scripting/monoscript/fileName/SplineObjectEditor.cs: 147a5ee070050fb0e1de31bbaf343c70 -> a55d835e65f356e9ff81dfed2253ee8a
+  custom:scripting/monoscript/fileName/MatrixObject.cs: 4b5a8c969566ae88ba326aa525ccbc5e -> b65a008c3f06a9658ea222b0375d291b
+  custom:scripting/monoscript/fileName/OverrideInspector.cs: e7437483b386dde439852eaff4461945 -> 3711db2b3b5560bb791f53fc2be7d0c1
+  custom:scripting/monoscript/fileName/PinDraw.cs: 5ea98862e651063a1fb5af90e28e0863 -> d98a82bc3592448e2451ed1210a2d3e3
+  custom:scripting/monoscript/fileName/Generator.cs: c41670fa399b5ee393c455f21a768770 -> c828e8b0be8a944cb95ef100e0e31fb0
+  custom:scripting/precompiled-assembly-types:Plugins.Baedrick.ColoredHeaderCreator: 658df3d5d9746d6064888b5169639d66 -> 0f530517dcf8a5052b6069f921134722
+  custom:scripting/monoscript/fileName/Serializer.cs: 29925bfbb1a89afcbb8d9f27aea783aa -> 6f6b6fbf1ecd4cea40dd9aa4d822ce3b
+  custom:scripting/monoscript/fileName/Item.cs: bdef5d20098b37b46800611ad1cb827d -> 9b03a5b52032920e993a264c5c15ced0
+  custom:scripting/monoscript/fileName/ObjectsPool.cs: 632d04bc349347a82a151dba815c9fbd -> 5a1fc93fb422bf25e0d0d3a9660e4c87
+  custom:scripting/monoscript/fileName/Layers.cs: 3fa61c1c9ed5fe1612c5e1571b103736 -> 4714df68ffa7f4e26cbaaab5a32a3473
+  custom:scripting/monoscript/fileName/TimerWindow.cs: 8dbf58f317b132841b6c05ff910a6ce0 -> 9bf61bbd2a21b1307fe3b95e3b74f7fd
+  custom:scripting/monoscript/fileName/HeightOut.cs: b98c5fe2612319350e9e3a4f86ca2c56 -> 7dc54cbcca14b957a0c3a7a686253566
+  custom:scripting/monoscript/fileName/MatrixLine.cs: f3ba3ccc9aceaeda2e39999b1eaa027a -> f71ae855ec713681fac70165ca8def68
+  custom:scripting/monoscript/fileName/MatrixOps.cs: b920a10e17e85143b95d0c3a4b8972b9 -> c0020ca0d4559dc8ecef016cb30b16d1
+  custom:scripting/monoscript/fileName/PortalSelector.cs: 327700e5a9dbc2003e5dc39a8c34bb58 -> 8f435fe6f791c8ae09a7120af1dfe545
+  custom:scripting/monoscript/fileName/Log.cs: 5412274d58e89a52115060ce575951e1 -> dc538af577970b420c2eceb9ec6c0da2
+  custom:scripting/monoscript/fileName/Line.cs: 7688f01a589f04460fb71fd1e4927d7f -> 6b25982bc818635a43eff7264f535c33
+  custom:scripting/monoscript/fileName/PositionMatrix.cs: 1f23fe763e89ec8610c1d6a9ab70e68c -> 06669a0d1ed3f9fc93a10cb4e009749e
+  custom:scripting/monoscript/fileName/LevelsDraw.cs: b0fd285178f2d4d6b33958f680916e82 -> 938ce786550e98bd1a3f659591eb8ac6
+  custom:scripting/monoscript/fileName/GraphSerializer.cs: 20c33514bef513bcf39ea69417ce6341 -> 140392c28e4751cd79d6c0f7f93a5a71
+  custom:scripting/monoscript/fileName/DragDrop.cs: cd30a6a60d88e49b40ba4692dc68548b -> 2d4312234bc0bdf5f5d3627dff2daf29
+  custom:scripting/monoscript/fileName/Timer.cs: fe26aa185e01075cc3100560e4969a1a -> 0d75301b285d5668d22a3eef8789ef01
+  custom:scripting/monoscript/fileName/MatrixWorld.cs: bd1d7e6b481eff8e3120778eb8051a47 -> 673c4a08eecf42d3a5bfcf76cbe80e28
+  custom:scripting/monoscript/fileName/GroupDraw.cs: 09684252b3f500a6f0a158e9555bb896 -> 90fd84d74e5ffe968009e35a6fe9ed0d
+  custom:scripting/monoscript/fileName/ExposeFieldWindow.cs: 3f1b6043e1b00b6d5bdf1fda973aabdf -> b0ada1f9021e07a4e452b80a3c429c26
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Cell.cs: d2f2c3aa5d1de73b024ab178b0cf7636 -> dc7376e7290ebea3f27163ea68e455ec
+  custom:scripting/monoscript/fileName/SplineMatrixOps.cs: b56a2f89f8964ed886e165325ac7b07d -> 6674242250d9086b9c896f09b8d8ef0f
+  custom:scripting/monoscript/fileName/Matrix.cs: 581ad9385c0604ff71c02ef2943b6652 -> 781f5a23df819d3532a8a22c4e3cb736
+  custom:scripting/monoscript/fileName/AssemblePlugins.cs: c750abca8cb9fbe761dd8d53d8ccf373 -> 91faa83fa9f775ac517d0202f3bd4447
+  custom:scripting/monoscript/fileName/MatrixNative.cs: 6cadd3bbbf4fa1115814fdf79f4b67f9 -> 9a05704578ddee2359e5ee8b080c420a
+  custom:scripting/monoscript/fileName/SpecialEditor.cs: dd82175fb5bee83f2e98e9b07ee22172 -> 6658d9d2cbdebdf42a5d4cf70fc9816c
+  custom:scripting/monoscript/fileName/GeneratorDraw.cs: b502d5e89de49853abd60799e89d9ce8 -> bedbe5c71799e418d3df82c0dacbd56d
+  custom:scripting/monoscript/fileName/MatrixGizmo.cs: d3d4088c5c8d9d59797ab29b60f1f617 -> 57f19b344fd0627932c7dd73260f0e70
+  custom:scripting/monoscript/fileName/SingleWindow.cs: 48682daa6ee3a0f7b7acefa68c394b88 -> cfdcaa25873752a2769a07039ff656a4
+  custom:scripting/monoscript/fileName/Attributes.cs: 2e8c5452663edac83be18efe79c714f7 -> 8e5e47221c42faa1f043a6084e76ca77
+  custom:scripting/monoscript/fileName/Placeholders.cs: 09b8037fd220f37d7112ff47cb5c368f -> fdfbea84f6d2d67afaeaba0391df3856
+  custom:scripting/monoscript/fileName/Preview.cs: 377037a6a16069516ca99557e709d5e4 -> a0144ae421cbe6b36caec8130fe93028
+  custom:scripting/monoscript/fileName/PaintAction.cs: d86c3202c66c26fa3fc80e18b6919bfb -> 0c7441b937bac38155460eeb9c59fa74
+  custom:scripting/monoscript/fileName/SharedValue.cs: 57eaa20cf44dc37860e3475b279fd095 -> 1e32c29cba0bc494993793aa5594a954
+  custom:scripting/monoscript/fileName/Node.cs: 5a41b591335a236add2b72be30b1513a -> a32d1afce06d6ad684ad7d79025f995c
+  custom:scripting/monoscript/fileName/TexturesData.cs: 310913b4f69eb2b699e626fa934dfd87 -> f1b5f9b80cba42ea16328802b637863c
+  custom:scripting/monoscript/fileName/SerailizationTools.cs: a4c0242792d0a709f6e9c130d9cba507 -> c0f98784c9650cba9fb03244eb27ed4f
+  custom:scripting/monoscript/fileName/CTSOutput.cs: b4083ef1ffb396baa3b406ff4cedf31d -> 4a574ff43578205682aa0785ecc1bc10
+  custom:scripting/monoscript/fileName/TerrainTileInspector.cs: 6fed65ac07e32956ba67cc21371581e7 -> fa171ef56524706ddf9e4429969c94a1
+  custom:scripting/monoscript/fileName/TypeDict.cs: 34c142a771441b490dd376b89e28ab50 -> d2f7b182e987a3d39c94faad28d2d9a6
+========================================================================
+Received Prepare
+Assembly with name 'Plugins.Baedrick.ColoredHeaderCreator' already exists (Assets/Plugins/Baedrick/ColoredHeaderCreator/Plugins.Baedrick.ColoredHeaderCreator.asmdef)
+Assembly with name 'Plugins.Baedrick.ColoredHeaderCreator' already exists (Assets/Import/Plugins/Baedrick/ColoredHeaderCreator/Plugins.Baedrick.ColoredHeaderCreator.asmdef)
+Assembly with name 'Plugins.Baedrick.ColoredHeaderCreator.Editor' already exists (Assets/Import/Plugins/Baedrick/ColoredHeaderCreator/Editor/Plugins.Baedrick.ColoredHeaderCreator.Editor.asmdef)
+Assembly with name 'Plugins.Baedrick.ColoredHeaderCreator.Editor' already exists (Assets/Plugins/Baedrick/ColoredHeaderCreator/Editor/Plugins.Baedrick.ColoredHeaderCreator.Editor.asmdef)
+Assembly with name 'Plugins.Baedrick.ColoredHeaderCreator' already exists (Assets/Plugins/Baedrick/ColoredHeaderCreator/Plugins.Baedrick.ColoredHeaderCreator.asmdef)
+Assembly with name 'Plugins.Baedrick.ColoredHeaderCreator' already exists (Assets/Import/Plugins/Baedrick/ColoredHeaderCreator/Plugins.Baedrick.ColoredHeaderCreator.asmdef)
+Assembly with name 'Plugins.Baedrick.ColoredHeaderCreator.Editor' already exists (Assets/Import/Plugins/Baedrick/ColoredHeaderCreator/Editor/Plugins.Baedrick.ColoredHeaderCreator.Editor.asmdef)
+Assembly with name 'Plugins.Baedrick.ColoredHeaderCreator.Editor' already exists (Assets/Plugins/Baedrick/ColoredHeaderCreator/Editor/Plugins.Baedrick.ColoredHeaderCreator.Editor.asmdef)
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.364 seconds
+Refreshing native plugins compatible for Editor in 4.19 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Assembly with name 'Plugins.Baedrick.ColoredHeaderCreator' already exists (Assets/Plugins/Baedrick/ColoredHeaderCreator/Plugins.Baedrick.ColoredHeaderCreator.asmdef)
+Assembly with name 'Plugins.Baedrick.ColoredHeaderCreator' already exists (Assets/Import/Plugins/Baedrick/ColoredHeaderCreator/Plugins.Baedrick.ColoredHeaderCreator.asmdef)
+Assembly with name 'Plugins.Baedrick.ColoredHeaderCreator.Editor' already exists (Assets/Import/Plugins/Baedrick/ColoredHeaderCreator/Editor/Plugins.Baedrick.ColoredHeaderCreator.Editor.asmdef)
+Assembly with name 'Plugins.Baedrick.ColoredHeaderCreator.Editor' already exists (Assets/Plugins/Baedrick/ColoredHeaderCreator/Editor/Plugins.Baedrick.ColoredHeaderCreator.Editor.asmdef)
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Owen's Revolution
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+MAPMAGIC2 Enabled
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MapMagic.GUI.SettingsWindow:ToggleKeyword (bool,string,string&) (at Assets/Import/MapMagic/Core/Plugins/SettingsWindow.cs:239)
+MapMagic.GUI.SettingsWindow:InitializeSettings () (at Assets/Import/MapMagic/Core/Plugins/SettingsWindow.cs:71)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/Import/MapMagic/Core/Plugins/SettingsWindow.cs Line: 239)
+
+MM_NATIVE Enabled
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MapMagic.GUI.SettingsWindow:ToggleKeyword (bool,string,string&) (at Assets/Import/MapMagic/Core/Plugins/SettingsWindow.cs:239)
+MapMagic.GUI.SettingsWindow:InitializeSettings () (at Assets/Import/MapMagic/Core/Plugins/SettingsWindow.cs:74)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/Import/MapMagic/Core/Plugins/SettingsWindow.cs Line: 239)
+
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.939 seconds
+Domain Reload Profiling: 3301ms
+	BeginReloadAssembly (323ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (95ms)
+	RebuildCommonClasses (94ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (866ms)
+		LoadAssemblies (510ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (521ms)
+			TypeCache.Refresh (506ms)
+				TypeCache.ScanAssembly (484ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1939ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1255ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (147ms)
+			ProcessInitializeOnLoadAttributes (950ms)
+			ProcessInitializeOnLoadMethodAttributes (133ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 9.65 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4077 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (11.1 MB). Loaded Objects now: 4681.
+Memory consumption went from 180.7 MB to 169.6 MB.
+Total: 14.683900 ms (FindLiveObjects: 0.930700 ms CreateObjectMapping: 0.316800 ms MarkObjects: 9.151600 ms  DeleteObjects: 4.281200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/ColoredHeader.cs: e04cbabb54b3db303c8c15602e5b2364 -> 21596fe5c0eb6a11638fc6ef39fdca42
+  custom:scripting/monoscript/fileName/GOPainter.cs: 5438c03539094541586329ba60b1f947 -> b92cee52a41f0706103c47ec0a47a128
+  custom:scripting/monoscript/fileName/HeightData.cs: 221d220320a7f17771c27015a0cef516 -> a51b112cd92a41ffdca2d1469ade53d7
+  custom:scripting/monoscript/fileName/GrassData.cs: d50ff80b5c72ce599dfd2154e21bd111 -> 6ae7a81fb96a8281296b02993f46ed96
+  custom:scripting/monoscript/fileName/PositioningSettings.cs: 38578f0db06aecddbbde50103a46011e -> 2175cfef10d9ef02cb5480cf0fe069f7
+  custom:scripting/monoscript/fileName/SplineSceneview.cs: b5488a4f9ee02ae644c822b0de5f28e7 -> 58cd8b2028b7157b55cf18b757aa0c47
+  custom:scripting/monoscript/fileName/EditorHacks.cs: d330c801104b42ad53f14fa276a9dcd3 -> ffb967f13b5b1a11e85508c52ecde535
+  custom:scripting/monoscript/fileName/GraphTemplates.cs: 6e7762aefb2229a90d5d72ac2b6739ea -> 8a30c89d4c8369214ae622e2f8c9bb11
+  custom:scripting/monoscript/fileName/EditorHelper.cs: 942b48b5bdf30651581fc815531ebac6 -> a4b503389e5a73cf4dfb5fbf2a227198
+  custom:scripting/monoscript/fileName/Deserialize.cs: 2df6d82507632554da143a20e6555611 -> 6dcf0e7751066a6fced25d74c65b0c90
+  custom:scripting/monoscript/fileName/Override.cs: 1d8440da7d9300936e98052dec3a2320 -> b5c4e21d022856937f55d0f91615a99c
+  custom:scripting/monoscript/fileName/DirectTexturesHolder.cs: dc30778b4b3e784500e1402836ab7062 -> 7e7190ccc5e08bc69b671cfd4bab8b48
+  custom:scripting/monoscript/fileName/Noise.cs: 92baceadbf5bf59fb8b3a1525ff6d108 -> ca135d862cc94540ecb7c78e7934538f
+  custom:scripting/monoscript/fileName/Segment.cs: 08b4e00730208d5cfcb7c8e791e60835 -> 82a57e3068e2e9eed00b1a869da8878e
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/RightClick.cs: 6e45ac2a4100268a317f48a464b71773 -> 696ed5480983a73e6eab4d500c62a1c9
+  custom:scripting/monoscript/fileName/PhysicsSimulation.cs: d8206f878f697776832d3a5f80b0d1f6 -> a658621ba6435eeae54fc996b302f3ce
+  custom:scripting/monoscript/fileName/CTSEditor.cs: 6b724d56c8bb13b18a9d4fe344627ee3 -> eb98000991af9aa08eaf3bd36657f6b2
+  custom:scripting/monoscript/fileName/GOSwitcher.cs: 18528c0cfaccf4b4e051e71226a4d421 -> 35cc3b3636e22fcdd0408d5277dd0c15
+  custom:scripting/monoscript/fileName/GeneratorRightClick.cs: 04892ed9d5d002468cce61c716da57ab -> 7c8d12103cff34833457521ca42f7900
+  custom:scripting/monoscript/fileName/TerrainTileManager.cs: c8aa1689cd470fbf2aefeed63fade46b -> df3c07d8298757e0e5dca05e40321d2a
+  custom:scripting/monoscript/fileName/MicroSplatOutputPlaceholder.cs: 3ae4d49aaf2470f34279d120f0d8045d -> 23f6bc1e2eff4e36b8c30fcf20e2a24a
+  custom:scripting/monoscript/fileName/ExtendedTerrainInspector.cs: 15a21427c881e694bac00def51b7bda4 -> 53a79c9531a8e9ae40b14188b07fcec9
+  custom:scripting/monoscript/fileName/Apply.cs: eea4a72f77527f6c9d8f71aa41235f6d -> fc74471de8c372cdd26ba1f75de4b390
+  custom:scripting/monoscript/fileName/RTPOutput.cs: 38943fd6d0de9e5032bd50c4a97db025 -> 6926f74b357833c3490ebe02a3df58b1
+  custom:scripting/monoscript/fileName/CreateRightClick.cs: 14384ed142321fd09b91f46b597f4399 -> 92f36519e7e8f73c5a91b4c5d6582057
+  custom:scripting/monoscript/fileName/TileManager.cs: 9980557ec7eba3a98cec81254ca014c9 -> 4fd239c735ecc73f2011d56d1537e4bd
+  custom:scripting/monoscript/fileName/GOSurfaceSnapper.cs: cf87fc74ebc7275d035c8293e93d4a3d -> c3d344cb3b7e7d9b672a50885e9aaeb8
+  custom:scripting/monoscript/fileName/MatrixInitial.cs: 34dea3e7eb561cba8f0b10a3e95cb1fa -> 8be99a4d9dd1a62643dcccfece0d1b4b
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/CellExpose.cs: 52353c3da5958466936bd1605fe146dd -> 2111b59f58cb129bbed40af954ee8739
+  custom:scripting/monoscript/fileName/TerrainTile.cs: 08256b4d2d454f9943762620aaf797b5 -> acb9db7041e86c9839d36228645f39d2
+  custom:scripting/monoscript/fileName/TwoWayDict.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/TerrainSettings.cs: 95cf92f077c3efe12d8f17ece0d64b5f -> 429a52aab7beafc0b6401f452d4b4508
+  custom:scripting/monoscript/fileName/CellToObj.cs: 68c50205016a35225996b48a21cd9f91 -> 22974f8424415cf35ac8e213c95e3217
+  custom:scripting/monoscript/fileName/DrawPreview.cs: 81ba02a4c14015cd368f882172b79c89 -> 52cf52a6e48ccbc2c9ecb48823b270d0
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/SplinePreview.cs: 8bbf024863a1ac735a29ba9e451e581b -> 5834d77fa62982b273a9ee27eeccc31f
+  custom:scripting/monoscript/fileName/TileData.cs: 37037c1630f2890d0a64458283bc6574 -> 155cbdaab26450fe6b1335bfa37b9444
+  custom:scripting/monoscript/fileName/Structs.cs: 4dd9f6b5ec2e7dee83a773c281e7a28e -> 7ee80091708c105e9b4c792c320d1f98
+  custom:scripting/monoscript/fileName/StackMatrix.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/MatrixWindowPlugins.cs: d19fc02fa34347f0d1ad1ee779f722b6 -> 2d3b8f05163ab9304fc26ab5f89bb6e6
+  custom:scripting/monoscript/fileName/Erosion.cs: 87d4bb2540d18b606b0e4b6870d7de65 -> ace2a4444a3d8be4a78640297d2f31be
+  custom:scripting/monoscript/fileName/StylesCache.cs: 0fd610b570e99e1eeab9775abc8bca38 -> d22a884173ffe787e395abb51f39b7f7
+  custom:scripting/monoscript/fileName/Marker.cs: 4bfeb8f48863c8e4fc9f7ce84f6ba8f7 -> 503acff44354bee3ff2ce5f2483acffb
+  custom:scripting/monoscript/fileName/VSProMapsPlaceholder.cs: ff1cc4ddeb18afa3ca559184080a7daa -> 5e198ef24e459796cbb850cfece7dda0
+  custom:scripting/monoscript/fileName/ObjectPaintAnimation.cs: 8b2d4b9f073a79ca01636d84e9ebe80e -> 0b1059b7a0a91b3233a86d9528a7cd40
+  custom:scripting/monoscript/fileName/TerrainAiming.cs: cec5e578f8e8db82c3a79cb874553f9d -> 751f6d5c69b40730ef84a77990421aee
+  custom:scripting/monoscript/fileName/Area.cs: 0b4dfe3672438c34fdf5854d78605625 -> 6dd357d2b09d46ea64c746eab62c3ce7
+  custom:scripting/monoscript/fileName/CoroutineManagerObject.cs: 86e2912454a753d7502f49dbaf2f0d3e -> 48c40553d6154ee2d94980eb94a15d89
+  custom:scripting/monoscript/fileName/MatrixAssetInspector.cs: a49d9581dd6961850ab1d5c4d07798ea -> 08ada1bfe2de51ecc818bfd54a193689
+  custom:scripting/monoscript/fileName/Coordinates.cs: f8b9f282ab700fbce6187da1d8ac1670 -> 474985f525b4d18751efc42751d71080
+  custom:scripting/monoscript/fileName/MapMagicInspector.cs: 0931b83fac2e7101ecb98b4158b49123 -> 32b8ade328236b555e4052e20a3c037f
+  custom:scripting/monoscript/fileName/ArrayTools.cs: 09404ca3ab122fd1f38844eca9913f24 -> 3a649b8ca01621a31a99f26be4f74f62
+  custom:scripting/monoscript/fileName/ObjectsEditorHelpers.cs: 665a564da1e38c015c691567cab7c442 -> 23b1736ec5b30aafd3aad1f864ead0de
+  custom:scripting/monoscript/fileName/OrderedDict.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/MatrixSetPrototype.cs: 418d4f31f7e1856e84569ac1bc99538b -> 3512971f692f145aac58e242fe87d2f3
+  custom:scripting/monoscript/fileName/DirectMatricesHolder.cs: 16444bf81435c922bb0e734aac0d2d0e -> 31e21bb79c89099c50d831aaa8b30765
+  custom:scripting/monoscript/fileName/MapMagicObject.cs: f0e3d28ae27ad4b2c33cf99413c51501 -> 1ca2438083cc3023f4d9942dd2f92d6a
+  custom:scripting/monoscript/fileName/LockData.cs: 7006a2752372ceb9a580441df1ddf1f4 -> 97be2622afb4742f0f9954a890388e66
+  custom:scripting/monoscript/fileName/Edges.cs: 9a8ccfa1086754276c08040af22f4764 -> 089cff2cbf612471a1f9f13468d4a777
+  custom:scripting/monoscript/fileName/PopupMenu.cs: 2c2ed0c310fcaaa3f26f70198f134035 -> af5ef52e22cc7aa6916a638e020920fd
+  custom:scripting/monoscript/fileName/MatrixSet.cs: 7aeb1af664edee10938f7aad5c5bc0cf -> 581abd6a89c1f33a16354100ddd5363d
+  custom:scripting/monoscript/fileName/CircleFactory.cs: 8fbfb5640cd4c8160afc8948204283f8 -> 2821b26199deb14d459fb8cca8dbca75
+  custom:scripting/monoscript/fileName/MegaSplatOutput.cs: c87c7022a898de3e35febb06950c47c1 -> 88d7fc8ba6ceed428ab79c4e7f2be92c
+  custom:scripting/monoscript/fileName/ObjectsPreview.cs: 9da8cb6edc85f6271fd5c886d581c884 -> 89a72d3b80716e3624a85405b3edf7fa
+  custom:scripting/monoscript/fileName/ThreadManager.cs: bb08d1c24fb57dfa7ac5c1ce5e06898d -> b6e26efd8f56894d0afb76531139d4a3
+  custom:scripting/monoscript/fileName/Lock.cs: b81ea524c964757eec352d715e5d8257 -> 1ab29d1f8c5e81437683ef091cf91f8b
+  custom:scripting/monoscript/fileName/DirectTexturesHolderInspector.cs: 8244f1bfb558eb28a948760f9aad11e9 -> 2ea15bfd62dc4fac935f980739640dfc
+  custom:scripting/monoscript/fileName/MatrixEditors.cs: e0f687b88c5f1b02d1dbc3d5346dddc6 -> 7d68968e8a37df412808551bbca29e30
+  custom:scripting/monoscript/fileName/PaintCanvas.cs: b1e31dfbab8105cbfdbee14f1058a564 -> fd1c0206f5f540f2a8657cd935cd50c5
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/CurveDraw.cs: e8183a3079e37308f3a188eaaa73d8e3 -> f50d56cee4a2171a56658fdb1d9fe9dd
+  custom:scripting/monoscript/fileName/Matrix3D.cs: cf6b36ca750604748254abc7f2d75b06 -> 868cad849d0a644fc3ebdf756e1dd7d9
+  custom:scripting/monoscript/fileName/Vector.cs: 82a5b135083da7336a8b5d982f0457d7 -> 0ae6b9a1ecc16faf145f8df788a34247
+  custom:scripting/monoscript/fileName/Texture2DExtensions.cs: 06a2b106eae568ed080bca57cfa03452 -> 99f20d364dae22e6534e1fe9f0eae137
+  custom:scripting/monoscript/fileName/MaterialPropertySerializer.cs: 3562d3e8c526ed7ec1353ddaa11d6d5c -> ddaadfde97d91b87e64a482e7985b6d3
+  custom:scripting/monoscript/fileName/Brush.cs: 8138a3ba71215644a1f84bb029e81d3e -> 659446fd6e21a6962cb8ee3a6d522528
+  custom:scripting/monoscript/fileName/Exposed.cs: 09f2f91f6ef6b47e3c6cecc6e07a5127 -> 1519ff78a713a8af18588b647e64ae49
+  custom:scripting/monoscript/fileName/GraphEditorActions.cs: 0c78ad74468a9ddb8268fe214150c65c -> 6cb913f4f7d20ffce2b36e0dbd36dc0e
+  custom:scripting/monoscript/fileName/TexturesCache.cs: 4d2b15f01ae5e26e0b5c7399e6409213 -> d9f22a31328890667673bf658c3b31a6
+  custom:scripting/monoscript/fileName/GOPainterMenu.cs: c6786828b0b65cad38e2599b8560a635 -> 33e0702910816751d76f2a06de900579
+  custom:scripting/monoscript/fileName/DebugGizmos.cs: a0f83095719f2ae83ca44acc42424f1f -> afa11358b9880e2324d612d5cb27cab9
+  custom:scripting/monoscript/fileName/Draw.cs: 4d4d57afe18299a769e366d924a637ab -> 434bf3c1eb75b6287ace0545d4bfbaa7
+  custom:scripting/monoscript/fileName/AboutWindow.cs: 21949c9892d9873ec901b9934fdae340 -> b6e67832305e18c0da49cf68fe8694c6
+  custom:scripting/monoscript/fileName/GridTransform.cs: ace6be5f81d7e0297e064d94700340ef -> b2bbc387c1fb757611c533bee578292f
+  custom:scripting/monoscript/fileName/Transition.cs: e5cdd37d91fb64fbd33644373b7e7357 -> 3945d7fe7fceabaf8db49357dc032feb
+  custom:scripting/monoscript/fileName/RTPEditor.cs: 35a68cb4ae328c562acef8823cb8e4ac -> 05269db7ae2a649f816dfd65c87650bf
+  custom:scripting/monoscript/fileName/GrassOut.cs: f4364c81b2f34b997e4b5231e94b4d7e -> dbe461f5ab69b5304fd1d657610ae33f
+  custom:scripting/monoscript/fileName/LineFactory.cs: 1abbd6efedcad9c220894953d227a362 -> 978ceb2327be79725838072e722caecf
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/ColoredHeaderRenderer.cs: 9a227f610b0ffa31f8ffb5c07047d4ee -> f65d1c4e6391d164415e50bd9daf9a4f
+  custom:scripting/monoscript/fileName/Weld.cs: f74fd2515c056ac36164cd2146e9b3ed -> a54c93caf70b6d9de3f9a592716ace71
+  custom:scripting/monoscript/fileName/Id.cs: f9d5b152c4f5831ca2477af04efbd4a2 -> b1b682a0d695941d9902cdb450c7ca7b
+  custom:scripting/monoscript/fileName/Extensions.cs: d2f743d6693458f816fc9cb7f6b87887 -> b8510d5c099d9892fc3c0a0934b768bd
+  custom:scripting/monoscript/fileName/CoroutineManager.cs: 4ddebb30261a7b089fa9e88073787a5b -> dd66d8153341cafa6bd20253eb07dd86
+  custom:scripting/monoscript/fileName/ValueRightClick.cs: d9afbf41e2d708c5a345c4181900ca19 -> bcb8fb98e3a9c3395356d973c7aa1553
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/FloatMatrix.cs: 59e483804ba8e92ec5a01624fb24e5db -> 08db8b95d739a6cbed87e69462e13f09
+  custom:scripting/monoscript/fileName/Serialize.cs: b87ddace3b9a729efa7c34f58e0e2c91 -> 4bf99c747680c746dc8a10bfb4dcbf88
+  custom:scripting/monoscript/fileName/DocScreensWindow.cs: 388b44804be3bd24ba3dffba089ced60 -> e165db7838dea83525429a9f3baa7e01
+  custom:scripting/monoscript/fileName/TexturesOut.cs: 8f938ace253c48c957b6642151d33e7e -> 1f1c98204647bfd9ca0875a7736f439d
+  custom:scripting/monoscript/fileName/HolesOut.cs: cae5f7df1e4ec18db0748c1f40f6ca4c -> 817b0c2833fc419161e943e998553cb6
+  custom:scripting/monoscript/fileName/Curve.cs: 6bdac177ea3e9943b270a3a5af9a0d22 -> af3b18574a3cbb4220ef5983c2aa546f
+  custom:scripting/monoscript/fileName/ObjectFactory.cs: 167c2a17c9f501f4499867f9d4f20607 -> 0f5cba08a5e094d6cc92621de065b4d4
+  custom:scripting/monoscript/fileName/SettingsAsset.cs: adb9bf122c6fe365ae4f081673c05981 -> 1b27ea3380a602f56567fd2ac2dfdb4a
+  custom:scripting/monoscript/fileName/GraphWindow.cs: 40cab8c24e4220b48ea20747777601f3 -> dcb8289bc7a6c090f260ec04189946a9
+  custom:scripting/monoscript/fileName/Padding.cs: f1ce2a054c7ad0b7c768bc573751477e -> 21baeea1a0a7126441c797f4e69619d3
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/Select.cs: 1805201c0c16c9ede55f1010264965e1 -> bd4d4f910746f677629138a7d1789d8a
+  custom:scripting/monoscript/fileName/PosTab.cs: 5680b4175ffdd192b94758ad8f60842c -> a03602e7b6a74bd412ab893ba66b98d0
+  custom:scripting/monoscript/fileName/Reflection.cs: 7d35be80c344e2dc7e06eb0fe7b5ee38 -> 752963cd89483dd9d0f40d06c0a03e3d
+  custom:scripting/monoscript/fileName/MatrixModifiers.cs: f0763ce2019c06eebe9032d009741eb7 -> 8da24cebdc584e2fb41e0f4b5c5dcbcf
+  custom:scripting/monoscript/fileName/UI.cs: a520931dc080d1d2a216dbb23cc27978 -> 36a28ba75a937ad66207203a82edeec1
+  custom:scripting/monoscript/fileName/ColoredHeaderSettings.cs: b35493ee39a276f0cb79c24d46da9942 -> 1dd8072462c6fd124b0de24e9c579c2a
+  custom:scripting/monoscript/fileName/MegaSplatEditor.cs: 554c62921743570917475cfde6e6064b -> c75ae1ab251cb3dc4cebbeae5ecdbded
+  custom:scripting/monoscript/fileName/ColoredHeaderGUI.cs: c4faca4cc6c6c9672bfe3366887683ea -> c5f98a0f650db8a4d09127d3c5515899
+  custom:scripting/monoscript/fileName/Group.cs: 188beca79f8863ce4e1863a1720ff126 -> 4163396120fa06efd6fc9e9a84df924b
+  custom:scripting/monoscript/fileName/GroupRightClick.cs: b98337d1034afb93c569e7be1e9e8711 -> 649a21446614e5bb0d25727bd90f4c19
+  custom:scripting/monoscript/fileName/ColoredHeaderPreset.cs: 83091c477a28338df9d4ed5235f84821 -> 17aeca57b35635d38c25d6f15efe602e
+  custom:scripting/monoscript/fileName/LockDraw.cs: 043af9bf9779d3287e76a334d7ffae1a -> abf896bfb4f2cfca8bf2b7d4f137c1f8
+  custom:scripting/monoscript/fileName/MoveRotateScale.cs: fdf61493448a9b0ba0edf20e274bfe4a -> 8177b932d7b440d4bcec6a2b3b93e5dd
+  custom:scripting/monoscript/fileName/MicroSplatEditorPlaceholder.cs: 421d869efedb8433277bad0fb251f84b -> c7cf7849a6492e6ff6bdf5288480388b
+  custom:scripting/monoscript/fileName/Calculator.cs: 250c3f37adcdd855f6094cdea1ab91c0 -> ac1280254abbafd172d15d3ad13dc19e
+  custom:scripting/monoscript/fileName/TerrainExtensions.cs: d63c9a1d2979da080db327cd01ea65c6 -> 1e089a85419045ff92db943986993392
+  custom:scripting/monoscript/fileName/GraphTree.cs: 38a65e892da6a224b7a26fba197df80c -> b2081d2256b18a95b3ec58b6193a4830
+  custom:scripting/monoscript/fileName/Graph.cs: 762002c025a198f8d1bf97a733b27a51 -> 8de06e082cc9fa3cf5f3cbe693bcbfe5
+  custom:scripting/monoscript/fileName/LogWindow.cs: 42ba22c736d9e391a66275c773ae829e -> 5d80d70e81e333051e55d538cc5a2f99
+  custom:scripting/monoscript/fileName/SplineSys.cs: bc64e6a4aefe67c5e241ab6ab18d4c14 -> 2bc4391a65e69e70b421318715cc7d97
+  custom:scripting/monoscript/fileName/Pop.cs: 4faa7714973d475238f6d0a9a0281b44 -> 2d320c46cb24d133b4bee5d163555ace
+  custom:scripting/monoscript/fileName/Pathfinding.cs: 13a510bc925b10ef86e977b63f1b12a5 -> 3b1b899738ac6e80626909350faa271d
+  custom:scripting/monoscript/fileName/FrameDraw.cs: fad7cd7279420f0fb72c7bb035740e6f -> 993b40fc30807a0e2a46b28d5f722a27
+  custom:scripting/monoscript/fileName/GraphRightClick.cs: 090d06009c96806c51fbb3ead6b2df30 -> 2b3ff6ea9b8c00211829a74795b9e715
+  custom:scripting/monoscript/fileName/MatrixObjectInspector.cs: 241a1859341adcb4f7055f197e06b535 -> 1d85e41d485fc689b16d3a7f737083d1
+  custom:scripting/monoscript/fileName/Undo.cs: 0588bb0e09c0049991420f1147f46d21 -> 6a2d7b7a07b0ffb8ba9ca5dbe4d235bd
+  custom:scripting/monoscript/fileName/Loader.cs: cd5c1ed45b02097f31af04ad8e28a2f0 -> a5ae146a54eee75fd4d1b2708c34771c
+  custom:scripting/monoscript/fileName/MatrixWindow.cs: b61db01db3b52f515f9b158f36a4b3e8 -> 6f7832e556f7d6c8412d00deaf5e62dc
+  custom:scripting/monoscript/fileName/GraphInspector.cs: 6cd8a83ca865e8903e901d53e633d47b -> 66b4efebfaf4989c7abcc5032184ce48
+  custom:scripting/monoscript/fileName/IGridTransform.cs: 60f2e7cc2737666cea485fa887f8cba4 -> 04ca06b6db5ea3660d4b8b168953f061
+  custom:scripting/monoscript/fileName/SplineObject.cs: b33d29086f2e8be5a8be7fc9407c4a20 -> ff1570e4b251e37e195ffb1622b4f67b
+  custom:scripting/monoscript/fileName/TextureArrayExtensions.cs: 6c95e5b8cd50be0c31d9ef523510ef20 -> 2d2045f3ebf043957d6663fd8841d04a
+  custom:scripting/monoscript/fileName/MatrixAsset.cs: 6f57af26a55fe8e2a7c9e5768f8d17e5 -> 2809c1d3e09dd59f59369d03ca6484d1
+  custom:scripting/monoscript/fileName/ScriptableAssetsExtensions.cs: 2ac04738d486e19a59c878a632d2e828 -> 0b97fa906759f26264face377e5e62d2
+  custom:scripting/monoscript/fileName/ScrollZoom.cs: 1fe25e10dc6eccec86ece3cf3bec3044 -> 7ab53e5a8b922985818e840a8bb3d938
+  custom:scripting/monoscript/fileName/Matrix2D.cs: 8f6297df34271fdb1ce2d9607ec6261d -> 90647cc400823b41df847a6cbfc29026
+  custom:scripting/monoscript/fileName/MatrixPreview.cs: a8bd9fe3d32628b22b419e70fc5af1d8 -> 36ad6df3abf2f630d90fa5ad47d4de21
+  custom:scripting/monoscript/fileName/DirectMatricesHolderInspector.cs: 80494f6b36385ea17e2c64b4a82eaf1e -> 94654fe0ebf06af547a4490f602a49d7
+  custom:scripting/monoscript/fileName/GORandomizer.cs: c9a871cb6feedfb0a34ac16db9e08d9f -> 3139eb6d5886ab1e1ae706183bf8ce10
+  custom:scripting/monoscript/fileName/RectFactory.cs: d6c7d9aafe5306719bf770e06c067374 -> 0c2053755969b199ddf4fcc567194821
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/AutoSubscribe.cs: 97e90cccbb04fe9d56405528b327d303 -> 47913f62612c6543b1cdfaa7fa84494f
+  custom:scripting/monoscript/fileName/GraphUpdater.cs: e7a20f67edd764e9050bca897e58c2c0 -> eb872f3304b3c39db38943707f9f1ea4
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/SettingsWindow.cs: dbb64ea8f354fc985a0d185aa6bfbcae -> 4f30deeca2384e30b1651a1e380b6d74
+  custom:scripting/monoscript/fileName/PolyLine.cs: 135a8833c503835b3719593d4bf7978b -> 50596cc04cd7eb2976ad25dbff77a026
+  custom:scripting/monoscript/fileName/Portals.cs: 616b81757775bbf7ae8559a633de501e -> 63340f8bb0c08373c52f3ab837faf532
+  custom:scripting/monoscript/fileName/OnPostProcessScene.cs: 59f288f0e6e9d3b833f0153ad85f6878 -> 4964b011022fdf3cacda8d59d09560f6
+  custom:scripting/monoscript/fileName/Assets.cs: 2606b7aaef63907e21df1ebcd6ae1e54 -> 358fe0bb61bff8d10a86c63944ef8899
+  custom:scripting/monoscript/fileName/SplineObjectEditor.cs: 147a5ee070050fb0e1de31bbaf343c70 -> a55d835e65f356e9ff81dfed2253ee8a
+  custom:scripting/monoscript/fileName/MatrixObject.cs: 4b5a8c969566ae88ba326aa525ccbc5e -> b65a008c3f06a9658ea222b0375d291b
+  custom:scripting/monoscript/fileName/OverrideInspector.cs: e7437483b386dde439852eaff4461945 -> 3711db2b3b5560bb791f53fc2be7d0c1
+  custom:scripting/monoscript/fileName/PinDraw.cs: 5ea98862e651063a1fb5af90e28e0863 -> d98a82bc3592448e2451ed1210a2d3e3
+  custom:scripting/monoscript/fileName/Generator.cs: c41670fa399b5ee393c455f21a768770 -> c828e8b0be8a944cb95ef100e0e31fb0
+  custom:scripting/monoscript/fileName/Serializer.cs: 29925bfbb1a89afcbb8d9f27aea783aa -> 6f6b6fbf1ecd4cea40dd9aa4d822ce3b
+  custom:scripting/monoscript/fileName/Item.cs: bdef5d20098b37b46800611ad1cb827d -> 9b03a5b52032920e993a264c5c15ced0
+  custom:scripting/monoscript/fileName/ObjectsPool.cs: 632d04bc349347a82a151dba815c9fbd -> 5a1fc93fb422bf25e0d0d3a9660e4c87
+  custom:scripting/monoscript/fileName/Layers.cs: 3fa61c1c9ed5fe1612c5e1571b103736 -> 4714df68ffa7f4e26cbaaab5a32a3473
+  custom:scripting/monoscript/fileName/TimerWindow.cs: 8dbf58f317b132841b6c05ff910a6ce0 -> 9bf61bbd2a21b1307fe3b95e3b74f7fd
+  custom:scripting/monoscript/fileName/HeightOut.cs: b98c5fe2612319350e9e3a4f86ca2c56 -> 7dc54cbcca14b957a0c3a7a686253566
+  custom:scripting/monoscript/fileName/MatrixLine.cs: f3ba3ccc9aceaeda2e39999b1eaa027a -> f71ae855ec713681fac70165ca8def68
+  custom:scripting/monoscript/fileName/MatrixOps.cs: b920a10e17e85143b95d0c3a4b8972b9 -> c0020ca0d4559dc8ecef016cb30b16d1
+  custom:scripting/monoscript/fileName/PortalSelector.cs: 327700e5a9dbc2003e5dc39a8c34bb58 -> 8f435fe6f791c8ae09a7120af1dfe545
+  custom:scripting/monoscript/fileName/Log.cs: 5412274d58e89a52115060ce575951e1 -> dc538af577970b420c2eceb9ec6c0da2
+  custom:scripting/monoscript/fileName/Line.cs: 7688f01a589f04460fb71fd1e4927d7f -> 6b25982bc818635a43eff7264f535c33
+  custom:scripting/monoscript/fileName/PositionMatrix.cs: 1f23fe763e89ec8610c1d6a9ab70e68c -> 06669a0d1ed3f9fc93a10cb4e009749e
+  custom:scripting/monoscript/fileName/LevelsDraw.cs: b0fd285178f2d4d6b33958f680916e82 -> 938ce786550e98bd1a3f659591eb8ac6
+  custom:scripting/monoscript/fileName/GraphSerializer.cs: 20c33514bef513bcf39ea69417ce6341 -> 140392c28e4751cd79d6c0f7f93a5a71
+  custom:scripting/monoscript/fileName/DragDrop.cs: cd30a6a60d88e49b40ba4692dc68548b -> 2d4312234bc0bdf5f5d3627dff2daf29
+  custom:scripting/monoscript/fileName/Timer.cs: fe26aa185e01075cc3100560e4969a1a -> 0d75301b285d5668d22a3eef8789ef01
+  custom:scripting/monoscript/fileName/MatrixWorld.cs: bd1d7e6b481eff8e3120778eb8051a47 -> 673c4a08eecf42d3a5bfcf76cbe80e28
+  custom:scripting/monoscript/fileName/GroupDraw.cs: 09684252b3f500a6f0a158e9555bb896 -> 90fd84d74e5ffe968009e35a6fe9ed0d
+  custom:scripting/monoscript/fileName/ExposeFieldWindow.cs: 3f1b6043e1b00b6d5bdf1fda973aabdf -> b0ada1f9021e07a4e452b80a3c429c26
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Cell.cs: d2f2c3aa5d1de73b024ab178b0cf7636 -> dc7376e7290ebea3f27163ea68e455ec
+  custom:scripting/monoscript/fileName/SplineMatrixOps.cs: b56a2f89f8964ed886e165325ac7b07d -> 6674242250d9086b9c896f09b8d8ef0f
+  custom:scripting/monoscript/fileName/Matrix.cs: 581ad9385c0604ff71c02ef2943b6652 -> 781f5a23df819d3532a8a22c4e3cb736
+  custom:scripting/monoscript/fileName/AssemblePlugins.cs: c750abca8cb9fbe761dd8d53d8ccf373 -> 91faa83fa9f775ac517d0202f3bd4447
+  custom:scripting/monoscript/fileName/MatrixNative.cs: 6cadd3bbbf4fa1115814fdf79f4b67f9 -> 9a05704578ddee2359e5ee8b080c420a
+  custom:scripting/monoscript/fileName/SpecialEditor.cs: dd82175fb5bee83f2e98e9b07ee22172 -> 6658d9d2cbdebdf42a5d4cf70fc9816c
+  custom:scripting/monoscript/fileName/GeneratorDraw.cs: b502d5e89de49853abd60799e89d9ce8 -> bedbe5c71799e418d3df82c0dacbd56d
+  custom:scripting/monoscript/fileName/MatrixGizmo.cs: d3d4088c5c8d9d59797ab29b60f1f617 -> 57f19b344fd0627932c7dd73260f0e70
+  custom:scripting/monoscript/fileName/SingleWindow.cs: 48682daa6ee3a0f7b7acefa68c394b88 -> cfdcaa25873752a2769a07039ff656a4
+  custom:scripting/monoscript/fileName/Attributes.cs: 2e8c5452663edac83be18efe79c714f7 -> 8e5e47221c42faa1f043a6084e76ca77
+  custom:scripting/monoscript/fileName/Placeholders.cs: 09b8037fd220f37d7112ff47cb5c368f -> fdfbea84f6d2d67afaeaba0391df3856
+  custom:scripting/monoscript/fileName/Preview.cs: 377037a6a16069516ca99557e709d5e4 -> a0144ae421cbe6b36caec8130fe93028
+  custom:scripting/monoscript/fileName/PaintAction.cs: d86c3202c66c26fa3fc80e18b6919bfb -> 0c7441b937bac38155460eeb9c59fa74
+  custom:scripting/monoscript/fileName/SharedValue.cs: 57eaa20cf44dc37860e3475b279fd095 -> 1e32c29cba0bc494993793aa5594a954
+  custom:scripting/monoscript/fileName/Node.cs: 5a41b591335a236add2b72be30b1513a -> a32d1afce06d6ad684ad7d79025f995c
+  custom:scripting/monoscript/fileName/TexturesData.cs: 310913b4f69eb2b699e626fa934dfd87 -> f1b5f9b80cba42ea16328802b637863c
+  custom:scripting/monoscript/fileName/SerailizationTools.cs: a4c0242792d0a709f6e9c130d9cba507 -> c0f98784c9650cba9fb03244eb27ed4f
+  custom:scripting/monoscript/fileName/CTSOutput.cs: b4083ef1ffb396baa3b406ff4cedf31d -> 4a574ff43578205682aa0785ecc1bc10
+  custom:scripting/monoscript/fileName/TerrainTileInspector.cs: 6fed65ac07e32956ba67cc21371581e7 -> fa171ef56524706ddf9e4429969c94a1
+  custom:scripting/monoscript/fileName/TypeDict.cs: 34c142a771441b490dd376b89e28ab50 -> d2f7b182e987a3d39c94faad28d2d9a6
