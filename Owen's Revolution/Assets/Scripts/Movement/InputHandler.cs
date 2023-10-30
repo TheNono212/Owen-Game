@@ -7,7 +7,10 @@ namespace HO
   public class InputHandler : MonoBehaviour
   {
     [Header("Dependencies")]
-    private PlayerControls inputActions;
+    PlayerControls inputActions;
+    PlayerAttack playerAttack;
+
+
     public float horizontal;
     public float vertical;
     public float moveAmount;
@@ -27,6 +30,10 @@ namespace HO
     private Vector2 movementInput;
     private Vector2 cameraInput;
 
+    private void Awake()
+    {
+      playerAttack = GetComponent<PlayerAttack>();
+    }
 
     public void OnEnable()
     {
