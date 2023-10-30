@@ -62,13 +62,17 @@ namespace HO
     {
       inputHandler.rollFlag = false;
       inputHandler.sprintFlag = false;
+      inputHandler.rb_Input = false;
+      inputHandler.rt_Input = false;
+
+
       if(inputHandler.moveAmount > 1)
       {
         isSprinting = inputHandler.leftShift;
       }
       
       //if (isInAir)
-      //  playerLocomotion.inAirTimer += Time.delta;
+      //  playerLocomotion.inAirTimer += Time.deltaTime;
       //else
       //  playerLocomotion.inAirTimer = 0.0f;
     }

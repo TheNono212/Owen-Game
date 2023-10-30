@@ -15,6 +15,10 @@ namespace HO
     public float mouseY;
 
     public bool leftShift;
+    public bool rb_Input;
+    public bool rt_Input;
+
+
     public bool rollFlag;
     public bool sprintFlag;
 
@@ -41,6 +45,7 @@ namespace HO
     {
       MoveInput(delta);
       HandleRollInput(delta);
+      HandleAttackInput(delta);
     }
 
     private void MoveInput(float delta)
@@ -73,6 +78,12 @@ namespace HO
         rollInputTimer = 0.0f;
                 sprintFlag = false;
       }
+    }
+
+    private void HandleAttackInput(float delta)
+    {
+      inputActions.PlayerActions.RB.performed += i => rb_Input = true;
+      inputActions.PlayerActions.RT.performed += i => rt_Input = true;
     }
   }
 }
