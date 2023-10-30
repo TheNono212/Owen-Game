@@ -85,7 +85,7 @@ namespace HO
       moveDirection += cameraObject.right * inputHandler.horizontal;
       moveDirection.Normalize();
       moveDirection.y = 0;
-      float speed = movementSpeed ;
+      float speed = movementSpeed;
       if(inputHandler.sprintFlag)
       {
         speed = sprintSpeed;
@@ -95,7 +95,7 @@ namespace HO
       else
       {  
         moveDirection *= speed;
-      
+      }
       Vector3 projectedVelocity = Vector3.ProjectOnPlane(moveDirection, normalVector);
       rigidbody.velocity = projectedVelocity;
       animatorHandler.UpdateAnimatorValues(inputHandler.moveAmount, 0.0f, playerManager.isSprinting);
@@ -103,7 +103,6 @@ namespace HO
       {
           HandleRotation(delta);
       }
-    }
     }
 
     public void HandleRollingAndSprinting(float delta)

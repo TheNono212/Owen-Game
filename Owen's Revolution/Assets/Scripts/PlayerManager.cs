@@ -41,6 +41,8 @@ namespace HO
       playerLocomotion.HandleMovement(delta);
       playerLocomotion.HandleRollingAndSprinting(delta);
       //playerLocomotion.HandleFalling(delta, playerLocomotion.moveDirection);
+
+
       isSprinting = inputHandler.sprintFlag;
       isRolling = inputHandler.rollFlag;
     }

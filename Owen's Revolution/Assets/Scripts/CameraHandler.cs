@@ -73,7 +73,8 @@ namespace HO
             Vector3 direction = cameraTransform.position - cameraPivotTransform.position;
             direction.Normalize();
 
-            if (Physics.SphereCast(cameraPivotTransform.position, cameraSphereRadius, direction, out hit, Mathf.Abs(targetPosition)
+            if (Physics.SphereCast(cameraPivotTransform.position, cameraSphereRadius
+                , direction, out hit, Mathf.Abs(targetPosition)
                     , ignoreLayers))
             {
                 float dis = Vector3.Distance(cameraPivotTransform.position, hit.point);
