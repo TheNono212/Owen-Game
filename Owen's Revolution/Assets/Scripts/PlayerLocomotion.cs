@@ -63,7 +63,7 @@ namespace HO
       targetDir += cameraObject.right * inputHandler.horizontal;
 
       targetDir.Normalize();
-      targetDir.y = 0.0f;
+      targetDir.y = 0;
 
       if (targetDir == Vector3.zero)
       {

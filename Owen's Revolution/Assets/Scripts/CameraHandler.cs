@@ -88,7 +88,7 @@ namespace HO
             }
             //Debug.Log(Mathf.Abs(targetPosition));
 
-            cameraTransformPosition.z = Mathf.Lerp(cameraTransform.localPosition.z, targetPosition, delta / 0.2f);
+            cameraTransformPosition.z = Mathf.Lerp(cameraTransform.localPosition.z, targetPosition, delta / 0.05f);
             cameraTransform.localPosition = cameraTransformPosition;
         }
     }
