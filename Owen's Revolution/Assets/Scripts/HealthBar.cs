@@ -8,6 +8,11 @@ namespace HO
     public class HealthBar : MonoBehaviour
     {
        public Slider slider;
+       
+       void Start()
+       {
+           slider = GetComponent<Slider>();
+       }
 
        public void SetMaxHealth(int maxHealth)
        {

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 namespace HO
 {
@@ -11,6 +13,8 @@ namespace HO
         public int currentHealth;
         
         public HealthBar healthBar;
+
+        public AnimationHandler animatorHandler;
 
         void Start()
         {
@@ -30,6 +34,26 @@ namespace HO
             currentHealth = currentHealth - damage;
 
             healthBar.SetCurrentHealth(currentHealth);
+
+            animatorHandler.PlayTargetAnimation("Damage_01", true);
+
+            if(currentHealth <= 0)
+            {
+                currentHealth = 0;
+                animatorHandler.PlayTargetAnimation("Dead_01", true);
+                //HANDLE PLAYER DEATH;
+                HandlePlayerDeath();
+            }
+        }
+        public void HandlePlayerDeath()
+        {
+            StartCoroutine(Death(5.0f));
+        }
+
+        public IEnumerator Death(float waitTime)
+        {
+            yield return new WaitForSeconds(waitTime);
+            SceneManager.LoadScene("DeathScene", LoadSceneMode.Single);
         }
     }
 }
