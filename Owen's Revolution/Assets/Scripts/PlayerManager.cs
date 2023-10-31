@@ -23,7 +23,8 @@ namespace HO
 
     private void Awake()
     { 
-      cameraHandler = CameraHandler.singleton;
+      cameraHandler = FindObjectOfType<CameraHandler>();
+      // need to put that in start if a LOT of object in scene and cause lag
     }
 
     private void Start()

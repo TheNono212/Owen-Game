@@ -10798,3 +10798,1532 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:scripting/monoscript/fileName/PlayerStats.cs: 3b39b425e89852a2a67c402d10ce892d -> 4c46016542bd1f227edca9ed565f9846
+========================================================================
+Received Import Request.
+  Time since last request: 741.214848 seconds.
+  path: Assets/Audio
+  artifactKey: Guid(a3a1ae41ba2c60a4bb4142e96be3413c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio using Guid(a3a1ae41ba2c60a4bb4142e96be3413c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '826e3158378e9ca46c8c22770a369fb0') in 0.011103 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 451.451137 seconds.
+  path: Assets/Audio/tuba_knight.mp3
+  artifactKey: Guid(053d20be1e942f245b65cd566a8eb19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/tuba_knight.mp3 using Guid(053d20be1e942f245b65cd566a8eb19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1ad8437dcb83e880fb7793b515f84a2') in 0.003558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.266 seconds
+Refreshing native plugins compatible for Editor in 3.87 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Owen's Revolution
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.521 seconds
+Domain Reload Profiling: 3786ms
+	BeginReloadAssembly (273ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (77ms)
+	RebuildCommonClasses (68ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (859ms)
+		LoadAssemblies (394ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (589ms)
+			TypeCache.Refresh (568ms)
+				TypeCache.ScanAssembly (546ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (2522ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1412ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (14ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (162ms)
+			ProcessInitializeOnLoadAttributes (1091ms)
+			ProcessInitializeOnLoadMethodAttributes (118ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 23.85 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 60 unused Assets / (4.1 MB). Loaded Objects now: 5722.
+Memory consumption went from 211.9 MB to 207.7 MB.
+Total: 9.400600 ms (FindLiveObjects: 0.973700 ms CreateObjectMapping: 0.390400 ms MarkObjects: 6.457900 ms  DeleteObjects: 1.577000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/HealthBar.cs: 7e38e0c7a8c07e1e85b1321f9c988e83 -> 2bf6d6bb300e4a495e61be11e36a2c7d
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/PlayerAttack.cs: b9c50176a857f698c6851338b34aa315 -> c64dfb3c2460f450da95099a90c9c7b4
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/PlayerStats.cs: 3b39b425e89852a2a67c402d10ce892d -> 4c46016542bd1f227edca9ed565f9846
+========================================================================
+Received Import Request.
+  Time since last request: 533.337174 seconds.
+  path: Assets/Models/Weapon
+  artifactKey: Guid(3bb1f489b65650744a6ad334ee608dcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Weapon using Guid(3bb1f489b65650744a6ad334ee608dcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c867b4570b30dfdee014c513614f8cbe') in 0.002927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.039896 seconds.
+  path: Assets/Models/Weapon/BroadSword.fbx
+  artifactKey: Guid(b9ac28e12ee4251468187531bbd87a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Weapon/BroadSword.fbx using Guid(b9ac28e12ee4251468187531bbd87a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00c1c0b995d08d935c520ef60a317c5b') in 0.005342 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.599456 seconds.
+  path: Assets/Models/Weapon/textures
+  artifactKey: Guid(5f4dfe389acca0f4baab77d59226b086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Weapon/textures using Guid(5f4dfe389acca0f4baab77d59226b086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f73623ef612e2ad580cf39a772878e8a') in 0.000900 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.088108 seconds.
+  path: Assets/Models/Weapon/textures/BroadSword_BaseColor.png
+  artifactKey: Guid(a9a37cf37bcdfae4cb7494a3664a84b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Weapon/textures/BroadSword_BaseColor.png using Guid(a9a37cf37bcdfae4cb7494a3664a84b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0ff0a33b3dadc4b647150ab96c8f7c1') in 0.019817 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/Weapon/textures/BroadSword_Normal.png
+  artifactKey: Guid(59c5f3766744f18438e86afe8204d052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Weapon/textures/BroadSword_Normal.png using Guid(59c5f3766744f18438e86afe8204d052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f67cb3ab36768e52144304f49eae7633') in 0.035824 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Models/Weapon/textures/BroadSword_Roughness.png
+  artifactKey: Guid(dded070d6855c9740acd38b49a085e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Weapon/textures/BroadSword_Roughness.png using Guid(dded070d6855c9740acd38b49a085e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '172c27d73af74b2cd5818524369713c7') in 0.039651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 995.433177 seconds.
+  path: Assets/Audio/fire_crepitement.mp3
+  artifactKey: Guid(f43490250fe874a4c93b9c2f8942b372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/fire_crepitement.mp3 using Guid(f43490250fe874a4c93b9c2f8942b372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7531af9e68935806e6ff1e3bfdb07323') in 0.001784 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 343.870051 seconds.
+  path: Assets/Import/Krearthur/GOPainter/Resources/blop.ogg
+  artifactKey: Guid(4d8d2c1e095c5cb418db8654f81c67ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Import/Krearthur/GOPainter/Resources/blop.ogg using Guid(4d8d2c1e095c5cb418db8654f81c67ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc309da4790a13078a8bbb4f29926397') in 0.001679 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.202 seconds
+Refreshing native plugins compatible for Editor in 4.05 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Owen's Revolution
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.163 seconds
+Domain Reload Profiling: 3363ms
+	BeginReloadAssembly (244ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (68ms)
+	RebuildCommonClasses (59ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (833ms)
+		LoadAssemblies (452ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (495ms)
+			TypeCache.Refresh (479ms)
+				TypeCache.ScanAssembly (458ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (2163ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1306ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (126ms)
+			ProcessInitializeOnLoadAttributes (1022ms)
+			ProcessInitializeOnLoadMethodAttributes (130ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 6.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 60 unused Assets / (4.1 MB). Loaded Objects now: 5739.
+Memory consumption went from 211.9 MB to 207.8 MB.
+Total: 15.047000 ms (FindLiveObjects: 1.126600 ms CreateObjectMapping: 0.482500 ms MarkObjects: 10.073500 ms  DeleteObjects: 3.361700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/HealthBar.cs: 7e38e0c7a8c07e1e85b1321f9c988e83 -> 2bf6d6bb300e4a495e61be11e36a2c7d
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/PlayerAttack.cs: b9c50176a857f698c6851338b34aa315 -> c64dfb3c2460f450da95099a90c9c7b4
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/PlayerStats.cs: 3b39b425e89852a2a67c402d10ce892d -> 4c46016542bd1f227edca9ed565f9846
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.183 seconds
+Refreshing native plugins compatible for Editor in 7.54 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Owen's Revolution
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.127 seconds
+Domain Reload Profiling: 3307ms
+	BeginReloadAssembly (220ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (67ms)
+	RebuildCommonClasses (56ms)
+	RebuildNativeTypeToScriptingClass (34ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (824ms)
+		LoadAssemblies (381ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (544ms)
+			TypeCache.Refresh (518ms)
+				TypeCache.ScanAssembly (498ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (2128ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1243ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (126ms)
+			ProcessInitializeOnLoadAttributes (974ms)
+			ProcessInitializeOnLoadMethodAttributes (116ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Refreshing native plugins compatible for Editor in 83.52 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 60 unused Assets / (4.1 MB). Loaded Objects now: 5756.
+Memory consumption went from 211.9 MB to 207.8 MB.
+Total: 11.075700 ms (FindLiveObjects: 0.961500 ms CreateObjectMapping: 0.325400 ms MarkObjects: 6.972600 ms  DeleteObjects: 2.813700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/HealthBar.cs: 7e38e0c7a8c07e1e85b1321f9c988e83 -> 2bf6d6bb300e4a495e61be11e36a2c7d
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/PlayerAttack.cs: b9c50176a857f698c6851338b34aa315 -> c64dfb3c2460f450da95099a90c9c7b4
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/PlayerStats.cs: 3b39b425e89852a2a67c402d10ce892d -> 4c46016542bd1f227edca9ed565f9846
+========================================================================
+Received Import Request.
+  Time since last request: 303.224273 seconds.
+  path: Assets/Scene/DeathScene.unity
+  artifactKey: Guid(6d361b21de1a9154785b0698b646e0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scene/DeathScene.unity using Guid(6d361b21de1a9154785b0698b646e0a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '276de430aed9c19252e72516f0f1f1b4') in 0.004607 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 335.123013 seconds.
+  path: Assets/Audio/mario_death.mp3
+  artifactKey: Guid(4fc3e2269f437b442a07dbf7cc92740e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/mario_death.mp3 using Guid(4fc3e2269f437b442a07dbf7cc92740e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '133a734148948aefa74aeca8068ae7f1') in 0.005952 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 97.366126 seconds.
+  path: Assets/Scene/Owen's Revolution.unity
+  artifactKey: Guid(542ba8a7c86c0b04ca53a2fb0a601a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scene/Owen's Revolution.unity using Guid(542ba8a7c86c0b04ca53a2fb0a601a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93f8a7b85b2c42d8cc53f6f709c23902') in 0.001428 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.361 seconds
+Refreshing native plugins compatible for Editor in 4.02 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Owen's Revolution
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.162 seconds
+Domain Reload Profiling: 3522ms
+	BeginReloadAssembly (241ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (64ms)
+	RebuildCommonClasses (79ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (978ms)
+		LoadAssemblies (468ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (618ms)
+			TypeCache.Refresh (597ms)
+				TypeCache.ScanAssembly (571ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (2163ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1226ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (13ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (121ms)
+			ProcessInitializeOnLoadAttributes (954ms)
+			ProcessInitializeOnLoadMethodAttributes (118ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (32ms)
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 34.27 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 60 unused Assets / (4.1 MB). Loaded Objects now: 5773.
+Memory consumption went from 211.9 MB to 207.8 MB.
+Total: 8.158100 ms (FindLiveObjects: 0.524000 ms CreateObjectMapping: 0.260000 ms MarkObjects: 5.287400 ms  DeleteObjects: 2.084500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/HealthBar.cs: 7e38e0c7a8c07e1e85b1321f9c988e83 -> 2bf6d6bb300e4a495e61be11e36a2c7d
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/PlayerAttack.cs: b9c50176a857f698c6851338b34aa315 -> c64dfb3c2460f450da95099a90c9c7b4
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/PlayerStats.cs: 3b39b425e89852a2a67c402d10ce892d -> 4c46016542bd1f227edca9ed565f9846
+========================================================================
+Received Import Request.
+  Time since last request: 240.552650 seconds.
+  path: Assets/Data
+  artifactKey: Guid(875a685d20b53184ca719df929e7374c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data using Guid(875a685d20b53184ca719df929e7374c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80482c0d116cbc518213caf03d814172') in 0.003370 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.940144 seconds.
+  path: Assets/Data/Prefab
+  artifactKey: Guid(16141d0b90d9a734bad7bc3691a69195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefab using Guid(16141d0b90d9a734bad7bc3691a69195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f261317cf023ad6f2ff95ceca42d1fdc') in 0.000840 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.506253 seconds.
+  path: Assets/Data/Prefab/Weapons
+  artifactKey: Guid(fa569d4a01b6b0a42892b10324542804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefab/Weapons using Guid(fa569d4a01b6b0a42892b10324542804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b0fdf462461797387fa5d38b1020482') in 0.000936 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.013986 seconds.
+  path: Assets/Data/Prefab/Weapons/Sword.prefab
+  artifactKey: Guid(0c9e870afc2102e4bbfd25bf0a2bec5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefab/Weapons/Sword.prefab using Guid(0c9e870afc2102e4bbfd25bf0a2bec5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45d311860ca1ae8967dc49aa6011aaa3') in 0.005874 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.173 seconds
+Refreshing native plugins compatible for Editor in 4.09 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Owen's Revolution
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.312 seconds
+Domain Reload Profiling: 3484ms
+	BeginReloadAssembly (224ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (58ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (833ms)
+		LoadAssemblies (398ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (546ms)
+			TypeCache.Refresh (526ms)
+				TypeCache.ScanAssembly (501ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (2313ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1194ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (124ms)
+			ProcessInitializeOnLoadAttributes (929ms)
+			ProcessInitializeOnLoadMethodAttributes (114ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (36ms)
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Refreshing native plugins compatible for Editor in 31.05 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 60 unused Assets / (4.1 MB). Loaded Objects now: 5790.
+Memory consumption went from 211.9 MB to 207.8 MB.
+Total: 20.969100 ms (FindLiveObjects: 1.016800 ms CreateObjectMapping: 0.417700 ms MarkObjects: 17.262200 ms  DeleteObjects: 2.269800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/HealthBar.cs: 7e38e0c7a8c07e1e85b1321f9c988e83 -> 2bf6d6bb300e4a495e61be11e36a2c7d
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/PlayerAttack.cs: b9c50176a857f698c6851338b34aa315 -> c64dfb3c2460f450da95099a90c9c7b4
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/PlayerStats.cs: 3b39b425e89852a2a67c402d10ce892d -> 4c46016542bd1f227edca9ed565f9846
+========================================================================
+Received Import Request.
+  Time since last request: 271.913050 seconds.
+  path: Assets/Models/Props
+  artifactKey: Guid(344729a2e74b0f44490373a122bc0141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props using Guid(344729a2e74b0f44490373a122bc0141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49dbac13a04e122456a02442aea7310b') in 0.003828 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 9.211846 seconds.
+  path: Assets/Models/Props/CampFire
+  artifactKey: Guid(21cff0d6d9040ac47940c07d2e594692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire using Guid(21cff0d6d9040ac47940c07d2e594692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7ed6b0b97f3af93dbe796a5f42a9b3f') in 0.000724 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 4.546347 seconds.
+  path: Assets/Models/Props/CampFire/palos_campfire_Base_color_1001.png
+  artifactKey: Guid(a07f63fbd4c21e6439e4910b63652be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/palos_campfire_Base_color_1001.png using Guid(a07f63fbd4c21e6439e4910b63652be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9be9db77726d1d1502b1cb40eda9ddea') in 0.008396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/Props/CampFire/palos_campfire_Roughness_1001.png
+  artifactKey: Guid(3fbd76cef377a224ba11c442ff34c0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/palos_campfire_Roughness_1001.png using Guid(3fbd76cef377a224ba11c442ff34c0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '627e2b8ae8ed3ec798d63bd96a56e7da') in 0.006193 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Models/Props/CampFire/palos_campfire_Normal_OpenGL_1001.png
+  artifactKey: Guid(d5ea4b7563f5b3e46ac5a4c04e34165a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/palos_campfire_Normal_OpenGL_1001.png using Guid(d5ea4b7563f5b3e46ac5a4c04e34165a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3f60080013b66fb088d474f903a72c7') in 0.008973 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4.522030 seconds.
+  path: Assets/Models/Props/CampFire/campamento_2.fbx
+  artifactKey: Guid(2230d0e4f5385c544b04ce9fe67cca7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/campamento_2.fbx using Guid(2230d0e4f5385c544b04ce9fe67cca7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28d58ca10870096b4f5233a08b947983') in 0.027898 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 31.731858 seconds.
+  path: Assets/Models/Props/CampFire/textures
+  artifactKey: Guid(68c880486855127438bab5d3a0a984e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/textures using Guid(68c880486855127438bab5d3a0a984e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4c27cfd2d4eb1323647ea9d51425f54') in 0.002777 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.043497 seconds.
+  path: Assets/Models/Props/CampFire/textures/Grass_MAT_Base_Color.png
+  artifactKey: Guid(a506cbd3a7ebcb5489938e1a7f56c696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/textures/Grass_MAT_Base_Color.png using Guid(a506cbd3a7ebcb5489938e1a7f56c696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '944e683e768e959b3e529b35340359b8') in 0.008144 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Models/Props/CampFire/textures/tronco_silla_Roughness_1001.png
+  artifactKey: Guid(c856f1158d973e2449a4dd1ff26f40a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/textures/tronco_silla_Roughness_1001.png using Guid(c856f1158d973e2449a4dd1ff26f40a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c24e2adbc5923af2161a46a852b21f1') in 0.009093 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Models/Props/CampFire/textures/palos_campfire_Normal_OpenGL_1001.png
+  artifactKey: Guid(9e334045c4d7ed44386fa75fd5a8537a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/textures/palos_campfire_Normal_OpenGL_1001.png using Guid(9e334045c4d7ed44386fa75fd5a8537a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1227d6be27f40d4ae4e9e0bde1f38037') in 0.006165 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Models/Props/CampFire/textures/tronco_Mixed_AO_1001.png
+  artifactKey: Guid(1d593006b45d4d048be61cd3836ec1b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/textures/tronco_Mixed_AO_1001.png using Guid(1d593006b45d4d048be61cd3836ec1b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46f54e4d37f3d562973ea86d1b481116') in 0.009166 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Models/Props/CampFire/textures/tronco_cortado_Normal_OpenGL_1001.png
+  artifactKey: Guid(ce960ef0a4526884fa808606a3212ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/textures/tronco_cortado_Normal_OpenGL_1001.png using Guid(ce960ef0a4526884fa808606a3212ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e829f1525bd77facbe0624fecd1d0bf') in 0.006612 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/Props/CampFire/textures/tronco_cortado_Mixed_AO_1001.png
+  artifactKey: Guid(3ca7bef51a92e004183e720732beec2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/textures/tronco_cortado_Mixed_AO_1001.png using Guid(3ca7bef51a92e004183e720732beec2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a2c58237c4814b8324945212c221a36') in 0.006224 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Models/Props/CampFire/textures/tronco_Base_color_1001.png
+  artifactKey: Guid(1502b4ac0ee2792448d3b7d2831c3e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/textures/tronco_Base_color_1001.png using Guid(1502b4ac0ee2792448d3b7d2831c3e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80e0d8d678eda839334df49989508ebd') in 0.006626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/Props/CampFire/textures/standardSurface1_Mixed_AO_1001.png
+  artifactKey: Guid(de3cd8e8ec262f443ab0e45f5ea6d230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/textures/standardSurface1_Mixed_AO_1001.png using Guid(de3cd8e8ec262f443ab0e45f5ea6d230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47da781f836c2d8aae0f1999dc3c0053') in 0.008113 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Models/Props/CampFire/textures/tronco_cortado_Roughness_1001.png
+  artifactKey: Guid(4195f6e9011221b4c9603a9c53d36a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/textures/tronco_cortado_Roughness_1001.png using Guid(4195f6e9011221b4c9603a9c53d36a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34cfcc1a8ca9cd0e96fa19f1f7b1ce4a') in 0.006330 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Models/Props/CampFire/textures/tronco_cortado_Base_color_1001.png
+  artifactKey: Guid(a40afc6810251494c858b4c5cc4645b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/textures/tronco_cortado_Base_color_1001.png using Guid(a40afc6810251494c858b4c5cc4645b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5014c16ddb36a25f96fd085056a1e446') in 0.006645 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/Props/CampFire/textures/palos_campfire_Roughness_1001.png
+  artifactKey: Guid(2c01e6f1489c62642a2bddb084fdf7df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/textures/palos_campfire_Roughness_1001.png using Guid(2c01e6f1489c62642a2bddb084fdf7df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '089bcc4a7647be0ec427d1025fc5b4d0') in 0.006032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/Props/CampFire/textures/tronco_silla_Mixed_AO_1001.png
+  artifactKey: Guid(fa3e6698dedc72f4c96b7df41e2b0c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/textures/tronco_silla_Mixed_AO_1001.png using Guid(fa3e6698dedc72f4c96b7df41e2b0c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f584c0e3938d7693e8b1a7f8d8becbf') in 0.006969 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.378206 seconds.
+  path: Assets/Models/Props/CampFire/source
+  artifactKey: Guid(784d7a9fcf978824fb27f00f44656e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/source using Guid(784d7a9fcf978824fb27f00f44656e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3577b7a4124a9c7bfbddd37da50b76e2') in 0.000760 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.034958 seconds.
+  path: Assets/Models/Props/CampFire/source/campamento_2.fbx
+  artifactKey: Guid(7c2555d1354f7c04b9ea7149fd06591e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/source/campamento_2.fbx using Guid(7c2555d1354f7c04b9ea7149fd06591e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5b79a2752528a49bba78ac65f6aa233') in 0.019489 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 49.029315 seconds.
+  path: Assets/Import/MapMagic/Demo/Grass/Meshes/Materials/Sedge.mat
+  artifactKey: Guid(e016d51411dde1c4595431ce83012e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Import/MapMagic/Demo/Grass/Meshes/Materials/Sedge.mat using Guid(e016d51411dde1c4595431ce83012e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f2bf59a65d2ad3bfc52b63df1f96aff') in 0.002112 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Import/MapMagic/Demo/Materials/Water.mat
+  artifactKey: Guid(e3ec03940d8819c47ae8616963afd1d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Import/MapMagic/Demo/Materials/Water.mat using Guid(e3ec03940d8819c47ae8616963afd1d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a76fa9e15c752379140570612bd1480f') in 0.001602 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 29.254162 seconds.
+  path: Assets/Models/Props/CampFire/textures/CampFire.mat
+  artifactKey: Guid(cf48acc4ed7015548ab23dd156521d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/textures/CampFire.mat using Guid(cf48acc4ed7015548ab23dd156521d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25418c4f976d6826d8fceb51b5d412d0') in 0.001277 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 91.944984 seconds.
+  path: Assets/Models/Props/CampFire/textures/Stone.mat
+  artifactKey: Guid(3548d1ab58d843f4c92843d418c43f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/textures/Stone.mat using Guid(3548d1ab58d843f4c92843d418c43f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '645f0dd4e1696a959ecb02767e4b4e7f') in 0.001312 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4.532109 seconds.
+  path: Assets/Models/Props/CampFire/textures/palos_campfire_Normal_OpenGL_1001.png
+  artifactKey: Guid(9e334045c4d7ed44386fa75fd5a8537a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/textures/palos_campfire_Normal_OpenGL_1001.png using Guid(9e334045c4d7ed44386fa75fd5a8537a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f058e26ba2c57f09cd1a3f68e362d3bb') in 0.009613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.892749 seconds.
+  path: Assets/Models/Props/CampFire/textures/CampFire.mat
+  artifactKey: Guid(cf48acc4ed7015548ab23dd156521d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/textures/CampFire.mat using Guid(cf48acc4ed7015548ab23dd156521d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffbf5f3c0ea5258f708cc5096b7d4f56') in 0.001262 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 54.566998 seconds.
+  path: Assets/Models/Props/CampFire/campamento_2.prefab
+  artifactKey: Guid(f7dc114a0a81bbc4499a5b795183bd59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Props/CampFire/campamento_2.prefab using Guid(f7dc114a0a81bbc4499a5b795183bd59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cc25b09c25e1b764797e6c54cee0b2e') in 0.004608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.204 seconds
+Refreshing native plugins compatible for Editor in 5.84 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Owen's Revolution
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.283 seconds
+Domain Reload Profiling: 3483ms
+	BeginReloadAssembly (232ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (70ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (837ms)
+		LoadAssemblies (443ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (497ms)
+			TypeCache.Refresh (478ms)
+				TypeCache.ScanAssembly (453ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (2284ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1368ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (133ms)
+			ProcessInitializeOnLoadAttributes (1074ms)
+			ProcessInitializeOnLoadMethodAttributes (131ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Refreshing native plugins compatible for Editor in 222.50 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 60 unused Assets / (4.1 MB). Loaded Objects now: 5807.
+Memory consumption went from 212.0 MB to 207.8 MB.
+Total: 13.967300 ms (FindLiveObjects: 0.929900 ms CreateObjectMapping: 0.378300 ms MarkObjects: 10.235100 ms  DeleteObjects: 2.421800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/HealthBar.cs: 7e38e0c7a8c07e1e85b1321f9c988e83 -> 2bf6d6bb300e4a495e61be11e36a2c7d
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/PlayerAttack.cs: b9c50176a857f698c6851338b34aa315 -> c64dfb3c2460f450da95099a90c9c7b4
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/PlayerStats.cs: 3b39b425e89852a2a67c402d10ce892d -> 4c46016542bd1f227edca9ed565f9846
+========================================================================
+Received Import Request.
+  Time since last request: 1133.943134 seconds.
+  path: Assets/Data/Items/Weapons/Sword.asset
+  artifactKey: Guid(9711476b5dbd1d14187750d21b5fe582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Items/Weapons/Sword.asset using Guid(9711476b5dbd1d14187750d21b5fe582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba86daa030df7702eb65fda0cfa0adeb') in 0.019489 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 17.760776 seconds.
+  path: Assets/Data/Prefab/Weapons/Sword.prefab
+  artifactKey: Guid(0c9e870afc2102e4bbfd25bf0a2bec5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefab/Weapons/Sword.prefab using Guid(0c9e870afc2102e4bbfd25bf0a2bec5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '009323594e75a5c572d53c132d3dc9e3') in 0.003421 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 20.497671 seconds.
+  path: Assets/Data/Prefab/Weapons/Sword.prefab
+  artifactKey: Guid(0c9e870afc2102e4bbfd25bf0a2bec5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefab/Weapons/Sword.prefab using Guid(0c9e870afc2102e4bbfd25bf0a2bec5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f74b009a0f4af896709396f1aff8d1e4') in 0.002135 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 9.937305 seconds.
+  path: Assets/Data/Prefab/Weapons/Sword.prefab
+  artifactKey: Guid(0c9e870afc2102e4bbfd25bf0a2bec5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/Prefab/Weapons/Sword.prefab using Guid(0c9e870afc2102e4bbfd25bf0a2bec5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16f9be34b39c4b8c74d25219c9231c60') in 0.003587 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.470 seconds
+Refreshing native plugins compatible for Editor in 5.74 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Owen's Revolution
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.063 seconds
+Domain Reload Profiling: 3531ms
+	BeginReloadAssembly (252ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (75ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (1083ms)
+		LoadAssemblies (639ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (557ms)
+			TypeCache.Refresh (521ms)
+				TypeCache.ScanAssembly (499ms)
+			ScanForSourceGeneratedMonoScriptInfo (13ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (2063ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1188ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (107ms)
+			ProcessInitializeOnLoadAttributes (941ms)
+			ProcessInitializeOnLoadMethodAttributes (110ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (29ms)
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Refreshing native plugins compatible for Editor in 6.22 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4779 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 60 unused Assets / (4.1 MB). Loaded Objects now: 5825.
+Memory consumption went from 212.0 MB to 207.9 MB.
+Total: 13.078500 ms (FindLiveObjects: 0.520000 ms CreateObjectMapping: 0.265600 ms MarkObjects: 10.806800 ms  DeleteObjects: 1.483900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/HealthBar.cs: 7e38e0c7a8c07e1e85b1321f9c988e83 -> 2bf6d6bb300e4a495e61be11e36a2c7d
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/PlayerAttack.cs: b9c50176a857f698c6851338b34aa315 -> c64dfb3c2460f450da95099a90c9c7b4
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/PlayerStats.cs: 3b39b425e89852a2a67c402d10ce892d -> 4c46016542bd1f227edca9ed565f9846
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.529 seconds
+Refreshing native plugins compatible for Editor in 8.80 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path E:\STOK\Hanono\Programmation\GIT\Owen-Game\Owen's Revolution\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <ac87b54e58ee4be198261fd5c8030d52>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
+UnityEditor.Tools:get_get ()
+UnityEditor.Tools:get_visibleLayers ()
+UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs:121)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: ./Library/PackageCache/com.unity.animation.rigging@1.2.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
+
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Owen's Revolution
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path E:\STOK\Hanono\Programmation\GIT\Owen-Game\Owen's Revolution\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <ac87b54e58ee4be198261fd5c8030d52>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path E:\STOK\Hanono\Programmation\GIT\Owen-Game\Owen's Revolution\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <ac87b54e58ee4be198261fd5c8030d52>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path E:\STOK\Hanono\Programmation\GIT\Owen-Game\Owen's Revolution\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <ac87b54e58ee4be198261fd5c8030d52>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.464 seconds
+Domain Reload Profiling: 3991ms
+	BeginReloadAssembly (257ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (64ms)
+	RebuildCommonClasses (78ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (1097ms)
+		LoadAssemblies (564ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (660ms)
+			TypeCache.Refresh (622ms)
+				TypeCache.ScanAssembly (598ms)
+			ScanForSourceGeneratedMonoScriptInfo (17ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (2465ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1437ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (211ms)
+			ProcessInitializeOnLoadAttributes (1071ms)
+			ProcessInitializeOnLoadMethodAttributes (127ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (46ms)
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Refreshing native plugins compatible for Editor in 10.29 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4779 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 60 unused Assets / (4.1 MB). Loaded Objects now: 5842.
+Memory consumption went from 212.1 MB to 207.9 MB.
+Total: 15.330000 ms (FindLiveObjects: 0.747800 ms CreateObjectMapping: 0.402300 ms MarkObjects: 11.830100 ms  DeleteObjects: 2.347500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/HealthBar.cs: 7e38e0c7a8c07e1e85b1321f9c988e83 -> 2bf6d6bb300e4a495e61be11e36a2c7d
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/PlayerAttack.cs: b9c50176a857f698c6851338b34aa315 -> c64dfb3c2460f450da95099a90c9c7b4
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/PlayerStats.cs: 3b39b425e89852a2a67c402d10ce892d -> 4c46016542bd1f227edca9ed565f9846
+========================================================================
+Received Import Request.
+  Time since last request: 336.669955 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '593bac055d518480b35775ef80c16747') in 0.003353 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 366.684227 seconds.
+  path: Assets/Animation/Sprint.anim
+  artifactKey: Guid(88512bf2d56ba174f88d2756968a5dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Sprint.anim using Guid(88512bf2d56ba174f88d2756968a5dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d17b42d7e8366c8eb933681465be6cc') in 0.021767 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 357.654575 seconds.
+  path: Assets/Animation/OH_Light_Attack_01.fbx
+  artifactKey: Guid(6fd3deb4bc0921848af199d253a90ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/OH_Light_Attack_01.fbx using Guid(6fd3deb4bc0921848af199d253a90ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c85f310f91e76f18dfde70893ac28d39') in 0.010530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 149
+========================================================================
+Received Import Request.
+  Time since last request: 91.026170 seconds.
+  path: Assets/Assets
+  artifactKey: Guid(d8a540183df001a489f77b9eaef57e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets using Guid(d8a540183df001a489f77b9eaef57e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3035a6400b25d1fbf44587755c743378') in 0.001080 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.799982 seconds.
+  path: Assets/Assets/Editor
+  artifactKey: Guid(2a6fe5ac1028a8845acdedf957034ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Editor using Guid(2a6fe5ac1028a8845acdedf957034ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b5d156b68718a9bafbad12ac9eab7a7') in 0.000906 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.659676 seconds.
+  path: Assets/Assets/Editor/StyleSheets
+  artifactKey: Guid(71ebe9e8168de8f4d93a0623d9b7beaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Editor/StyleSheets using Guid(71ebe9e8168de8f4d93a0623d9b7beaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2535201be9b56904d23bdd9daac98de0') in 0.001779 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.551300 seconds.
+  path: Assets/Assets/Editor/StyleSheets/Extensions
+  artifactKey: Guid(0a70ca147d0616f498110412245c09a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Editor/StyleSheets/Extensions using Guid(0a70ca147d0616f498110412245c09a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aac3f0eefceb8cd0ba03ef3f4e48e4f1') in 0.000760 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.050707 seconds.
+  path: Assets/Assets/Editor/StyleSheets/Extensions/dark.uss
+  artifactKey: Guid(815069e4ee26ffb4e852e3bfe9f68840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Editor/StyleSheets/Extensions/dark.uss using Guid(815069e4ee26ffb4e852e3bfe9f68840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5555b9f300d28129892ad86c1fd4f61f') in 0.013501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.396945 seconds.
+  path: Assets/Assets/Scenes
+  artifactKey: Guid(360ee86c8b632d8498f256181cfd1066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Scenes using Guid(360ee86c8b632d8498f256181cfd1066) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f901f552c0b48b379e7777895b80f1cf') in 0.000842 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.104321 seconds.
+  path: Assets/Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '347c80f12e0f8cbb0be5c3e0063b68fd') in 0.000937 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 11.334936 seconds.
+  path: Assets/Scene/Owen's Revolution.unity
+  artifactKey: Guid(542ba8a7c86c0b04ca53a2fb0a601a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scene/Owen's Revolution.unity using Guid(542ba8a7c86c0b04ca53a2fb0a601a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88785d9265e55f73ccd56470e3dd00f7') in 0.000928 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.686089 seconds.
+  path: Assets/Packages
+  artifactKey: Guid(01e526f62f063064bb6cd9075484bcc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages using Guid(01e526f62f063064bb6cd9075484bcc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae1bced7fe35dd923195693234b3bdd6') in 0.000762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.191268 seconds.
+  path: Assets/ProjectSettings
+  artifactKey: Guid(63724b6d452e7784abd3d5ecba6df812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectSettings using Guid(63724b6d452e7784abd3d5ecba6df812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '144873c30cc6bb8f96af59e5878cc935') in 0.000712 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.745912 seconds.
+  path: Assets/ProjectSettings/AudioManager.asset
+  artifactKey: Guid(42d753cad3ac85f4b879c6371d2fa729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectSettings/AudioManager.asset using Guid(42d753cad3ac85f4b879c6371d2fa729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53547ce4930b67b9cd6f177485dd3e14') in 0.000981 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ProjectSettings/EditorSettings.asset
+  artifactKey: Guid(8c185e022a38a4c4f97e9fdb6bf03199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectSettings/EditorSettings.asset using Guid(8c185e022a38a4c4f97e9fdb6bf03199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3ffe8e46560751e9e695119b3636543') in 0.001106 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ProjectSettings/ProjectSettings.asset
+  artifactKey: Guid(0ebd4fc7a779d114d851f2e760db8c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectSettings/ProjectSettings.asset using Guid(0ebd4fc7a779d114d851f2e760db8c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f487f76f5f7850cdfcfabcfd4d5e97fe') in 0.001862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/ProjectSettings/NavMeshAreas.asset
+  artifactKey: Guid(559f05079755f53459d03ddfffcdf9e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectSettings/NavMeshAreas.asset using Guid(559f05079755f53459d03ddfffcdf9e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51f4bc3cecacb3ea4d4f0a68c2af3d4f') in 0.002125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/ProjectSettings/TimeManager.asset
+  artifactKey: Guid(1f032faeb41b95a45b85d154c8077638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectSettings/TimeManager.asset using Guid(1f032faeb41b95a45b85d154c8077638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab81a966f5f7959d484de27d99ab383d') in 0.001108 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ProjectSettings/UnityConnectSettings.asset
+  artifactKey: Guid(c981729934ec45840a7119deffc14098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectSettings/UnityConnectSettings.asset using Guid(c981729934ec45840a7119deffc14098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa7db65c1f9b7934cc8b270135f9729') in 0.000911 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/ProjectSettings/XRSettings.asset
+  artifactKey: Guid(c0f81c9de9ec9f34fb40ec28f48c6357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectSettings/XRSettings.asset using Guid(c0f81c9de9ec9f34fb40ec28f48c6357) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Failed to load 'E:/STOK/Hanono/Programmation/GIT/Owen-Game/Owen's Revolution/Assets/ProjectSettings/XRSettings.asset'. File may be corrupted or was serialized with a newer version of Unity.
+ -> (artifact id: '1cdceb634dac640a5d61f863196e7cc3') in 0.001566 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ProjectSettings/InputManager.asset
+  artifactKey: Guid(2dcc8896933c48549bc0f197395b23df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectSettings/InputManager.asset using Guid(2dcc8896933c48549bc0f197395b23df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd2f6a9e077df772608c53cdfde0e062') in 0.000907 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ProjectSettings/VFXManager.asset
+  artifactKey: Guid(57ef84a6a1c2fb842bf183028f2b8b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectSettings/VFXManager.asset using Guid(57ef84a6a1c2fb842bf183028f2b8b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb9155d7a4f54b44d32a7f0df8a36be7') in 0.000704 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 43.588556 seconds.
+  path: Assets/Assets/Editor/StyleSheets/Extensions/dark.uss
+  artifactKey: Guid(815069e4ee26ffb4e852e3bfe9f68840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Editor/StyleSheets/Extensions/dark.uss using Guid(815069e4ee26ffb4e852e3bfe9f68840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bb1c4ea3462a9fb61184b1aaca76b7f') in 0.001480 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 20.862742 seconds.
+  path: Assets/ProjectSettings/ProjectVersion.txt
+  artifactKey: Guid(22f82eb8f659a81458efa80c8205e3e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProjectSettings/ProjectVersion.txt using Guid(22f82eb8f659a81458efa80c8205e3e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40a3fe68eb888e607bd67e01d5c21587') in 0.002107 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 221.327514 seconds.
+  path: Assets/Settings
+  artifactKey: Guid(7a600204908e1df4db658c25facd1a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings using Guid(7a600204908e1df4db658c25facd1a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0c49f8d3b54ed5f33ed500412c76f4a') in 0.000801 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.151 seconds
+Refreshing native plugins compatible for Editor in 4.10 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Owen's Revolution
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path E:\STOK\Hanono\Programmation\GIT\Owen-Game\Owen's Revolution\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <ac87b54e58ee4be198261fd5c8030d52>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.009 seconds
+Domain Reload Profiling: 3160ms
+	BeginReloadAssembly (219ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (69ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (805ms)
+		LoadAssemblies (395ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (512ms)
+			TypeCache.Refresh (474ms)
+				TypeCache.ScanAssembly (453ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (2010ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1073ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (110ms)
+			ProcessInitializeOnLoadAttributes (833ms)
+			ProcessInitializeOnLoadMethodAttributes (106ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (34ms)
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Refreshing native plugins compatible for Editor in 6.15 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4779 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 60 unused Assets / (4.1 MB). Loaded Objects now: 5859.
+Memory consumption went from 212.0 MB to 207.9 MB.
+Total: 14.053000 ms (FindLiveObjects: 0.981900 ms CreateObjectMapping: 0.424000 ms MarkObjects: 9.787400 ms  DeleteObjects: 2.857200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/HealthBar.cs: 7e38e0c7a8c07e1e85b1321f9c988e83 -> 2bf6d6bb300e4a495e61be11e36a2c7d
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/PlayerAttack.cs: b9c50176a857f698c6851338b34aa315 -> c64dfb3c2460f450da95099a90c9c7b4
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/PlayerStats.cs: 3b39b425e89852a2a67c402d10ce892d -> 4c46016542bd1f227edca9ed565f9846
+========================================================================
+Received Import Request.
+  Time since last request: 171.360179 seconds.
+  path: Assets/Settings/High_PipelineAsset.asset
+  artifactKey: Guid(2b74b04d618c9f74a826d1c6cb6e5ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/High_PipelineAsset.asset using Guid(2b74b04d618c9f74a826d1c6cb6e5ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bba3361455b0c33bf025de79bc49c1de') in 0.069766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Settings/Low_PipelineAsset_ForwardRenderer.asset
+  artifactKey: Guid(19662328dc246c64ea0da9228ed96142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Low_PipelineAsset_ForwardRenderer.asset using Guid(19662328dc246c64ea0da9228ed96142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad750427265986646dec596641167beb') in 0.002835 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Settings/Low_PipelineAsset.asset
+  artifactKey: Guid(b325a9df25133db4a9998ff67f107179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Low_PipelineAsset.asset using Guid(b325a9df25133db4a9998ff67f107179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10ae3e363dab52ef89efe929f9001ba8') in 0.004065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Settings/Medium_PipelineAsset.asset
+  artifactKey: Guid(6dda13913889aa4448e8ca8fd97345cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Medium_PipelineAsset.asset using Guid(6dda13913889aa4448e8ca8fd97345cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4beb1854d2042ec637d10beddc127edf') in 0.001753 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Settings/Ultra_PipelineAsset.asset
+  artifactKey: Guid(7d8b4020a04121842b45697445686c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Ultra_PipelineAsset.asset using Guid(7d8b4020a04121842b45697445686c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c809446b46c31417892d88dd108465c') in 0.003172 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Settings/Medium_PipelineAsset_ForwardRenderer.asset
+  artifactKey: Guid(3623c037b97225640877c09aec075d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Medium_PipelineAsset_ForwardRenderer.asset using Guid(3623c037b97225640877c09aec075d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81075d71daa42e9bbfb51223ec6851dc') in 0.001504 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.111 seconds
+Refreshing native plugins compatible for Editor in 4.25 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Owen's Revolution
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path E:\STOK\Hanono\Programmation\GIT\Owen-Game\Owen's Revolution\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <ac87b54e58ee4be198261fd5c8030d52>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path E:\STOK\Hanono\Programmation\GIT\Owen-Game\Owen's Revolution\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <605bf8b31fcb444b85176da963870aa7>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <ac87b54e58ee4be198261fd5c8030d52>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.087 seconds
+Domain Reload Profiling: 3197ms
+	BeginReloadAssembly (211ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (778ms)
+		LoadAssemblies (406ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (467ms)
+			TypeCache.Refresh (452ms)
+				TypeCache.ScanAssembly (434ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (2088ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1163ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (128ms)
+			ProcessInitializeOnLoadAttributes (901ms)
+			ProcessInitializeOnLoadMethodAttributes (99ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (34ms)
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapShader' shader 'Hidden/HDRP/TerrainLit_Basemap' not found
+Shader 'MapMagic/TerrainPreviewHDRP': dependency 'BaseMapGenShader' shader 'Hidden/HDRP/TerrainLit_BasemapGen' not found
+Refreshing native plugins compatible for Editor in 5.28 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4779 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 60 unused Assets / (4.1 MB). Loaded Objects now: 5876.
+Memory consumption went from 212.1 MB to 207.9 MB.
+Total: 8.564600 ms (FindLiveObjects: 0.726700 ms CreateObjectMapping: 0.367500 ms MarkObjects: 5.845700 ms  DeleteObjects: 1.623200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/HealthBar.cs: 7e38e0c7a8c07e1e85b1321f9c988e83 -> 2bf6d6bb300e4a495e61be11e36a2c7d
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/PlayerAttack.cs: b9c50176a857f698c6851338b34aa315 -> c64dfb3c2460f450da95099a90c9c7b4
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/PlayerStats.cs: 3b39b425e89852a2a67c402d10ce892d -> 4c46016542bd1f227edca9ed565f9846
