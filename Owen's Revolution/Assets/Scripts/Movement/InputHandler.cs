@@ -10,6 +10,8 @@ namespace HO
     PlayerControls inputActions;
     PlayerAttack playerAttack;
 
+    PlayerInventory playerInventory;
+
 
     public float horizontal;
     public float vertical;
@@ -33,6 +35,7 @@ namespace HO
     private void Awake()
     {
       playerAttack = GetComponent<PlayerAttack>();
+      playerInventory = GetComponent<PlayerInventory>();
     }
 
     public void OnEnable()
@@ -91,6 +94,15 @@ namespace HO
     {
       inputActions.PlayerActions.RB.performed += i => rb_Input = true;
       inputActions.PlayerActions.RT.performed += i => rt_Input = true;
+
+      if(rb_Input)
+      {
+        playerAttack.HandleLightAttack(playerInventory.rightWeapon);
+      }
+      if(rt_Input)
+      {
+        playerAttack.HandleHeavyAttack(playerInventory.rightWeapon);
+      }
     }
   }
 }

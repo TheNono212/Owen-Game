@@ -8,6 +8,8 @@ namespace HO
     private PlayerManager playerManager;
     private Transform cameraObject;
     private InputHandler inputHandler;
+
+    private PlayerAttack playerAttack;
     public Vector3 moveDirection;
     public Rigidbody rigidbody;
     public GameObject normalCamera;
@@ -41,6 +43,7 @@ namespace HO
       rigidbody = GetComponent<Rigidbody>();
       inputHandler = GetComponent<InputHandler>();
       animatorHandler = GetComponentInChildren<AnimationHandler>();
+      playerAttack = GetComponentInChildren<PlayerAttack>();
       cameraObject = Camera.main.transform;
       myTransform = transform;
       animatorHandler.Initialize();
@@ -80,6 +83,9 @@ namespace HO
     
     public void HandleMovement(float delta)
     {
+      //if(playerManager.isInteracting)
+      //  return;
+      // prevent player from moving when interaction => can't move when rolling but can't move when attacking
 
       moveDirection = cameraObject.forward * inputHandler.vertical;
       moveDirection += cameraObject.right * inputHandler.horizontal;
@@ -119,7 +125,9 @@ namespace HO
             }
             else
             {
-                animatorHandler.PlayTargetAnimation("Backstep", true);
+              animatorHandler.canRotate = false;
+              animatorHandler.PlayTargetAnimation("Backstep", true);
+              StartCoroutine(playerAttack.WaitForRotate(2.0f));
             }
       inputHandler.rollFlag = false;
     }
