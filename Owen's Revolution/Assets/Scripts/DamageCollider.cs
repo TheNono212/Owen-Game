@@ -6,13 +6,13 @@ namespace HO
 {
     public class DamageCollider : MonoBehaviour
     {
-        Collider damageCollider;
+        BoxCollider damageCollider;
 
         public int currentWeaponDamage = 25;
 
         private void Awake()
         {
-            damageCollider = GetComponent<Collider>();
+            damageCollider = GetComponent<BoxCollider>();
             damageCollider.gameObject.SetActive(true);
             damageCollider.isTrigger = true;
             damageCollider.enabled = false;
@@ -24,18 +24,31 @@ namespace HO
         }
         public void DisableDamageCollider()
         {
+            if(damageCollider == null)
+            {
+                print("GIJFSOIGJFS");
+            }
             damageCollider.enabled = false;
         }
 
         private void OnTriggerEnter(Collider collision) 
         {
-            if(collision.tag == "Hittable")
+            if(collision.tag == "Player")
             {
                 PlayerStats playerStats = collision.GetComponent<PlayerStats>();
 
                 if(playerStats != null)
                 {
                     playerStats.TakeDamage(currentWeaponDamage);
+                }
+            }
+            if(collision.tag == "Enemy")
+            {
+                EnemyStats enemyStats = collision.GetComponent<EnemyStats>();
+
+                if(enemyStats != null)
+                {
+                    enemyStats.TakeDamage(currentWeaponDamage);
                 }
             }
         }

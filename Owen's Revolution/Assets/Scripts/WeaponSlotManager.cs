@@ -12,6 +12,8 @@ namespace HO
         DamageCollider leftHandDamageCollider;
         DamageCollider rightHandDamageCollider;
 
+        DamageCollider damageCollider;
+
         private void Awake()
         {
             WeaponHolderSlot[] weaponHolderSlots = GetComponentsInChildren<WeaponHolderSlot>();
@@ -66,12 +68,12 @@ namespace HO
 
         public void CloseRightDamageCollider()
         {
-            rightHandDamageCollider.EnableDamageCollider();
+            rightHandDamageCollider.DisableDamageCollider();
         }
 
         public void CloseLeftDamageCollider()
         {
-            leftHandDamageCollider.EnableDamageCollider();
+            leftHandDamageCollider.DisableDamageCollider();
         }
         #endregion
     }
