@@ -38,9 +38,10 @@ namespace HO
             currentHealth = currentHealth - damage;
 
             healthBar.SetCurrentHealth(currentHealth);
-
+            if(currentHealth > 0)
+            {
             animator.Play("Damage_01");
-
+            }
             if(currentHealth <= 0)
             {
                 currentHealth = 0;
