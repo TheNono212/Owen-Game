@@ -6,7 +6,7 @@ namespace HO
 {
     public class DamageCollider : MonoBehaviour
     {
-        BoxCollider damageCollider;
+        public BoxCollider damageCollider;
 
         public int currentWeaponDamage = 25;
 
@@ -24,10 +24,6 @@ namespace HO
         }
         public void DisableDamageCollider()
         {
-            if(damageCollider == null)
-            {
-                print("GIJFSOIGJFS");
-            }
             damageCollider.enabled = false;
         }
 

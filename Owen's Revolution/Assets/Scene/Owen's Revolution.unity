@@ -669,9 +669,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -923,7 +923,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810697071}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -931,7 +931,7 @@ RectTransform:
   - {fileID: 587952624}
   m_Father: {fileID: 1510609067}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 2.03}
@@ -2164,6 +2164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cab8b68c2a98cf41a2bd7215e46e1a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponSlotManager: {fileID: 0}
   rightWeapon: {fileID: 11400000, guid: 9711476b5dbd1d14187750d21b5fe582, type: 2}
   leftWeapon: {fileID: 11400000, guid: 9711476b5dbd1d14187750d21b5fe582, type: 2}
 --- !u!114 &1574869260
@@ -5393,6 +5394,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9b0533bc2e805e4199e6e2177d50e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leftHandSlot: {fileID: 0}
+  rightHandSlot: {fileID: 0}
+  leftHandDamageCollider: {fileID: 0}
+  rightHandDamageCollider: {fileID: 0}
+  damageCollider: {fileID: 0}
 --- !u!137 &5944369018483233809
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0

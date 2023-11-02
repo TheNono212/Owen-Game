@@ -16,15 +16,15 @@ namespace HO
         }
         public void HandleLightAttack(WeaponItem weapon)
         {
-            animatorHandler.canRotate = false;
+            //animatorHandler.canRotate = false;
             animatorHandler.PlayTargetAnimation(weapon.OH_Light_Attack_1, true);
-            StartCoroutine(WaitForRotate(2.0f));            
+            //StartCoroutine(WaitForRotate(2.0f));            
         }
         public void HandleHeavyAttack(WeaponItem weapon)
         {
-            animatorHandler.canRotate = false;
+            //animatorHandler.canRotate = false;
             animatorHandler.PlayTargetAnimation(weapon.OH_Heavy_Attack_1, true);
-            StartCoroutine(WaitForRotate(2.0f));
+            //StartCoroutine(WaitForRotate(2.0f));
         }
         public IEnumerator WaitForRotate(float waitTime)
         {

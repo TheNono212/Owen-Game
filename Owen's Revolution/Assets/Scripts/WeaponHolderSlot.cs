@@ -30,6 +30,7 @@ namespace HO
         public void LoadWeaponModel(WeaponItem weaponItem)
         {
             UnloadWeaponAndDestroy();
+            
             if(weaponItem == null)
             {
                 UnloadWeapon();
@@ -37,6 +38,9 @@ namespace HO
             }
 
             GameObject model = Instantiate(weaponItem.modelPrefab) as GameObject;
+
+            currentWeaponModel = model;
+
             if(model != null)
             {
                 if(parentOverride != null)

@@ -6,7 +6,7 @@ namespace HO
 {
     public class PlayerInventory : MonoBehaviour
     {
-        WeaponSlotManager weaponSlotManager;
+        public WeaponSlotManager weaponSlotManager;
 
         public WeaponItem rightWeapon;
         public WeaponItem leftWeapon;
@@ -15,7 +15,7 @@ namespace HO
         {
             weaponSlotManager = GetComponentInChildren<WeaponSlotManager>();
         }
-        void Start()
+        private void Start()
         {
             weaponSlotManager.LoadWeaponOnSlot(rightWeapon, false);
             weaponSlotManager.LoadWeaponOnSlot(leftWeapon, true);

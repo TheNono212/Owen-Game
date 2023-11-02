@@ -6,16 +6,28 @@ namespace HO
 {
     public class WeaponSlotManager : MonoBehaviour
     {
-        WeaponHolderSlot leftHandSlot;
-        WeaponHolderSlot rightHandSlot;
+        public WeaponHolderSlot leftHandSlot;
+        public WeaponHolderSlot rightHandSlot;
 
-        DamageCollider leftHandDamageCollider;
-        DamageCollider rightHandDamageCollider;
+        public DamageCollider leftHandDamageCollider;
+        public DamageCollider rightHandDamageCollider;
 
-        DamageCollider damageCollider;
+        public DamageCollider damageCollider;
 
         private void Awake()
         {
+            //DamageCollider[] damageCollider = GetComponentsInChildren<DamageCollider>();
+            //foreach(DamageCollider damageCollider1 in damageCollider)
+            //{
+            //    if(damageCollider1.damageCollider.enabled != true)
+            //    {
+            //        leftHandDamageCollider = damageCollider1;
+            //        rightHandDamageCollider = damageCollider1;
+            //        damageCollider0 = damageCollider1;
+            //    }
+            //}
+
+
             WeaponHolderSlot[] weaponHolderSlots = GetComponentsInChildren<WeaponHolderSlot>();
             foreach (WeaponHolderSlot weaponSlot in weaponHolderSlots)
             {
@@ -39,7 +51,7 @@ namespace HO
             }
             else
             {
-                rightHandSlot.LoadWeaponModel(weaponItem);
+                rightHandSlot.LoadWeaponModel(weaponItem);;
                 LoadRightWeaponDamageCollider();
             }
         }
@@ -53,12 +65,21 @@ namespace HO
         
         private void LoadRightWeaponDamageCollider()
         {
+            print("CACA");
             rightHandDamageCollider = rightHandSlot.currentWeaponModel.GetComponentInChildren<DamageCollider>();
+            //c'erst ici que ça bug? PARCE QU"IL NE RECONNAIT PAS currentWeaponModel
+            print("Hello i just assigned bitch");
         }
 
         public void OpenRightDamageCollider()
         {
+            print("SAY MY NAME");
+            rightHandDamageCollider = rightHandSlot.currentWeaponModel.GetComponentInChildren<DamageCollider>();
+            print("reassigned");
             rightHandDamageCollider.EnableDamageCollider();
+            print("Enabled collider");
+            rightHandSlot.currentWeaponModel.GetComponentInChildren<DamageCollider>().EnableDamageCollider(); 
+            print("Reenabled");
         }
 
         public void OpenLeftDamageCollider()
@@ -69,6 +90,7 @@ namespace HO
         public void CloseRightDamageCollider()
         {
             rightHandDamageCollider.DisableDamageCollider();
+            print("Closed collider");
         }
 
         public void CloseLeftDamageCollider()

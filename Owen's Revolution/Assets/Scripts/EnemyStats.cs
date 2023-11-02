@@ -28,6 +28,11 @@ namespace HO
             return maxHealth;
         }
 
+        public void Update()
+        {
+            healthBar.slider.value = currentHealth;
+        }
+
         public void TakeDamage(int damage)
         {
             currentHealth = currentHealth - damage;
