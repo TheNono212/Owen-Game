@@ -12,11 +12,11 @@ namespace HO
         public DamageCollider leftHandDamageCollider;
         public DamageCollider rightHandDamageCollider;
 
-        public DamageCollider damageCollider;
+        //public DamageCollider damageCollider;
 
         private void Awake()
         {
-            //DamageCollider[] damageCollider = GetComponentsInChildren<DamageCollider>();
+            DamageCollider[] damageCollider = GetComponentsInChildren<DamageCollider>();
             //foreach(DamageCollider damageCollider1 in damageCollider)
             //{
             //    if(damageCollider1.damageCollider.enabled != true)
@@ -65,21 +65,15 @@ namespace HO
         
         private void LoadRightWeaponDamageCollider()
         {
-            print("CACA");
             rightHandDamageCollider = rightHandSlot.currentWeaponModel.GetComponentInChildren<DamageCollider>();
             //c'erst ici que ça bug? PARCE QU"IL NE RECONNAIT PAS currentWeaponModel
-            print("Hello i just assigned bitch");
         }
 
         public void OpenRightDamageCollider()
         {
-            print("SAY MY NAME");
-            rightHandDamageCollider = rightHandSlot.currentWeaponModel.GetComponentInChildren<DamageCollider>();
-            print("reassigned");
+            //rightHandDamageCollider = rightHandSlot.currentWeaponModel.GetComponentInChildren<DamageCollider>();
             rightHandDamageCollider.EnableDamageCollider();
-            print("Enabled collider");
-            rightHandSlot.currentWeaponModel.GetComponentInChildren<DamageCollider>().EnableDamageCollider(); 
-            print("Reenabled");
+            //rightHandSlot.currentWeaponModel.GetComponentInChildren<DamageCollider>().EnableDamageCollider();
         }
 
         public void OpenLeftDamageCollider()

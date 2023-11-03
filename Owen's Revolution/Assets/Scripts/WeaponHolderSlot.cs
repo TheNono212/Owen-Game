@@ -12,6 +12,7 @@ namespace HO
 
         public GameObject currentWeaponModel;
 
+
         public void UnloadWeapon()
         {
             if(currentWeaponModel != null)

@@ -16,8 +16,14 @@ namespace HO
 
         public Animator animator;
 
+        public Collider collider;
+
+        public GameObject enemyHealthBar;
+
         void Start()
         {
+            collider = GetComponent<Collider>();
+            enemyHealthBar = GameObject.Find("Enemy/EnemyModel/EnemyHealth");
             maxHealth = SetMaxHealthFromHealthLevel();
             currentHealth = maxHealth;
         }
@@ -46,6 +52,16 @@ namespace HO
             {
                 currentHealth = 0;
                 animator.Play("Dead_01");
+                collider.enabled = false;
+                StartCoroutine(WaitBeforeHealthDisappear(4.0f));
+            }
+        }
+        IEnumerator WaitBeforeHealthDisappear(float waitTime)
+        {
+            yield return new WaitForSeconds(waitTime);
+            if(enemyHealthBar != null)
+            {
+                Destroy(enemyHealthBar);
             }
         }
     }
