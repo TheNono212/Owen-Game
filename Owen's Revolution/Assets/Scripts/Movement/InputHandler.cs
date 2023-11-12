@@ -19,9 +19,10 @@ namespace HO
     public float mouseX;
     public float mouseY;
 
-    public bool leftShift;
+    public bool b_Input;
     public bool rb_Input;
     public bool rt_Input;
+    public bool jump_Input;
 
 
     public bool rollFlag;
@@ -49,13 +50,17 @@ namespace HO
       inputActions.Enable();
     }
 
-    private void OnDisable() => inputActions.Disable();
+    private void OnDisable()
+    {
+      inputActions.Disable();
+    }
 
     public void TickInput(float delta)
     {
       MoveInput(delta);
       HandleRollInput(delta);
       HandleAttackInput(delta);
+      HandleJumpInput(delta);
     }
 
     private void MoveInput(float delta)
@@ -69,8 +74,8 @@ namespace HO
 
     private void HandleRollInput(float delta)
     {
-      leftShift = inputActions.PlayerActions.Roll.phase == InputActionPhase.Performed;
-      if (leftShift)
+      b_Input = inputActions.PlayerActions.Roll.phase == InputActionPhase.Performed;
+      if (b_Input)
       {
         rollInputTimer += delta;
         if(moveAmount < 1)
@@ -103,6 +108,11 @@ namespace HO
       {
         playerAttack.HandleHeavyAttack(playerInventory.rightWeapon);
       }
+    }
+
+    private void HandleJumpInput(float delta)
+    {
+      inputActions.PlayerActions.Jump.performed += i => jump_Input = true;
     }
   }
 }

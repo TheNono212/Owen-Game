@@ -25,17 +25,17 @@ namespace HO
     [SerializeField]
     private float sprintSpeed = 9f;
 
-        //[SerializeField]
-        //private float fallingSpeed = 4f;
-        //[Header("Ground & Air Detection Stats")]
-        //[SerializeField]
-        //private float groundDetectionRayStartPoint = 0.5f;
-        //[SerializeField]
-        //private float minimumDistanceNeededToBeginFall = 0.1f;
-        //[SerializeField]
-        //private float groundDirectionRayDistance = -0.2f;
-        //private LayerMask ignoreForGroundCheck;
-        //public float inAirTimer;
+      //[SerializeField]
+      //private float fallingSpeed = 4f;
+      //[Header("Ground & Air Detection Stats")]
+      //[SerializeField]
+      //private float groundDetectionRayStartPoint = 0.5f;
+      //[SerializeField]
+      //private float minimumDistanceNeededToBeginFall = 0.1f;
+      //[SerializeField]
+      //private float groundDirectionRayDistance = -0.2f;
+      //private LayerMask ignoreForGroundCheck;
+      //public float inAirTimer;
 
     private void Start()
     {
@@ -132,18 +132,38 @@ namespace HO
       inputHandler.rollFlag = false;
     }
 
-        public void HandleLessRotationWhenInteracting(float delta)
+    public void HandleLessRotationWhenInteracting(float delta)
+    {
+        if(playerManager.isInteracting)
         {
-            if(playerManager.isInteracting)
-            {
-                rotationSpeed = 5;
-            }
-            if(playerManager.isInteracting == false)
-            {
-                    rotationSpeed = 10;
-            }
-            // A FINIR CAR NE MARCHE PAS
+            rotationSpeed = 5;
         }
+        if(playerManager.isInteracting == false)
+        {
+                rotationSpeed = 10;
+        }
+        // A FINIR CAR NE MARCHE PAS
+    }
+
+    public void HandleJumping()
+    {
+      if(playerManager.isInteracting)
+        return;
+
+      if(inputHandler.jump_Input)
+      {
+        if(inputHandler.moveAmount > 0)
+        {
+          moveDirection = cameraObject.forward * inputHandler.vertical;
+          moveDirection += cameraObject.right * inputHandler.horizontal;
+          animatorHandler.PlayTargetAnimation("Jump", true);
+          moveDirection.y = 0;
+          Quaternion jumpRotation = Quaternion.LookRotation(moveDirection);
+          myTransform.rotation = jumpRotation;
+        }
+      }
+    }
+    
     #endregion
   }
 }

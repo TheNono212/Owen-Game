@@ -11,6 +11,7 @@ namespace HO
     private PlayerLocomotion playerLocomotion;
     private Animator anim;
     private CameraHandler cameraHandler;
+    private PlayerStats playerStats;
 
     public bool isInteracting;
 
@@ -32,6 +33,7 @@ namespace HO
       inputHandler = GetComponent<InputHandler>();
       anim = GetComponentInChildren<Animator>();
       playerLocomotion = GetComponent<PlayerLocomotion>();
+      playerStats = GetComponent<PlayerStats>();
     }
 
     private void Update()
@@ -44,11 +46,31 @@ namespace HO
       playerLocomotion.HandleMovement(delta);
       playerLocomotion.HandleRollingAndSprinting(delta);
       //playerLocomotion.HandleFalling(delta, playerLocomotion.moveDirection);
+      playerLocomotion.HandleJumping();
 
 
       isSprinting = inputHandler.sprintFlag;
       isRolling = inputHandler.rollFlag;
     }
+
+    public void SavePlayer()
+    {
+      SaveSystem.SavePlayer(playerStats, playerLocomotion);
+    }
+    public void LoadPlayer()
+    {
+      PlayerData data = SaveSystem.LoadPlayer();
+
+      playerStats.currentHealth = data.health;
+
+      Vector3 position;
+      position.x = data.position[0];
+      position.y = data.position[1];
+      position.z = data.position[2];
+      playerLocomotion.transform.position = position;
+
+    }
+
 
     private void FixedUpdate()
     {
@@ -67,11 +89,12 @@ namespace HO
       inputHandler.sprintFlag = false;
       inputHandler.rb_Input = false;
       inputHandler.rt_Input = false;
+      inputHandler.jump_Input = false;
 
 
       if(inputHandler.moveAmount > 1)
       {
-        isSprinting = inputHandler.leftShift;
+        isSprinting = inputHandler.b_Input;
       }
       
       //if (isInAir)

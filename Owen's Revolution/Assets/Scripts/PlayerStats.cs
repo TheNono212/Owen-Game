@@ -23,6 +23,11 @@ namespace HO
             healthBar.SetMaxHealth(maxHealth);
         }
 
+        void Update()
+        {
+            healthBar.SetCurrentHealth(currentHealth);
+        }
+
         private int SetMaxHealthFromHealthLevel()
         {
             maxHealth = healthLevel * 10;

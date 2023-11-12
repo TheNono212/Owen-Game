@@ -27,7 +27,7 @@ namespace HO
         public float maximumPivot = 35;
 
         public float cameraSphereRadius = 0.2f;
-        public float cameraCollisionOffset = 0.2f;
+        public float cameraCollisionOffset = -0.2f;
         public float minimumCollisionOffset = 0.2f;
 
         private void Awake()
@@ -35,7 +35,7 @@ namespace HO
             singleton = this;
             myTransform = transform;
             defaultPosition = cameraTransform.localPosition.z;
-            ignoreLayers = ~(1 << 2 | 1 << 8 | 1 << 9 | 1 << 10);
+            ignoreLayers = ~(1 << 4 | 1 << 8 | 1 << 9 | 1 << 10);
             targetTransform = FindObjectOfType<PlayerManager>().transform;
         }
 
