@@ -11,6 +11,10 @@ namespace HO
         public int healthLevel = 10;
         public int maxHealth;
         public int currentHealth;
+
+        public float burnTime;
+        public float remainBurnTime;
+        public bool isBurning;
         
         public HealthBar healthBar;
 
@@ -59,6 +63,11 @@ namespace HO
         {
             yield return new WaitForSeconds(waitTime);
             SceneManager.LoadScene("DeathScene", LoadSceneMode.Single);
+        }
+
+        public void Burn() 
+        {
+            
         }
     }
 }

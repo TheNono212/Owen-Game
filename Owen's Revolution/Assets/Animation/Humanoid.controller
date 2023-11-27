@@ -34,7 +34,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Backstep
-  m_Speed: 2
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 4509994890773433189}
@@ -47,7 +47,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 66721ae47425a674f9688f3f083b1cce, type: 3}
+  m_Motion: {fileID: 7400000, guid: 75622ba7677350e4e9c2f1086f8b80e8, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -118,7 +118,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 29059bf7f601d4f44be5accc2ba7c72c, type: 3}
+  m_Motion: {fileID: 7400000, guid: 0c920915728aefc40a68e16623bc007f, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

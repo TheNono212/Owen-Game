@@ -125,7 +125,7 @@ namespace HO
             }
             else
             {
-              animatorHandler.canRotate = false;
+              //change rotation speed
               animatorHandler.PlayTargetAnimation("Backstep", true);
               StartCoroutine(playerAttack.WaitForRotate(2.0f));
             }
