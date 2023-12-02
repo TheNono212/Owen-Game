@@ -12,6 +12,7 @@ namespace HO
     private Animator anim;
     private CameraHandler cameraHandler;
     private PlayerStats playerStats;
+    private EnemyStats enemyStats;
 
     public bool isInteracting;
 
@@ -55,7 +56,7 @@ namespace HO
 
     public void SavePlayer()
     {
-      SaveSystem.SavePlayer(playerStats, playerLocomotion);
+      SaveSystem.SavePlayer(playerStats, playerLocomotion, enemyStats);
     }
     public void LoadPlayer()
     {
@@ -68,6 +69,9 @@ namespace HO
       position.y = data.position[1];
       position.z = data.position[2];
       playerLocomotion.transform.position = position;
+
+      //enemyStats currentHea lth = data.enemyHealth;
+      //enemyStats isDead = data.enemyIsDead;
 
     }
 

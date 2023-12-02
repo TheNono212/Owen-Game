@@ -19,6 +19,8 @@ namespace HO
         public HealthBar healthBar;
 
         public AnimationHandler animatorHandler;
+        public DamagePlayer damagePlayer;
+
 
         void Start()
         {
@@ -38,7 +40,7 @@ namespace HO
             return maxHealth;
         }
 
-        public void TakeDamage(int damage)
+        public void TakeDamage(int damage, string damageType)
         {
             currentHealth = currentHealth - damage;
 

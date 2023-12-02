@@ -8,6 +8,8 @@ namespace HO
     {
         public BoxCollider damageCollider;
 
+        public DamagePlayer damagePlayer;
+
         public int currentWeaponDamage = 25;
 
         private void Awake()
@@ -35,7 +37,7 @@ namespace HO
 
                 if(playerStats != null)
                 {
-                    playerStats.TakeDamage(currentWeaponDamage);
+                    playerStats.TakeDamage(currentWeaponDamage, damagePlayer.damageType[0]);
                 }
             }
             if(collision.tag == "Enemy")

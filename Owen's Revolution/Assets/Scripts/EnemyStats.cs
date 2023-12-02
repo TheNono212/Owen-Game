@@ -16,13 +16,19 @@ namespace HO
 
         public Animator animator;
 
-        public Collider collider;
+        public Collider solidCollider;
+        public Collider triggerCollider;
 
         public GameObject enemyHealthBar;
 
+        public bool isDead;
+
         void Start()
         {
-            collider = GetComponent<Collider>();
+            solidCollider = GetComponent<Collider>();
+            //triggerCollider = GetComponentInChildren<Collider>();
+            // The triggerCollider doesn't work this way, it's assigned as the same collider as solidCollider
+            // SO IT DOESN'T WORK HAHAHA (putting it in the inspector works so going to let it as it is)
             enemyHealthBar = GameObject.Find("Enemy/EnemyModel/EnemyHealth");
             maxHealth = SetMaxHealthFromHealthLevel();
             currentHealth = maxHealth;
@@ -37,6 +43,13 @@ namespace HO
         public void Update()
         {
             healthBar.slider.value = currentHealth;
+
+            if(!isDead)
+            {
+                GetComponent<Collider>().enabled = true;
+                triggerCollider.enabled = true;
+                enemyHealthBar.SetActive(true);
+            }
         }
 
         public void TakeDamage(int damage)
@@ -51,8 +64,10 @@ namespace HO
             if(currentHealth <= 0)
             {
                 currentHealth = 0;
+                isDead=true;
                 animator.Play("Dead_01");
-                collider.enabled = false;
+                GetComponent<Collider>().enabled = false;
+                triggerCollider.enabled = false;
                 StartCoroutine(WaitBeforeHealthDisappear(4.0f));
             }
         }
@@ -61,7 +76,7 @@ namespace HO
             yield return new WaitForSeconds(waitTime);
             if(enemyHealthBar != null)
             {
-                Destroy(enemyHealthBar);
+                enemyHealthBar.SetActive(false);
             }
         }
     }

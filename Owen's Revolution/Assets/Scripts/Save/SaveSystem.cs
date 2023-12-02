@@ -6,13 +6,13 @@ namespace HO
 {
     public static class SaveSystem 
     {
-        public static void SavePlayer(PlayerStats playerStats, PlayerLocomotion playerLocomotion)
+        public static void SavePlayer(PlayerStats playerStats, PlayerLocomotion playerLocomotion, EnemyStats enemyStats)
         {
             BinaryFormatter formatter = new BinaryFormatter();
             string path = Application.persistentDataPath + "/player.fun";
             FileStream stream = new FileStream(path, FileMode.Create);
 
-            PlayerData data = new PlayerData(playerStats, playerLocomotion);
+            PlayerData data = new PlayerData(playerStats, playerLocomotion, enemyStats);
 
             formatter.Serialize(stream, data);
             stream.Close();

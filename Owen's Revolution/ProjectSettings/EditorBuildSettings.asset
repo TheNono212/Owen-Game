@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scene/Menu 1.unity
+    guid: 78a9ee25c8de58d49b7dfb713dd4299c
+  - enabled: 1
     path: Assets/Scene/Owen's Revolution.unity
     guid: 542ba8a7c86c0b04ca53a2fb0a601a55
   - enabled: 1
