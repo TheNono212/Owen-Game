@@ -23,6 +23,7 @@ namespace HO
         private void OnTriggerEnter(Collider other)
         {
             PlayerStats playerStats = other.GetComponent<PlayerStats>();
+            Fire fire = other.GetComponent<Fire>();
 
             if(playerStats != null)
             {
@@ -35,12 +36,21 @@ namespace HO
                 {
                     playerStats.TakeDamage(damage, damageType[1]);
                     Debug.Log(damageType[1]);
+                    fire.FireDamage(true);
                 }
                 if(obj.tag == "Tree")
                 {
                     playerStats.TakeDamage(damage, damageType[2]);
                     Debug.Log(damageType[2]);
                 }
+            }
+        }
+
+        private void OnTriggerExit(Collider other) {
+            Fire fire = other.GetComponent<Fire>();
+            if(obj.tag == "Fire")
+            {
+                fire.FireDamage(false);
             }
         }
     }

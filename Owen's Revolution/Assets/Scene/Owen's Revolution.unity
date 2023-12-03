@@ -1869,6 +1869,7 @@ GameObject:
   - component: {fileID: 1574869259}
   - component: {fileID: 1574869260}
   - component: {fileID: 1574869261}
+  - component: {fileID: 1574869263}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -1914,7 +1915,7 @@ CapsuleCollider:
   m_Radius: 0.40673828
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0.9, z: -0.09326172}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!54 &1574869255
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2043,11 +2044,9 @@ MonoBehaviour:
   healthLevel: 20
   maxHealth: 0
   currentHealth: 0
-  burnTime: 0
-  remainBurnTime: 0
-  isBurning: 0
   healthBar: {fileID: 1300737125}
   animatorHandler: {fileID: 5866666021843375749}
+  fire: {fileID: 1574869263}
   damagePlayer: {fileID: 1580737667}
 --- !u!81 &1574869262
 AudioListener:
@@ -2057,6 +2056,23 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574869252}
   m_Enabled: 1
+--- !u!114 &1574869263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574869252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f9cad970a9e064986089ffd4e4f1b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  remainBurnTime: 0
+  setBurnTime: 5
+  isBurning: 0
+  isCollidingWithFire: 0
+  playerStats: {fileID: 1574869261}
 --- !u!1 &1580737666
 GameObject:
   m_ObjectHideFlags: 0
@@ -2068,7 +2084,6 @@ GameObject:
   - component: {fileID: 1580737669}
   - component: {fileID: 1580737668}
   - component: {fileID: 1580737667}
-  - component: {fileID: 1580737670}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Fire
@@ -2133,18 +2148,6 @@ Transform:
   m_Father: {fileID: 2066583671}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1580737670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1580737666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8f9cad970a9e064986089ffd4e4f1b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1594986925
 GameObject:
   m_ObjectHideFlags: 0

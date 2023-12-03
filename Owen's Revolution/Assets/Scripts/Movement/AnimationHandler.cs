@@ -8,7 +8,7 @@ namespace HO
         PlayerManager playerManager;
         public Animator anim;
         InputHandler inputHandler;
-         PlayerLocomotion playerLocomotion;
+        PlayerLocomotion playerLocomotion;
         int vertical;
         int horizontal;
         public bool canRotate;
@@ -85,7 +85,7 @@ namespace HO
         {
             anim.applyRootMotion = isInteracting;
             anim.SetBool("isInteracting", isInteracting);
-            Debug.Log(anim.GetBool("isInteracting"));
+            //Debug.Log(anim.GetBool("isInteracting"));
             anim.CrossFade(targetAnim, 0.2f);
         }
         public void CanRotate()
