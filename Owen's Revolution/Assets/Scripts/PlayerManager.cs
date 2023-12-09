@@ -16,6 +16,8 @@ namespace HO
 
     public bool isInteracting;
 
+    public Collectable collectable;
+
     [Header("Player Flags")]
     public bool isRolling;
     public bool isSprinting;
@@ -35,6 +37,7 @@ namespace HO
       anim = GetComponentInChildren<Animator>();
       playerLocomotion = GetComponent<PlayerLocomotion>();
       playerStats = GetComponent<PlayerStats>();
+      collectable = GetComponent<Collectable>();
     }
 
     private void Update()
@@ -48,6 +51,7 @@ namespace HO
       playerLocomotion.HandleRollingAndSprinting(delta);
       //playerLocomotion.HandleFalling(delta, playerLocomotion.moveDirection);
       playerLocomotion.HandleJumping();
+      collectable.IsContact();
 
 
       isSprinting = inputHandler.sprintFlag;
@@ -94,6 +98,7 @@ namespace HO
       inputHandler.rb_Input = false;
       inputHandler.rt_Input = false;
       inputHandler.jump_Input = false;
+      inputHandler.interact_Input = false;
 
 
       if(inputHandler.moveAmount > 1)

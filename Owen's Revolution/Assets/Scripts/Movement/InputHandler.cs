@@ -23,6 +23,7 @@ namespace HO
     public bool rb_Input;
     public bool rt_Input;
     public bool jump_Input;
+    public bool interact_Input;
 
 
     public bool rollFlag;
@@ -61,6 +62,7 @@ namespace HO
       HandleRollInput(delta);
       HandleAttackInput(delta);
       HandleJumpInput(delta);
+      HandleInteractInput(delta);
     }
 
     private void MoveInput(float delta)
@@ -113,6 +115,11 @@ namespace HO
     private void HandleJumpInput(float delta)
     {
       inputActions.PlayerActions.Jump.performed += i => jump_Input = true;
+    }
+
+    private void HandleInteractInput(float delta)
+    {
+      inputActions.PlayerActions.Interact.performed += i => interact_Input = true;
     }
   }
 }

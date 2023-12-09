@@ -70,7 +70,7 @@ namespace HO
 
       if (targetDir == Vector3.zero)
       {
-         targetDir = myTransform.forward;
+        targetDir = myTransform.forward;
       }
       
       float rs = rotationSpeed;
@@ -140,7 +140,7 @@ namespace HO
         }
         if(playerManager.isInteracting == false)
         {
-                rotationSpeed = 10;
+          rotationSpeed = 10;
         }
         // A FINIR CAR NE MARCHE PAS
     }
