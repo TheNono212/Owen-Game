@@ -20,6 +20,9 @@ namespace HO
         public Collider triggerCollider;
 
         public GameObject enemyHealthBar;
+        public GameObject FloatingTextPrefab;
+
+        public int publicDamage;
 
         public bool isDead;
 
@@ -54,7 +57,13 @@ namespace HO
 
         public void TakeDamage(int damage)
         {
+            publicDamage = damage;
             currentHealth = currentHealth - damage;
+
+            if(FloatingTextPrefab != null && currentHealth > 0)
+            {
+                ShowFloatingText();
+            }
 
             healthBar.SetCurrentHealth(currentHealth);
             if(currentHealth > 0)
@@ -71,6 +80,13 @@ namespace HO
                 StartCoroutine(WaitBeforeHealthDisappear(4.0f));
             }
         }
+
+        public void ShowFloatingText()
+        {
+            var go = Instantiate(FloatingTextPrefab, transform.position, Quaternion.identity, transform);
+            go.GetComponent<TextMesh>().text = publicDamage.ToString();
+        }
+
         IEnumerator WaitBeforeHealthDisappear(float waitTime)
         {
             yield return new WaitForSeconds(waitTime);

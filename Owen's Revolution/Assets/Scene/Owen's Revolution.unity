@@ -761,7 +761,7 @@ GameObject:
   - component: {fileID: 554596293}
   - component: {fileID: 554596292}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TutorialText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2526,7 +2526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   remainBurnTime: 0
-  setBurnTime: 5
+  setBurnTime: 2
   isBurning: 0
   isCollidingWithFire: 0
   playerStats: {fileID: 1574869261}
@@ -2564,6 +2564,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d125efcac855ab489978a3847e44f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FloatingItemTextPrefab: {fileID: 4259454549536981311, guid: 137d7302daff2604f88f47e543159850, type: 3}
+  AllUI: {fileID: 1069700082}
 --- !u!1 &1580737666
 GameObject:
   m_ObjectHideFlags: 0
@@ -7328,6 +7330,8 @@ MonoBehaviour:
   solidCollider: {fileID: 5985974262793656557}
   triggerCollider: {fileID: 8616861843952859134}
   enemyHealthBar: {fileID: 5753900123113817403}
+  FloatingTextPrefab: {fileID: 88232180805042020, guid: 2ca0beafde6a1c5468d3386743da19a9, type: 3}
+  publicDamage: 0
   isDead: 0
 --- !u!1 &7420171797090286636
 GameObject:
@@ -8083,7 +8087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
-  obj: {fileID: 0}
+  obj: {fileID: 5334387280687541153}
   damageType:
   - SwordDamage
   - FireDamage

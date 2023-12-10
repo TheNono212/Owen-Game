@@ -52,7 +52,7 @@ namespace HO
                         //if(playerManager.isInteracting) => return; ????
                         animationHandler.PlayTargetAnimation("Collect", true);
                         berries += 1;
-                        uiManager.NewTime(1, "Berries");
+                        uiManager.NewItem(1, "Berries");
                     }
                     break;
                 default:
