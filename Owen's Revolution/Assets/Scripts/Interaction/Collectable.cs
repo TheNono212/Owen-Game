@@ -44,21 +44,21 @@ namespace HO
 
         public void IsContact()
         {
-            switch (customTag)
-            {
-                case "Berries":
-                    if(inputHandler.interact_Input)
-                    {
-                        //if(playerManager.isInteracting) => return; ????
-                        animationHandler.PlayTargetAnimation("Collect", true);
-                        berries += 1;
-                        uiManager.NewItem(1, "Berries");
-                    }
-                    break;
-                default:
-                    return;
-                    break;
-            }
+                switch (customTag)
+                {
+                    case "Berries":
+                        if(inputHandler.interact_Input && isTriggered == true)
+                        {
+                            //if(playerManager.isInteracting) => return; ????
+                            animationHandler.PlayTargetAnimation("Collect", true);
+                            berries += 1;
+                            uiManager.NewItem(1, "Berries");
+                        }
+                        break;
+                    default:
+                        return;
+                        break;
+                }
         }
     }
 }

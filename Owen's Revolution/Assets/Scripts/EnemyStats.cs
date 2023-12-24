@@ -6,11 +6,8 @@ using UnityEngine.SceneManagement;
 
 namespace HO
 {
-    public class EnemyStats : MonoBehaviour
+    public class EnemyStats : CharacterStats
     {
-        public int healthLevel = 10;
-        public int maxHealth;
-        public int currentHealth;
         
         public HealthBar healthBar;
 
