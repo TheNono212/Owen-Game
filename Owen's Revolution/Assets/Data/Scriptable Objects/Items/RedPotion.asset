@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 342769925320c2d48a3c92e9ae162b2d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5179b3e0f68f06458750ecf0864494d, type: 3}
   m_Name: RedPotion
   m_EditorClassIdentifier: 
-  id: 1
-  itemName: Red Potion
-  value: 5
-  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  prefab: {fileID: 4499152815655567283, guid: 12b333e039d6a5342a958e0f3c81cbe0, type: 3}
+  type: 0
+  description: HOLY SHIT
+  restoreHealthValue: 0

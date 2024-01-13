@@ -22,7 +22,7 @@ namespace HO
         }
 
 
-        public void FireDamage(bool isInFire)
+            public void FireDamage(bool isInFire)
         {
             if(isInFire)
             {

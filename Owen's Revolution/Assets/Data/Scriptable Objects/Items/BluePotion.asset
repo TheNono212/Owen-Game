@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 342769925320c2d48a3c92e9ae162b2d, type: 3}
+  m_Script: {fileID: 11500000, guid: f5179b3e0f68f06458750ecf0864494d, type: 3}
   m_Name: BluePotion
   m_EditorClassIdentifier: 
-  id: 2
-  itemName: Blue Potion
-  value: 5
-  icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  prefab: {fileID: 6962764309578266122, guid: d2157dc1e224f504995d8c2d5dd89ac9, type: 3}
+  type: 0
+  description: 
+  restoreHealthValue: 20

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Collectable : MonoBehaviour
 {
     public string[] collectableTypes = {"Berries"};
-    public Item[] itemToPickup;
+    //public Item[] itemToPickup;
     public bool isTriggered = false;
     public bool canCollect = false;
     public string customTag;
